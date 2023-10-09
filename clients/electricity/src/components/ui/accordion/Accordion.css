@@ -1,0 +1,44 @@
+.accordion-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  height: 100%;
+}
+
+.accordion-list_item__button {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 3px 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-list_item__button:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion-list_item__button_active,
+.accordion-list_item__button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.accordion-list_item__button_active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.accordion__content-wrapper {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s linear;
+}

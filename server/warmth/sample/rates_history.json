@@ -1,0 +1,10229 @@
+[
+    {
+        "rate_id": 1,
+        "year": 2018,
+        "month": 8,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2018,
+        "month": 8,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2018,
+        "month": 8,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2018,
+        "month": 8,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2018,
+        "month": 8,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2018,
+        "month": 8,
+        "value_1": 16.9259,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2018,
+        "month": 8,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2018,
+        "month": 8,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2018,
+        "month": 8,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2018,
+        "month": 8,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2018,
+        "month": 8,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2018,
+        "month": 8,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2018,
+        "month": 8,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2018,
+        "month": 8,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2018,
+        "month": 8,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2018,
+        "month": 8,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2018,
+        "month": 8,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2018,
+        "month": 8,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2018,
+        "month": 8,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2018,
+        "month": 8,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2018,
+        "month": 8,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 22,
+        "year": 2018,
+        "month": 8,
+        "value_1": 0.0,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2018,
+        "month": 8,
+        "value_1": 81.42,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2018,
+        "month": 8,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2018,
+        "month": 9,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2018,
+        "month": 9,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2018,
+        "month": 9,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2018,
+        "month": 9,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2018,
+        "month": 9,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2018,
+        "month": 9,
+        "value_1": 16.9259,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2018,
+        "month": 9,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2018,
+        "month": 9,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2018,
+        "month": 9,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2018,
+        "month": 9,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2018,
+        "month": 9,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2018,
+        "month": 9,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2018,
+        "month": 9,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2018,
+        "month": 9,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2018,
+        "month": 9,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2018,
+        "month": 9,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2018,
+        "month": 9,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2018,
+        "month": 9,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2018,
+        "month": 9,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2018,
+        "month": 9,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2018,
+        "month": 9,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 22,
+        "year": 2018,
+        "month": 9,
+        "value_1": 0.0,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2018,
+        "month": 9,
+        "value_1": 81.42,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2018,
+        "month": 9,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2018,
+        "month": 10,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2018,
+        "month": 10,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2018,
+        "month": 10,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2018,
+        "month": 10,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2018,
+        "month": 10,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2018,
+        "month": 10,
+        "value_1": 16.9259,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2018,
+        "month": 10,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2018,
+        "month": 10,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2018,
+        "month": 10,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2018,
+        "month": 10,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2018,
+        "month": 10,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2018,
+        "month": 10,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2018,
+        "month": 10,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2018,
+        "month": 10,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2018,
+        "month": 10,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2018,
+        "month": 10,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2018,
+        "month": 10,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2018,
+        "month": 10,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2018,
+        "month": 10,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2018,
+        "month": 10,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2018,
+        "month": 10,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2018,
+        "month": 10,
+        "value_1": 81.42,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2018,
+        "month": 10,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2018,
+        "month": 11,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2018,
+        "month": 11,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2018,
+        "month": 11,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2018,
+        "month": 11,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2018,
+        "month": 11,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2018,
+        "month": 11,
+        "value_1": 16.9259,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2018,
+        "month": 11,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2018,
+        "month": 11,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2018,
+        "month": 11,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2018,
+        "month": 11,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2018,
+        "month": 11,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2018,
+        "month": 11,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2018,
+        "month": 11,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2018,
+        "month": 11,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2018,
+        "month": 11,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2018,
+        "month": 11,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2018,
+        "month": 11,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2018,
+        "month": 11,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2018,
+        "month": 11,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2018,
+        "month": 11,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2018,
+        "month": 11,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2018,
+        "month": 11,
+        "value_1": 81.42,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2018,
+        "month": 11,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2018,
+        "month": 12,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2018,
+        "month": 12,
+        "value_1": 16.9259,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2018,
+        "month": 12,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2018,
+        "month": 12,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2018,
+        "month": 12,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2018,
+        "month": 12,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2018,
+        "month": 12,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2018,
+        "month": 12,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2018,
+        "month": 12,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2018,
+        "month": 12,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2018,
+        "month": 12,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2018,
+        "month": 12,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2018,
+        "month": 12,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2018,
+        "month": 12,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2018,
+        "month": 12,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2018,
+        "month": 12,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2018,
+        "month": 12,
+        "value_1": 86.808,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2018,
+        "month": 12,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2018,
+        "month": 12,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2018,
+        "month": 12,
+        "value_1": 77.6641,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2018,
+        "month": 12,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2018,
+        "month": 12,
+        "value_1": 81.42,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2018,
+        "month": 12,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2018,
+        "month": 12,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2018,
+        "month": 12,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 1,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 1,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 1,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 1,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 1,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 1,
+        "value_1": 16.9259,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 1,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 1,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 1,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 1,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 1,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 1,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 1,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 1,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 1,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 1,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 1,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 1,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 1,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 1,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2019,
+        "month": 1,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 1,
+        "value_1": 78.2446,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 1,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2019,
+        "month": 1,
+        "value_1": 16.5911,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2019,
+        "month": 1,
+        "value_1": 91.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 2,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 2,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 2,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 2,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 2,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 2,
+        "value_1": 16.9259,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 2,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 2,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 2,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 2,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 2,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 2,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 2,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 2,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 2,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 2,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 2,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 2,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 2,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 2,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2019,
+        "month": 2,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 2,
+        "value_1": 78.2446,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 2,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 3,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 3,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 3,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 3,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 3,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 3,
+        "value_1": 16.9259,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 3,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 3,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 3,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 3,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 3,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 3,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 3,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 3,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 3,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 3,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 3,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 3,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 3,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 3,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2019,
+        "month": 3,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 3,
+        "value_1": 78.2446,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 3,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 4,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 4,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 4,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 4,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 4,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 4,
+        "value_1": 16.9259,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 4,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 4,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 4,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 4,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 4,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 4,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 4,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 4,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 4,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 4,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 4,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 4,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 4,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 4,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2019,
+        "month": 4,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 4,
+        "value_1": 78.2446,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 4,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 5,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 5,
+        "value_1": 16.9259,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 5,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 5,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 5,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 5,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 5,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 5,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 5,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 5,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 5,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 5,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 5,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 5,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 5,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 5,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 5,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 5,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 5,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 5,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2019,
+        "month": 5,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 5,
+        "value_1": 78.2446,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 5,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 6,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 6,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 6,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 6,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 6,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 6,
+        "value_1": 16.9259,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 6,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 6,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 6,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 6,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 6,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 6,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 6,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 6,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 6,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 6,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 6,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 6,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 6,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 6,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2019,
+        "month": 6,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 6,
+        "value_1": 78.2446,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 6,
+        "value_1": 16.2658,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 7,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 7,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 7,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 7,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 7,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 7,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 7,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 7,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 7,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 7,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 7,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 7,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 7,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 7,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 7,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 7,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 7,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 7,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 7,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 7,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2019,
+        "month": 7,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 7,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 7,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 8,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 8,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 8,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 8,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 8,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 8,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 8,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 8,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 8,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 8,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 8,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 8,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 8,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 8,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 8,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 8,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 8,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 8,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 8,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 8,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2019,
+        "month": 8,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 8,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 8,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 9,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 9,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 9,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 9,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 9,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 9,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 9,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 9,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 9,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 9,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 9,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 9,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 9,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 9,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 9,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 9,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 9,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 9,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 9,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 9,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2019,
+        "month": 9,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 9,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 9,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 10,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 10,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 10,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 10,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 10,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 10,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 10,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 10,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 10,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 10,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 10,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 10,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 10,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 10,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 10,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 10,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 10,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 10,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 10,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 10,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2019,
+        "month": 10,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 22,
+        "year": 2019,
+        "month": 10,
+        "value_1": 0.0,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 10,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 10,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 11,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 11,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 11,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 11,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 11,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 11,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 11,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 11,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 11,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 11,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 11,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 11,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 11,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 11,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 11,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 11,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 11,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 11,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 11,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 11,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2019,
+        "month": 11,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 11,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 11,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2019,
+        "month": 12,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2019,
+        "month": 12,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2019,
+        "month": 12,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2019,
+        "month": 12,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2019,
+        "month": 12,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2019,
+        "month": 12,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2019,
+        "month": 12,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2019,
+        "month": 12,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2019,
+        "month": 12,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2019,
+        "month": 12,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2019,
+        "month": 12,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2019,
+        "month": 12,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2019,
+        "month": 12,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2019,
+        "month": 12,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2019,
+        "month": 12,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2019,
+        "month": 12,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2019,
+        "month": 12,
+        "value_1": 93.5292,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2019,
+        "month": 12,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2019,
+        "month": 12,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2019,
+        "month": 12,
+        "value_1": 84.8058,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2019,
+        "month": 12,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2019,
+        "month": 12,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 1,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 1,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 1,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 1,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 1,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 1,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 1,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 1,
+        "value_1": 96.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 1,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 1,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 1,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 2,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 2,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 2,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 2,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 2,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 2,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 2,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 2,
+        "value_1": 96.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 2,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 2,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 2,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 3,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 3,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 3,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 3,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 3,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 3,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 3,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 3,
+        "value_1": 96.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 3,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 3,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 3,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 4,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 4,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 4,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 4,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 4,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 4,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 4,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 4,
+        "value_1": 96.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 4,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 4,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 4,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 5,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 5,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 5,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 5,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 5,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 5,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 5,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 5,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 5,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 5,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 5,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 6,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 6,
+        "value_1": 17.77,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 6,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 6,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 6,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 6,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 6,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 6,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 6,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 6,
+        "value_1": 85.57,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 6,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2020,
+        "month": 6,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2020,
+        "month": 6,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 7,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 7,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 7,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 7,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 7,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 7,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 7,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 7,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 7,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 7,
+        "value_1": 88.7,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 7,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2020,
+        "month": 7,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2020,
+        "month": 7,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 8,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 8,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 8,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 8,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 8,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 8,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 8,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 8,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 8,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 8,
+        "value_1": 88.7,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2020,
+        "month": 8,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2020,
+        "month": 8,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 8,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 9,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 9,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 9,
+        "value_1": 93.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 9,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 9,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 9,
+        "value_1": 18.4831,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 9,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 9,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 9,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 9,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 9,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 9,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 9,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 9,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 9,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 9,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 9,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 9,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 9,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 9,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 9,
+        "value_1": 88.7,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2020,
+        "month": 9,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2020,
+        "month": 9,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 9,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 10,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 10,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 10,
+        "value_1": 93.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 10,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 10,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 10,
+        "value_1": 20.6216,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 10,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 10,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 10,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 10,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 10,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 10,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 10,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 10,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 10,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 10,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 10,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 10,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 10,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 10,
+        "value_1": 85.8777,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 10,
+        "value_1": 88.7,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2020,
+        "month": 10,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2020,
+        "month": 10,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 10,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 11,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 11,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 11,
+        "value_1": 93.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 11,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 11,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 11,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 11,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 11,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 11,
+        "value_1": 88.7,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2020,
+        "month": 11,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2020,
+        "month": 11,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 11,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 11,
+        "value_1": 20.6216,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 29,
+        "year": 2020,
+        "month": 11,
+        "value_1": 7.2732,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2020,
+        "month": 12,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2020,
+        "month": 12,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2020,
+        "month": 12,
+        "value_1": 93.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2020,
+        "month": 12,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2020,
+        "month": 12,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2020,
+        "month": 12,
+        "value_1": 20.6216,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2020,
+        "month": 12,
+        "value_1": 91.4509,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2020,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2020,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2020,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2020,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2020,
+        "month": 12,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2020,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2020,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2020,
+        "month": 12,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2020,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2020,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2020,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2020,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2020,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2020,
+        "month": 12,
+        "value_1": 0.0,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2020,
+        "month": 12,
+        "value_1": 88.7,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2020,
+        "month": 12,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2020,
+        "month": 12,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2020,
+        "month": 12,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 1,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 1,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 1,
+        "value_1": 93.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 1,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 1,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 1,
+        "value_1": 20.6216,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 1,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 1,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 1,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 1,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 1,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 1,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 1,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 1,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 1,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 1,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 1,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 1,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 1,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 1,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 21,
+        "year": 2021,
+        "month": 1,
+        "value_1": 0.0,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 1,
+        "value_1": 88.7,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 1,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 1,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 1,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 2,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 2,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 2,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 2,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 2,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 2,
+        "value_1": 20.6216,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 2,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 2,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 2,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 2,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 2,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 2,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 2,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 2,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 2,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 2,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 2,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 2,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 2,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 2,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 2,
+        "value_1": 88.7,
+        "value_2": 103.18
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 2,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 2,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 2,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 3,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 3,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 3,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 3,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 3,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 3,
+        "value_1": 20.6216,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 3,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 3,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 3,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 3,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 3,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 3,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 3,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 3,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 3,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 3,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 3,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 3,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 3,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 3,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 3,
+        "value_1": 103.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 3,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 3,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 3,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2020,
+        "month": 10,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2020,
+        "month": 11,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2020,
+        "month": 12,
+        "value_1": 96.0235,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2021,
+        "month": 1,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2021,
+        "month": 2,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2021,
+        "month": 3,
+        "value_1": 96.0235,
+        "value_2": 117.789
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 4,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 4,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 4,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 4,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 4,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 4,
+        "value_1": 20.6216,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 4,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 4,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 4,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 4,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 4,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 4,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 4,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 4,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 4,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 4,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 4,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 4,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 4,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 4,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 4,
+        "value_1": 103.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 4,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 4,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 4,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2021,
+        "month": 4,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 5,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 5,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 5,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 5,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 5,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 5,
+        "value_1": 20.6216,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 5,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 5,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 5,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 5,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 5,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 5,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 5,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 5,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 5,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 5,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 5,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 5,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 5,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 5,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 5,
+        "value_1": 103.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 5,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 5,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 5,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2021,
+        "month": 5,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 6,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 6,
+        "value_1": 19.83,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 6,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 6,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 6,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 6,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 6,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 6,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 6,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 6,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 6,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 6,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 6,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 6,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 6,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 6,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 6,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 6,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 6,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 6,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 6,
+        "value_1": 103.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 6,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 6,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 6,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2021,
+        "month": 6,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 7,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 7,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 7,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 7,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 7,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 7,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 7,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 7,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 7,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 7,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 7,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 7,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 7,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 7,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 7,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 7,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 7,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 7,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 7,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 7,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 7,
+        "value_1": 103.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 7,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 7,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 7,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2021,
+        "month": 7,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 8,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 8,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 8,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 8,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 8,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 8,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 8,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 8,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 8,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 8,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 8,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 8,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 8,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 8,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 8,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 8,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 8,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 8,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 8,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 8,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 8,
+        "value_1": 103.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 8,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 8,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 8,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 32,
+        "year": 2021,
+        "month": 8,
+        "value_1": 0.0,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 9,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 9,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 9,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 9,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 9,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 9,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 9,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 9,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 9,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 9,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 9,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 9,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 9,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 9,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 9,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 9,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 9,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 9,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 9,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 9,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 9,
+        "value_1": 103.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 9,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 9,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 9,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 10,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 10,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 10,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 10,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 10,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 10,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 10,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 10,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 10,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 10,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 10,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 10,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 10,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 10,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 10,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 10,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 10,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 10,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 10,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 10,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 10,
+        "value_1": 103.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 10,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 10,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 10,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 11,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 11,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 11,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 11,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 11,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 11,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 11,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 11,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 11,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 11,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 11,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 11,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 11,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 11,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 11,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 11,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 11,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 11,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 11,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 11,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 11,
+        "value_1": 103.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 11,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 11,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 11,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2021,
+        "month": 12,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2021,
+        "month": 12,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2021,
+        "month": 12,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2021,
+        "month": 12,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2021,
+        "month": 12,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2021,
+        "month": 12,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2021,
+        "month": 12,
+        "value_1": 112.1799,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2021,
+        "month": 12,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2021,
+        "month": 12,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2021,
+        "month": 12,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2021,
+        "month": 12,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2021,
+        "month": 12,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2021,
+        "month": 12,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2021,
+        "month": 12,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2021,
+        "month": 12,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2021,
+        "month": 12,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2021,
+        "month": 12,
+        "value_1": 85.877,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2021,
+        "month": 12,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2021,
+        "month": 12,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2021,
+        "month": 12,
+        "value_1": 106.9457,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2021,
+        "month": 12,
+        "value_1": 103.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2021,
+        "month": 12,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2021,
+        "month": 12,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2021,
+        "month": 12,
+        "value_1": 21.08,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 1,
+        "value_1": 21.08,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 1,
+        "value_1": 21.08,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 1,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 1,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 1,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 1,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 1,
+        "value_1": 115.3434,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 1,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 1,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 1,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 1,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 1,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 1,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 1,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 1,
+        "value_1": 21.08,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 1,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 1,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 1,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 1,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 1,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 1,
+        "value_1": 103.18,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 1,
+        "value_1": 21.08,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 1,
+        "value_1": 21.08,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 1,
+        "value_1": 21.08,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 2,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 2,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 2,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 2,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 2,
+        "value_1": 115.3434,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 2,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 2,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 2,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 2,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 2,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 2,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 2,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 2,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 2,
+        "value_1": 117.789,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 2,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 2,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 2,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 2,
+        "value_1": 114.1,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 21.08
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 3,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 3,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 3,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 3,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 3,
+        "value_1": 115.3434,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 3,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 3,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 3,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 3,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 3,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 3,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 3,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 3,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 3,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 3,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 3,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 3,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 3,
+        "value_1": 114.1,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 4,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 4,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 4,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 4,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 4,
+        "value_1": 115.3434,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 4,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 4,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 4,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 4,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 4,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 4,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 4,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 4,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 4,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 4,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 4,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 4,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 4,
+        "value_1": 114.1,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 21.08
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 5,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 5,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 5,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 5,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 5,
+        "value_1": 115.3434,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 5,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 5,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 5,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 5,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 5,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 5,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 5,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 5,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 5,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 5,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 5,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 5,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 5,
+        "value_1": 114.1,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 19.83
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 6,
+        "value_1": 22.91,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 6,
+        "value_1": 21.05,
+        "value_2": 22.91
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 6,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 6,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 6,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 6,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 6,
+        "value_1": 115.3434,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 6,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 6,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 6,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 6,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 6,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 6,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 6,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 6,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 6,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 6,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 6,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 6,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 6,
+        "value_1": 101.8739,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 6,
+        "value_1": 114.1,
+        "value_2": 103.18
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 6,
+        "value_1": 21.05,
+        "value_2": 22.91
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 6,
+        "value_1": 22.91,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 6,
+        "value_1": 21.05,
+        "value_2": 22.91
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 7,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 7,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 7,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 7,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 7,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 7,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 7,
+        "value_1": 117.0764,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 7,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 7,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 7,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 7,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 7,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 7,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 7,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 7,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 7,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 7,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 7,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 7,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 7,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 7,
+        "value_1": 114.1,
+        "value_2": 114.1
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 7,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 7,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 7,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 8,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 8,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 8,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 8,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 8,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 8,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 8,
+        "value_1": 117.0764,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 8,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 8,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 8,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 8,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 8,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 8,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 8,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 8,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 8,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 8,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 8,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 8,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 8,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 8,
+        "value_1": 114.1,
+        "value_2": 114.1
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 8,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 8,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 29,
+        "year": 2022,
+        "month": 8,
+        "value_1": 121.1107,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 8,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 33,
+        "year": 2022,
+        "month": 8,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 9,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 9,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 9,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 9,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 9,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 9,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 9,
+        "value_1": 117.0764,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 9,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 9,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 9,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 9,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 9,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 9,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 9,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 9,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 9,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 9,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 9,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 9,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 9,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 9,
+        "value_1": 114.1,
+        "value_2": 114.1
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 9,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 9,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 9,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 10,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 10,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 10,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 10,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 10,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 10,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 10,
+        "value_1": 117.0764,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 10,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 10,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 10,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 10,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 10,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 10,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 10,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 10,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 10,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 10,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 10,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 10,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 10,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 10,
+        "value_1": 114.1,
+        "value_2": 114.1
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 10,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 10,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 10,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 11,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 11,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 11,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 11,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 11,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 11,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 11,
+        "value_1": 117.0764,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 11,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 11,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 11,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 11,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 11,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 11,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 11,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 11,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 11,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 11,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 11,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 11,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 11,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 11,
+        "value_1": 114.1,
+        "value_2": 114.1
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 11,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 11,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 11,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 29,
+        "year": 2022,
+        "month": 11,
+        "value_1": 117.789,
+        "value_2": 121.1107
+    },
+    {
+        "rate_id": 1,
+        "year": 2022,
+        "month": 12,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2022,
+        "month": 12,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 3,
+        "year": 2022,
+        "month": 12,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2022,
+        "month": 12,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2022,
+        "month": 12,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2022,
+        "month": 12,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2022,
+        "month": 12,
+        "value_1": 117.0764,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2022,
+        "month": 12,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2022,
+        "month": 12,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2022,
+        "month": 12,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2022,
+        "month": 12,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2022,
+        "month": 12,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2022,
+        "month": 12,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2022,
+        "month": 12,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2022,
+        "month": 12,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2022,
+        "month": 12,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2022,
+        "month": 12,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2022,
+        "month": 12,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2022,
+        "month": 12,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2022,
+        "month": 12,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2022,
+        "month": 12,
+        "value_1": 114.1,
+        "value_2": 114.1
+    },
+    {
+        "rate_id": 24,
+        "year": 2022,
+        "month": 12,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2022,
+        "month": 12,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2022,
+        "month": 12,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2023,
+        "month": 1,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2023,
+        "month": 1,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 3,
+        "year": 2023,
+        "month": 1,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2023,
+        "month": 1,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2023,
+        "month": 1,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2023,
+        "month": 1,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2023,
+        "month": 1,
+        "value_1": 117.0764,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2023,
+        "month": 1,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2023,
+        "month": 1,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2023,
+        "month": 1,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2023,
+        "month": 1,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2023,
+        "month": 1,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2023,
+        "month": 1,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2023,
+        "month": 1,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2023,
+        "month": 1,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2023,
+        "month": 1,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2023,
+        "month": 1,
+        "value_1": 122.9304,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2023,
+        "month": 1,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2023,
+        "month": 1,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2023,
+        "month": 1,
+        "value_1": 103.4045,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2023,
+        "month": 1,
+        "value_1": 114.1,
+        "value_2": 114.1
+    },
+    {
+        "rate_id": 24,
+        "year": 2023,
+        "month": 1,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2023,
+        "month": 1,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2023,
+        "month": 1,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2023,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2023,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 3,
+        "year": 2023,
+        "month": 2,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2023,
+        "month": 2,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2023,
+        "month": 2,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2023,
+        "month": 2,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2023,
+        "month": 2,
+        "value_1": 126.4425,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2023,
+        "month": 2,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2023,
+        "month": 2,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2023,
+        "month": 2,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2023,
+        "month": 2,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2023,
+        "month": 2,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2023,
+        "month": 2,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2023,
+        "month": 2,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2023,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2023,
+        "month": 2,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2023,
+        "month": 2,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2023,
+        "month": 2,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2023,
+        "month": 2,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2023,
+        "month": 2,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2023,
+        "month": 2,
+        "value_1": 121.25,
+        "value_2": 114.1
+    },
+    {
+        "rate_id": 24,
+        "year": 2023,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2023,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2023,
+        "month": 2,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 29,
+        "year": 2023,
+        "month": 2,
+        "value_1": 0.0,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2023,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2023,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 3,
+        "year": 2023,
+        "month": 3,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2023,
+        "month": 3,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2023,
+        "month": 3,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2023,
+        "month": 3,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2023,
+        "month": 3,
+        "value_1": 126.4425,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2023,
+        "month": 3,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2023,
+        "month": 3,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2023,
+        "month": 3,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2023,
+        "month": 3,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2023,
+        "month": 3,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2023,
+        "month": 3,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2023,
+        "month": 3,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2023,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2023,
+        "month": 3,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2023,
+        "month": 3,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2023,
+        "month": 3,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2023,
+        "month": 3,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2023,
+        "month": 3,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2023,
+        "month": 3,
+        "value_1": 121.25,
+        "value_2": 121.25
+    },
+    {
+        "rate_id": 24,
+        "year": 2023,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2023,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2023,
+        "month": 3,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2023,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2023,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 3,
+        "year": 2023,
+        "month": 4,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2023,
+        "month": 4,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2023,
+        "month": 4,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2023,
+        "month": 4,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2023,
+        "month": 4,
+        "value_1": 126.4425,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2023,
+        "month": 4,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2023,
+        "month": 4,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2023,
+        "month": 4,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2023,
+        "month": 4,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2023,
+        "month": 4,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2023,
+        "month": 4,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2023,
+        "month": 4,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2023,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2023,
+        "month": 4,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2023,
+        "month": 4,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2023,
+        "month": 4,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2023,
+        "month": 4,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2023,
+        "month": 4,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2023,
+        "month": 4,
+        "value_1": 121.25,
+        "value_2": 121.25
+    },
+    {
+        "rate_id": 24,
+        "year": 2023,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2023,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2023,
+        "month": 4,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2023,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 2,
+        "year": 2023,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 21.05
+    },
+    {
+        "rate_id": 3,
+        "year": 2023,
+        "month": 5,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2023,
+        "month": 5,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2023,
+        "month": 5,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2023,
+        "month": 5,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2023,
+        "month": 5,
+        "value_1": 126.4425,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2023,
+        "month": 5,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2023,
+        "month": 5,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2023,
+        "month": 5,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2023,
+        "month": 5,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2023,
+        "month": 5,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2023,
+        "month": 5,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2023,
+        "month": 5,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2023,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2023,
+        "month": 5,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2023,
+        "month": 5,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2023,
+        "month": 5,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2023,
+        "month": 5,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2023,
+        "month": 5,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2023,
+        "month": 5,
+        "value_1": 121.25,
+        "value_2": 121.25
+    },
+    {
+        "rate_id": 24,
+        "year": 2023,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2023,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 31,
+        "year": 2023,
+        "month": 5,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 1,
+        "year": 2023,
+        "month": 6,
+        "value_1": 21.05,
+        "value_2": 23.73
+    },
+    {
+        "rate_id": 2,
+        "year": 2023,
+        "month": 6,
+        "value_1": 21.05,
+        "value_2": 23.73
+    },
+    {
+        "rate_id": 3,
+        "year": 2023,
+        "month": 6,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2023,
+        "month": 6,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2023,
+        "month": 6,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2023,
+        "month": 6,
+        "value_1": 21.9245,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2023,
+        "month": 6,
+        "value_1": 126.4425,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2023,
+        "month": 6,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2023,
+        "month": 6,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2023,
+        "month": 6,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2023,
+        "month": 6,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2023,
+        "month": 6,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2023,
+        "month": 6,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2023,
+        "month": 6,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2023,
+        "month": 6,
+        "value_1": 23.73,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2023,
+        "month": 6,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2023,
+        "month": 6,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2023,
+        "month": 6,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2023,
+        "month": 6,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2023,
+        "month": 6,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2023,
+        "month": 6,
+        "value_1": 121.25,
+        "value_2": 121.25
+    },
+    {
+        "rate_id": 24,
+        "year": 2023,
+        "month": 6,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2023,
+        "month": 6,
+        "value_1": 21.05,
+        "value_2": 23.73
+    },
+    {
+        "rate_id": 31,
+        "year": 2023,
+        "month": 6,
+        "value_1": 23.73,
+        "value_2": 23.73
+    },
+    {
+        "rate_id": 1,
+        "year": 2023,
+        "month": 7,
+        "value_1": 23.73,
+        "value_2": 23.73
+    },
+    {
+        "rate_id": 2,
+        "year": 2023,
+        "month": 7,
+        "value_1": 23.73,
+        "value_2": 23.73
+    },
+    {
+        "rate_id": 3,
+        "year": 2023,
+        "month": 7,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2023,
+        "month": 7,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2023,
+        "month": 7,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2023,
+        "month": 7,
+        "value_1": 24.7187,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2023,
+        "month": 7,
+        "value_1": 126.4425,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2023,
+        "month": 7,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2023,
+        "month": 7,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2023,
+        "month": 7,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2023,
+        "month": 7,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2023,
+        "month": 7,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2023,
+        "month": 7,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2023,
+        "month": 7,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2023,
+        "month": 7,
+        "value_1": 23.73,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2023,
+        "month": 7,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2023,
+        "month": 7,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2023,
+        "month": 7,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2023,
+        "month": 7,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2023,
+        "month": 7,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2023,
+        "month": 7,
+        "value_1": 121.25,
+        "value_2": 121.25
+    },
+    {
+        "rate_id": 24,
+        "year": 2023,
+        "month": 7,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2023,
+        "month": 7,
+        "value_1": 23.73,
+        "value_2": 23.73
+    },
+    {
+        "rate_id": 31,
+        "year": 2023,
+        "month": 7,
+        "value_1": 23.73,
+        "value_2": 23.73
+    },
+    {
+        "rate_id": 1,
+        "year": 2023,
+        "month": 8,
+        "value_1": 23.73,
+        "value_2": 23.73
+    },
+    {
+        "rate_id": 2,
+        "year": 2023,
+        "month": 8,
+        "value_1": 23.73,
+        "value_2": 23.73
+    },
+    {
+        "rate_id": 3,
+        "year": 2023,
+        "month": 8,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 4,
+        "year": 2023,
+        "month": 8,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 5,
+        "year": 2023,
+        "month": 8,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 6,
+        "year": 2023,
+        "month": 8,
+        "value_1": 24.7187,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 7,
+        "year": 2023,
+        "month": 8,
+        "value_1": 126.4425,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 8,
+        "year": 2023,
+        "month": 8,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 9,
+        "year": 2023,
+        "month": 8,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 10,
+        "year": 2023,
+        "month": 8,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 11,
+        "year": 2023,
+        "month": 8,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 12,
+        "year": 2023,
+        "month": 8,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 13,
+        "year": 2023,
+        "month": 8,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 14,
+        "year": 2023,
+        "month": 8,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 15,
+        "year": 2023,
+        "month": 8,
+        "value_1": 23.73,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 16,
+        "year": 2023,
+        "month": 8,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 17,
+        "year": 2023,
+        "month": 8,
+        "value_1": 132.7648,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 18,
+        "year": 2023,
+        "month": 8,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 19,
+        "year": 2023,
+        "month": 8,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 20,
+        "year": 2023,
+        "month": 8,
+        "value_1": 119.7251,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 23,
+        "year": 2023,
+        "month": 8,
+        "value_1": 121.25,
+        "value_2": 121.25
+    },
+    {
+        "rate_id": 24,
+        "year": 2023,
+        "month": 8,
+        "value_1": 21.05,
+        "value_2": 0.0
+    },
+    {
+        "rate_id": 25,
+        "year": 2023,
+        "month": 8,
+        "value_1": 23.73,
+        "value_2": 23.73
+    },
+    {
+        "rate_id": 31,
+        "year": 2023,
+        "month": 8,
+        "value_1": 23.73,
+        "value_2": 23.73
+    }
+]

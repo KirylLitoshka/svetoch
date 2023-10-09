@@ -1,0 +1,138 @@
+[
+    {
+        "title": "Население",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "Население",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "ФОК-1",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Цех КЖУП\"Светочь\"",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Арендаторы",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Социальный",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "Бюджет",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Потери ЖЭУ (транзит",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Потери КЖУП Светочь",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Потери бюджет",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Потери по ЦРБ",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "цеха",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Потери (ведомствен.)",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Потери промышленнос.",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Потери ЦТП-30",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "Потери комунхоз",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Подпитка сверхнорма",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Потери ведомст.жильё",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Потери ЖСК",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "Потери прочие",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "подпитка",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "хоз.нужды ТЭЦ",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "по себестоимости",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "перерасчёт 2",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "Население",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "перерасчёт ЧУП",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "перерасчёт чуп",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "перерасчёт чуп",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "перерасчёт арендат",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "перерасчёт 3",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "общежития",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "перерасчет 4",
+        "is_currency_coefficient_applied": true
+    },
+    {
+        "title": "перерасчёт ФОК",
+        "is_currency_coefficient_applied": false
+    },
+    {
+        "title": "пролет.13а",
+        "is_currency_coefficient_applied": false
+    }
+]

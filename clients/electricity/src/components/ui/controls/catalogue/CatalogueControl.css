@@ -1,0 +1,14 @@
+.catalogue-control {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 5px;
+  padding: 5px 0 0;
+  border-top: 1px solid grey;
+}
+
+@media screen and (max-width: 1250px) {
+  .catalogue-control {
+    margin-top: auto;
+  }
+}

@@ -1,0 +1,526 @@
+[
+    {
+        "title": "САЗУ-И670М",
+        "capacity": 5
+    },
+    {
+        "title": "СА4У-И672М",
+        "capacity": 5
+    },
+    {
+        "title": "СА4-И672",
+        "capacity": 5
+    },
+    {
+        "title": "СО-И446",
+        "capacity": 5
+    },
+    {
+        "title": "СА4У-И682",
+        "capacity": 5
+    },
+    {
+        "title": "Т-2 СА43",
+        "capacity": 6
+    },
+    {
+        "title": "СА4У-И678",
+        "capacity": 6
+    },
+    {
+        "title": "СО-2М",
+        "capacity": 6
+    },
+    {
+        "title": "СО-И446М",
+        "capacity": 6
+    },
+    {
+        "title": "СОЭЭ-6705",
+        "capacity": 5
+    },
+    {
+        "title": "СА4-44-672",
+        "capacity": 4
+    },
+    {
+        "title": "СОЭЭ-6705",
+        "capacity": 4
+    },
+    {
+        "title": "СО-5",
+        "capacity": 4
+    },
+    {
+        "title": "СО-И466М",
+        "capacity": 4
+    },
+    {
+        "title": "СА4У-И672",
+        "capacity": 6
+    },
+    {
+        "title": "СО-И466М",
+        "capacity": 5
+    },
+    {
+        "title": "СА4-И672М",
+        "capacity": 6
+    },
+    {
+        "title": "ЛЭМ-3А4-4",
+        "capacity": 6
+    },
+    {
+        "title": "СА4-И678",
+        "capacity": 5
+    },
+    {
+        "title": "СС-301-10.",
+        "capacity": 8
+    },
+    {
+        "title": "СО-2",
+        "capacity": 4
+    },
+    {
+        "title": "СА4У-И672М",
+        "capacity": 6
+    },
+    {
+        "title": "СО-И449М1",
+        "capacity": 5
+    },
+    {
+        "title": "СО-И496",
+        "capacity": 5
+    },
+    {
+        "title": "СО-2М2",
+        "capacity": 4
+    },
+    {
+        "title": "СА4-И699",
+        "capacity": 5
+    },
+    {
+        "title": "ПО УСТ.МОЩ",
+        "capacity": 0
+    },
+    {
+        "title": "ЦЭ-6805",
+        "capacity": 5
+    },
+    {
+        "title": "СА4У-И699",
+        "capacity": 5
+    },
+    {
+        "title": "СО-И499",
+        "capacity": 5
+    },
+    {
+        "title": "ЭЭ-8003/2",
+        "capacity": 5
+    },
+    {
+        "title": "ЦЭ 6828",
+        "capacity": 6
+    },
+    {
+        "title": "СЕ301BY",
+        "capacity": 5
+    },
+    {
+        "title": "СС-301",
+        "capacity": 5
+    },
+    {
+        "title": "СТК-3",
+        "capacity": 7
+    },
+    {
+        "title": "ЭЭ-8005/12",
+        "capacity": 7
+    },
+    {
+        "title": "ЦЭ 6828",
+        "capacity": 7
+    },
+    {
+        "title": "Энергия-9",
+        "capacity": 7
+    },
+    {
+        "title": "СО-2М",
+        "capacity": 4
+    },
+    {
+        "title": "СА4-И699",
+        "capacity": 6
+    },
+    {
+        "title": "СА4У-672М",
+        "capacity": 4
+    },
+    {
+        "title": "ЭЭ-8005/2",
+        "capacity": 7
+    },
+    {
+        "title": "СА4У-И672М",
+        "capacity": 4
+    },
+    {
+        "title": "ЦЭ6850М",
+        "capacity": 6
+    },
+    {
+        "title": "СА3У-И670М",
+        "capacity": 4
+    },
+    {
+        "title": "СС-301-5.1",
+        "capacity": 5
+    },
+    {
+        "title": "СА4У-И672",
+        "capacity": 4
+    },
+    {
+        "title": "СА4У-И672",
+        "capacity": 5
+    },
+    {
+        "title": "ЦЭ6823М",
+        "capacity": 7
+    },
+    {
+        "title": "А-1700",
+        "capacity": 5
+    },
+    {
+        "title": "СЕ301BY",
+        "capacity": 6
+    },
+    {
+        "title": "СА4У-И678",
+        "capacity": 5
+    },
+    {
+        "title": "ЭЭ-8005/6",
+        "capacity": 7
+    },
+    {
+        "title": "СА4-И672М",
+        "capacity": 4
+    },
+    {
+        "title": "СТК1-10В1",
+        "capacity": 7
+    },
+    {
+        "title": "ЦЭ6822Б",
+        "capacity": 7
+    },
+    {
+        "title": "СТК1-10В1",
+        "capacity": 4
+    },
+    {
+        "title": "ЦЭ6807Б",
+        "capacity": 6
+    },
+    {
+        "title": "ЦЭ6807Б",
+        "capacity": 5
+    },
+    {
+        "title": "ЦЭ6803В",
+        "capacity": 7
+    },
+    {
+        "title": "СА4У-И699",
+        "capacity": 4
+    },
+    {
+        "title": "СЕ102",
+        "capacity": 6
+    },
+    {
+        "title": "СО-И446",
+        "capacity": 4
+    },
+    {
+        "title": "ЦЭ6827М",
+        "capacity": 6
+    },
+    {
+        "title": "СЕ102BY",
+        "capacity": 6
+    },
+    {
+        "title": "СС-301-5",
+        "capacity": 8
+    },
+    {
+        "title": "СЕ301",
+        "capacity": 6
+    },
+    {
+        "title": "EMS",
+        "capacity": 8
+    },
+    {
+        "title": "ЦЭ6822",
+        "capacity": 6
+    },
+    {
+        "title": "ЦЭ6822",
+        "capacity": 7
+    },
+    {
+        "title": "AV05-RAL",
+        "capacity": 5
+    },
+    {
+        "title": "СТК33-10А",
+        "capacity": 7
+    },
+    {
+        "title": "СО-И496М",
+        "capacity": 5
+    },
+    {
+        "title": "СТКI-10BU5",
+        "capacity": 7
+    },
+    {
+        "title": "CA4-И672",
+        "capacity": 4
+    },
+    {
+        "title": "CA4-И672М",
+        "capacity": 5
+    },
+    {
+        "title": "СТК1-10.К5",
+        "capacity": 6
+    },
+    {
+        "title": "CО-И446М",
+        "capacity": 5
+    },
+    {
+        "title": "СО-505",
+        "capacity": 5
+    },
+    {
+        "title": "СТК3-10АIH",
+        "capacity": 6
+    },
+    {
+        "title": "CТК1-10ВИ1",
+        "capacity": 7
+    },
+    {
+        "title": "CO-И449",
+        "capacity": 5
+    },
+    {
+        "title": "CE301BYR33",
+        "capacity": 6
+    },
+    {
+        "title": "CE301BY146",
+        "capacity": 6
+    },
+    {
+        "title": "CA4Y-И699",
+        "capacity": 6
+    },
+    {
+        "title": "Миртек-1",
+        "capacity": 6
+    },
+    {
+        "title": "СС-101",
+        "capacity": 8
+    },
+    {
+        "title": "СС-301.5",
+        "capacity": 6
+    },
+    {
+        "title": "СО-И449",
+        "capacity": 6
+    },
+    {
+        "title": "СО-И496",
+        "capacity": 8
+    },
+    {
+        "title": "СЕ-301ВУ14",
+        "capacity": 7
+    },
+    {
+        "title": "ЭЭ 8003/2",
+        "capacity": 7
+    },
+    {
+        "title": "СТК1-10.ВИ",
+        "capacity": 6
+    },
+    {
+        "title": "СЕ102",
+        "capacity": 5
+    },
+    {
+        "title": "СТК3-10А1Н",
+        "capacity": 5
+    },
+    {
+        "title": "АИСТ3W31A1",
+        "capacity": 6
+    },
+    {
+        "title": "АИСТ-3W31",
+        "capacity": 6
+    },
+    {
+        "title": "СО-5У",
+        "capacity": 6
+    },
+    {
+        "title": "Миртек-3BY",
+        "capacity": 6
+    },
+    {
+        "title": "Миртек-1BY",
+        "capacity": 6
+    },
+    {
+        "title": "АИСТ-1-W1-",
+        "capacity": 6
+    },
+    {
+        "title": "АИСТ-1W5-А",
+        "capacity": 6
+    },
+    {
+        "title": "СО-2",
+        "capacity": 5
+    },
+    {
+        "title": "Миртек-1-В",
+        "capacity": 5
+    },
+    {
+        "title": "СЕ102ВY",
+        "capacity": 5
+    },
+    {
+        "title": "АИСТ-1-W2-",
+        "capacity": 6
+    },
+    {
+        "title": "Марс-1,0-1",
+        "capacity": 5
+    },
+    {
+        "title": "СА3У-4670М",
+        "capacity": 4
+    },
+    {
+        "title": "АИСТ-3-D33",
+        "capacity": 6
+    },
+    {
+        "title": "АИСТ 1W6A1",
+        "capacity": 6
+    },
+    {
+        "title": "Миртек1-BY",
+        "capacity": 7
+    },
+    {
+        "title": "Меркур 206",
+        "capacity": 4
+    },
+    {
+        "title": "Энергия-9B",
+        "capacity": 6
+    },
+    {
+        "title": "MOD T-2ca4",
+        "capacity": 6
+    },
+    {
+        "title": "ЭЭ 8005/3",
+        "capacity": 7
+    },
+    {
+        "title": "АИСТ-3-W32",
+        "capacity": 5
+    },
+    {
+        "title": "CE301BYR33",
+        "capacity": 5
+    },
+    {
+        "title": "АистСТ3W32",
+        "capacity": 4
+    },
+    {
+        "title": "CC-301-10",
+        "capacity": 6
+    },
+    {
+        "title": "ЦЭ6823М",
+        "capacity": 7
+    },
+    {
+        "title": "ЦЭ 6827М",
+        "capacity": 4
+    },
+    {
+        "title": "СС-101-140",
+        "capacity": 7
+    },
+    {
+        "title": "ЦЭ6807БК",
+        "capacity": 7
+    },
+    {
+        "title": "CE318BYR32",
+        "capacity": 6
+    },
+    {
+        "title": "Меркурий20",
+        "capacity": 5
+    },
+    {
+        "title": "TDM",
+        "capacity": 5
+    },
+    {
+        "title": "Меркурий20",
+        "capacity": 6
+    },
+    {
+        "title": "АГАТ",
+        "capacity": 5
+    },
+    {
+        "title": "СЕ-208BY",
+        "capacity": 6
+    },
+    {
+        "title": "СТК1-10.5",
+        "capacity": 5
+    },
+    {
+        "title": "СЕ318BY",
+        "capacity": 5
+    }
+]

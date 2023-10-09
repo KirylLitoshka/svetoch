@@ -1,0 +1,8 @@
+.control-button {
+  cursor: pointer;
+  background: none;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  font-family: inherit;
+  font-size: 12px;
+}

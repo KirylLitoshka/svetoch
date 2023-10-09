@@ -1,0 +1,23 @@
+.button {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 5px;
+  background: none;
+  border: 1px solid red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button_delete {
+  background-image: url(./icons/trash.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}
+
+.button_edit {
+  background-image: url(./icons/edit.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+}

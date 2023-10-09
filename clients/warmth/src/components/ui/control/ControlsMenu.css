@@ -1,0 +1,26 @@
+.controls-menu {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 5px;
+  padding: 5px 0 0;
+  border-top: 1px solid grey;
+}
+
+.controls-menu > .button {
+  background-color: white;
+  color: teal;
+  font-size: 14px;
+}
+
+.controls-menu > .button:hover {
+  background-color: teal;
+  color: white;
+  transform: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .controls-menu {
+    margin-top: auto;
+  }
+}

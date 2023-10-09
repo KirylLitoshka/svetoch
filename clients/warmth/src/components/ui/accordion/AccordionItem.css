@@ -1,0 +1,41 @@
+.accordion-item_button {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 3px 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-item_button:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion-item_button__active,
+.accordion-item_button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.accordion-item_button__active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.accordion-item_content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s linear;
+}
+
+.accordion-item_content-wrapper {
+  padding: 10px 0;
+}

@@ -1,0 +1,6 @@
+.catalogue {
+  display: flex;
+  flex-flow: wrap row;
+  column-gap: 2.5%;
+  row-gap: 20px;
+}

@@ -1,0 +1,546 @@
+[
+    {
+        "year": 2018,
+        "month": 5,
+        "factor_1": 1.009974,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 900000
+    },
+    {
+        "year": 2018,
+        "month": 6,
+        "factor_1": 0.997525,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 870000
+    },
+    {
+        "year": 2018,
+        "month": 7,
+        "factor_1": 0.998211,
+        "factor_2": 1.001827,
+        "working_hours": 744,
+        "limit": 850000
+    },
+    {
+        "year": 2018,
+        "month": 8,
+        "factor_1": 1.028895,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 918000
+    },
+    {
+        "year": 2018,
+        "month": 9,
+        "factor_1": 1.040025,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 870000
+    },
+    {
+        "year": 2018,
+        "month": 10,
+        "factor_1": 1.041995,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1007000
+    },
+    {
+        "year": 2018,
+        "month": 11,
+        "factor_1": 1.049115,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 1173000
+    },
+    {
+        "year": 2018,
+        "month": 12,
+        "factor_1": 1.056512,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1390000
+    },
+    {
+        "year": 2019,
+        "month": 1,
+        "factor_1": 0.999808,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1250000
+    },
+    {
+        "year": 2019,
+        "month": 2,
+        "factor_1": 0.993448,
+        "factor_2": 0.0,
+        "working_hours": 672,
+        "limit": 1150000
+    },
+    {
+        "year": 2019,
+        "month": 3,
+        "factor_1": 0.990252,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1150000
+    },
+    {
+        "year": 2019,
+        "month": 4,
+        "factor_1": 0.983988,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 1100000
+    },
+    {
+        "year": 2019,
+        "month": 5,
+        "factor_1": 0.979642,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 980000
+    },
+    {
+        "year": 2019,
+        "month": 6,
+        "factor_1": 0.963023,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 850000
+    },
+    {
+        "year": 2019,
+        "month": 7,
+        "factor_1": 0.960307,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 800000
+    },
+    {
+        "year": 2019,
+        "month": 8,
+        "factor_1": 0.980505,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 960000
+    },
+    {
+        "year": 2019,
+        "month": 9,
+        "factor_1": 0.972931,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 850000
+    },
+    {
+        "year": 2019,
+        "month": 10,
+        "factor_1": 0.966571,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1050000
+    },
+    {
+        "year": 2019,
+        "month": 11,
+        "factor_1": 0.983893,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 1150000
+    },
+    {
+        "year": 2019,
+        "month": 12,
+        "factor_1": 0.982295,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1200000
+    },
+    {
+        "year": 2020,
+        "month": 1,
+        "factor_1": 1.009556,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1190000
+    },
+    {
+        "year": 2020,
+        "month": 2,
+        "factor_1": 1.042738,
+        "factor_2": 0.0,
+        "working_hours": 696,
+        "limit": 1100000
+    },
+    {
+        "year": 2020,
+        "month": 3,
+        "factor_1": 1.161594,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1120000
+    },
+    {
+        "year": 2020,
+        "month": 4,
+        "factor_1": 1.107206,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 1110000
+    },
+    {
+        "year": 2020,
+        "month": 5,
+        "factor_1": 1.098665,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 900000
+    },
+    {
+        "year": 2020,
+        "month": 6,
+        "factor_1": 1.095654,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 800000
+    },
+    {
+        "year": 2020,
+        "month": 7,
+        "factor_1": 1.108024,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 850000
+    },
+    {
+        "year": 2020,
+        "month": 8,
+        "factor_1": 1.181491,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 840000
+    },
+    {
+        "year": 2020,
+        "month": 9,
+        "factor_1": 1.17403,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 900000
+    },
+    {
+        "year": 2020,
+        "month": 10,
+        "factor_1": 1.172361,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1000000
+    },
+    {
+        "year": 2020,
+        "month": 11,
+        "factor_1": 1.154853,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 1170000
+    },
+    {
+        "year": 2020,
+        "month": 12,
+        "factor_1": 1.153937,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1100000
+    },
+    {
+        "year": 2021,
+        "month": 1,
+        "factor_1": 1.012655,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1110000
+    },
+    {
+        "year": 2021,
+        "month": 2,
+        "factor_1": 1.00717,
+        "factor_2": 0.0,
+        "working_hours": 672,
+        "limit": 1030000
+    },
+    {
+        "year": 2021,
+        "month": 3,
+        "factor_1": 1.01212,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1020000
+    },
+    {
+        "year": 2021,
+        "month": 4,
+        "factor_1": 0.995371,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 1060000
+    },
+    {
+        "year": 2021,
+        "month": 5,
+        "factor_1": 0.987692,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 830000
+    },
+    {
+        "year": 2021,
+        "month": 6,
+        "factor_1": 0.987238,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 810000
+    },
+    {
+        "year": 2021,
+        "month": 7,
+        "factor_1": 0.97881,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 760000
+    },
+    {
+        "year": 2021,
+        "month": 8,
+        "factor_1": 0.980736,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 800000
+    },
+    {
+        "year": 2021,
+        "month": 9,
+        "factor_1": 0.981111,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 820000
+    },
+    {
+        "year": 2021,
+        "month": 10,
+        "factor_1": 0.958181,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1000000
+    },
+    {
+        "year": 2021,
+        "month": 11,
+        "factor_1": 0.993605,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 1060000
+    },
+    {
+        "year": 2021,
+        "month": 12,
+        "factor_1": 0.991759,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1080000
+    },
+    {
+        "year": 2022,
+        "month": 1,
+        "factor_1": 1.018089,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1100000
+    },
+    {
+        "year": 2022,
+        "month": 2,
+        "factor_1": 1.057299,
+        "factor_2": 0.0,
+        "working_hours": 672,
+        "limit": 1070000
+    },
+    {
+        "year": 2022,
+        "month": 3,
+        "factor_1": 1.115113,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1060000
+    },
+    {
+        "year": 2022,
+        "month": 4,
+        "factor_1": 1.028514,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 1060000
+    },
+    {
+        "year": 2022,
+        "month": 5,
+        "factor_1": 1.010913,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 840000
+    },
+    {
+        "year": 2022,
+        "month": 6,
+        "factor_1": 0.993339,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 840000
+    },
+    {
+        "year": 2022,
+        "month": 7,
+        "factor_1": 1.0,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 820000
+    },
+    {
+        "year": 2022,
+        "month": 8,
+        "factor_1": 1.0,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 800000
+    },
+    {
+        "year": 2022,
+        "month": 9,
+        "factor_1": 1.0,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 830000
+    },
+    {
+        "year": 2022,
+        "month": 10,
+        "factor_1": 1.0,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 920000
+    },
+    {
+        "year": 2022,
+        "month": 11,
+        "factor_1": 1.0,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 1030000
+    },
+    {
+        "year": 2022,
+        "month": 12,
+        "factor_1": 1.0,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1080000
+    },
+    {
+        "year": 2023,
+        "month": 1,
+        "factor_1": 1.0,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1090000
+    },
+    {
+        "year": 2023,
+        "month": 2,
+        "factor_1": 0.992796,
+        "factor_2": 0.0,
+        "working_hours": 672,
+        "limit": 1020000
+    },
+    {
+        "year": 2023,
+        "month": 3,
+        "factor_1": 0.987635,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1070000
+    },
+    {
+        "year": 2023,
+        "month": 4,
+        "factor_1": 0.966006,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 1050000
+    },
+    {
+        "year": 2023,
+        "month": 5,
+        "factor_1": 0.0,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 840000
+    },
+    {
+        "year": 2023,
+        "month": 6,
+        "factor_1": 0.0,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 860000
+    },
+    {
+        "year": 2023,
+        "month": 7,
+        "factor_1": 0.0,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 800000
+    },
+    {
+        "year": 2023,
+        "month": 8,
+        "factor_1": 0.0,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 830000
+    },
+    {
+        "year": 2023,
+        "month": 9,
+        "factor_1": 0.0,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 860000
+    },
+    {
+        "year": 2023,
+        "month": 10,
+        "factor_1": 0.0,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 900000
+    },
+    {
+        "year": 2023,
+        "month": 11,
+        "factor_1": 0.0,
+        "factor_2": 0.0,
+        "working_hours": 720,
+        "limit": 1010000
+    },
+    {
+        "year": 2023,
+        "month": 12,
+        "factor_1": 0.0,
+        "factor_2": 0.0,
+        "working_hours": 744,
+        "limit": 1060000
+    }
+]

@@ -1,0 +1,30 @@
+.payment-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+}
+
+.payment-list__row {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.payment-list__row:first-child {
+  margin-bottom: 15px;
+}
+
+.payment-list__row > div {
+  width: 20%;
+}
+
+.payment-list__row > div:first-child {
+  width: 25%;
+}
+
+.payment-list__row > div:last-child {
+  width: 15%;
+}

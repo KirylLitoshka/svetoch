@@ -1,0 +1,31 @@
+.catalogue-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  padding: 5px;
+  width: 23%;
+  height: auto;
+  border: 1px solid grey;
+}
+
+.catalogue-item__title {
+  text-align: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .catalogue-item {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .catalogue-item {
+    width: 31.5%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .catalogue-item {
+    width: 48%;
+  }
+}

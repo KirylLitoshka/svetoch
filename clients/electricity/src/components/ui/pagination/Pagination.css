@@ -1,0 +1,26 @@
+.pagination {
+  list-style-type: none;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.pagination li {
+  cursor: pointer;
+}
+
+.pagination li:not(.break) {
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px 7px;
+}
+
+.pagination li:hover:not(.break) {
+  background-color: grey;
+}
+
+.pagination__link--active {
+  background-color: black;
+  color: white;
+}

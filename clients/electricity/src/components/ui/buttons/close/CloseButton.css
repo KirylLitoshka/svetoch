@@ -1,0 +1,15 @@
+.button_close {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../icons/cancel.png);
+  background-size: 100%;
+  background-position: center;
+}
+
+.button_close:hover {
+  cursor: pointer;
+  background-image: url(../icons/cancel_fill.png);
+}

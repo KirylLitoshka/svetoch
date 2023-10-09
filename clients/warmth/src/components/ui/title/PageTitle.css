@@ -1,0 +1,20 @@
+.page-main__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-main__title_content_between {
+  justify-content: space-between;
+}
+
+.page-main__title_content_end {
+  justify-content: end;
+  column-gap: 15px;
+}
+
+.page-main__title_select {
+  font-size: 18px;
+  min-width: 300px;
+  text-align: center;
+}

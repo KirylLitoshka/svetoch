@@ -1,0 +1,35 @@
+.confirm {
+    background-color: white;
+    padding: 15px 50px;
+}
+
+.confirm_title {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.confirm_buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.confirm_button {
+    border: 1px solid;
+    border-radius: 5px;
+    background: none;
+    font-size: 22px;
+    padding: 5px 10px;
+    color: white;
+    background-color: teal;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* .confirm_button__accept {
+    background-color: #7afa66;
+}
+
+.confirm_button__cancel {
+    background-color: #ff244b;
+} */

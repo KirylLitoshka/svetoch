@@ -1,0 +1,3332 @@
+[
+  {
+    "city_type": "д.",
+    "city_name": "Чернин",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Чернин",
+    "street_type": "пер.",
+    "street_name": "Северный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Чернин",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Чернин",
+    "street_type": "пер.",
+    "street_name": "Южный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Верхлесье",
+    "street_type": "ул.",
+    "street_name": "Ленинская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Верхлесье",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Горки",
+    "street_type": "ул.",
+    "street_name": "Совхозная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Горки",
+    "street_type": "ул.",
+    "street_name": "Партизанская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Ковчицы-1",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Ковчицы-1",
+    "street_type": "ул.",
+    "street_name": "Чапаева"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Ковчицы-2",
+    "street_type": "ул.",
+    "street_name": "Рабочая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Ковчицы-2",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Ковчицы-2",
+    "street_type": "ул.",
+    "street_name": "Партизанская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Ковчицы-2",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Ковчицы-2",
+    "street_type": "ул.",
+    "street_name": "Марии Колпаковой"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Козловка",
+    "street_type": "ул.",
+    "street_name": "Южная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Козловка",
+    "street_type": "ул.",
+    "street_name": "Юбилейная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Козловка",
+    "street_type": "ул.",
+    "street_name": "30 лет Освобождения БССР"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Козловка",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Козловка",
+    "street_type": "ул.",
+    "street_name": "Тенистая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Козловка",
+    "street_type": "ул.",
+    "street_name": "Социалистическая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Козловка",
+    "street_type": "ул.",
+    "street_name": "Комсомольская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Козловка",
+    "street_type": "ул.",
+    "street_name": "Октябрьская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Козловка",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Козловка",
+    "street_type": "пер.",
+    "street_name": "Молодёжный"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Козловка",
+    "street_type": "ул.",
+    "street_name": "Мозырская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Медведов",
+    "street_type": "пер.",
+    "street_name": "Центральный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Медведов",
+    "street_type": "ул.",
+    "street_name": "Школьная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Медведов",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Медведов",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Медведов",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Медведов",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Медведов",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Медведов",
+    "street_type": "ул.",
+    "street_name": "Колхозная"
+  },
+  {
+    "city_type": "п.",
+    "city_name": "Медков",
+    "street_type": "ул.",
+    "street_name": "Заводская"
+  },
+  {
+    "city_type": "п.",
+    "city_name": "Медков",
+    "street_type": "ул.",
+    "street_name": "Дорожная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Погонцы",
+    "street_type": "ул.",
+    "street_name": "Победы"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Гамза",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Гамза",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Гамза",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Гамза",
+    "street_type": "ул.",
+    "street_name": "Залесская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Мыслов Рог",
+    "street_type": "ул.",
+    "street_name": "Песочная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Мыслов Рог",
+    "street_type": "ул.",
+    "street_name": "Озёрная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Мыслов Рог",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Заболотье",
+    "street_type": "ул.",
+    "street_name": "Пушкина"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Заболотье",
+    "street_type": "ул.",
+    "street_name": "Суворова"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Кастрычник",
+    "street_type": "ул.",
+    "street_name": "Октябрьская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Кастрычник",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Большая Людвиновка",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Большая Людвиновка",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Михайловка",
+    "street_type": "ул.",
+    "street_name": "Сосновая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Михайловка",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Михайловка",
+    "street_type": "ул.",
+    "street_name": "Бобруйская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Михайловка",
+    "street_type": "ул.",
+    "street_name": "Юбилейная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Михайловка",
+    "street_type": "ул.",
+    "street_name": "Рабочая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Кирова"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Школьная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Комсомольская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Чернобыльская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "пер.",
+    "street_name": "Садовый"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Полевая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "пер.",
+    "street_name": "Погонный"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Хутор",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Сосновка",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Комсомольская"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Ленина"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Вокзальная"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Октябрьская"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Карла Маркса"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Железнодорожная"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Пионерская"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Фридриха Энгельса"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "8 Марта"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Максима Горького"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "1 Мая"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "р.п.",
+    "city_name": "Сосновый Бор",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Затон",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Даниловка",
+    "street_type": "пер.",
+    "street_name": "Солнечный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Даниловка",
+    "street_type": "ул.",
+    "street_name": "Янки Купалы"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Даниловка",
+    "street_type": "ул.",
+    "street_name": "Шмидта"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Даниловка",
+    "street_type": "ул.",
+    "street_name": "Якуба Коласа"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Искра",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Раковичи",
+    "street_type": "ул.",
+    "street_name": "Интернациональная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Ракшин",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Ракшин",
+    "street_type": "ул.",
+    "street_name": "Здудичская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Славань",
+    "street_type": "ул.",
+    "street_name": "Светлогорская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Славань",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Славань",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Славань",
+    "street_type": "ул.",
+    "street_name": "Жердянская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Секеричи",
+    "street_type": "ул.",
+    "street_name": "Социалистическая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Секеричи",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Мармовичи",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Мармовичи",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Мармовичи",
+    "street_type": "ул.",
+    "street_name": "Восточная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Мартыновичи",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Мартыновка",
+    "street_type": "ул.",
+    "street_name": "Мичурина"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Шупейки",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Шупейки",
+    "street_type": "пер.",
+    "street_name": "Дорожный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Шупейки",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Шупейки",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Шупейки",
+    "street_type": "ул.",
+    "street_name": "Сведская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Стартовый"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Мирошниченко"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "м-н",
+    "street_name": "Октябрьский"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пр-д",
+    "street_name": "Вереснёвский"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "м-н",
+    "street_name": "Первомайский"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Калинина"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Ленина"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Свердлова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пр-д",
+    "street_name": "Старый Город"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "50 лет Октября"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Социалистическая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Батова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Шоссейная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "м-н",
+    "street_name": "Молодёжный"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Азалова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Луначарского"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Петра Стефановского"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Привокзальная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "м-н",
+    "street_name": "Полесье"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Интернациональная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "м-н",
+    "street_name": "Шатилки"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Паричская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "м-н",
+    "street_name": "Березина"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Октябрьская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Ломоносова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Авиационный"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пр-д",
+    "street_name": "Белтелекомовский"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Песочная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Дружбы"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Дорожная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Пролетарская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Школьная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Спортивная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Пушкина"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Западная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Комсомольская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Лазо"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Маяковского"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Мичурина"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "м-н",
+    "street_name": "Юбилейный"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Красноармейская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Авиационная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Березинская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Юрия Гагарина"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Максима Горького"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Дзержинского"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Ершова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Трудовая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Чигладзе"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Чапаева"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Кооперативная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Краснопёрова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Лермонтова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Лермонтова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Лазо"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Первомайская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Пионерская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Парковая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Расовская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Светлая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "п.",
+    "street_name": "Строителей"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Энергетиков"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Юбилейный"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Набережная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Северная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Титова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Суворова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Максима Богдановича"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Бобруйская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Бобруйский"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Весёлковая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Васильковая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Гастелло"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Добровольского"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Днепровская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Железнодорожная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Жердянский"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Жлобинская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Жердянская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Заслонова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Задорожная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Задорожный"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Заречная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Крылова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Искровская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Коммунальная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Кирова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Калинковичская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Криничная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Комарова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Камынина"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Янки Купалы"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Леухина"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Мира"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Медковская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Пацаева"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Полевая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Полевой"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Первомайский"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Парковый"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Полесская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Редькина"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Рудобельская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Руднянская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Строительная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Александра Завадского"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Припятская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Ивана Каяфюка"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Антона Пилькевича"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Суворова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Тенистая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Славянская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Сосновая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Фроленкова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Чкалова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Чехова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Фестивальная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Юбилейная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Фрунзе"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Франциска Скорины"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Цветочная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Ясная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Чирковичская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Энергетиков"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Волкова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Краснопёрова"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "пер.",
+    "street_name": "Медковский"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Мостовая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Мирная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Пригородная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Сергея Прача"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Совхозная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Бельская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Виноградная"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Вишнёвая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Абрикосовая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Липовая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Евфросинии Полоцкой"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Каштановая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Еловая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Берёзовая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Кучинская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Царскосельская"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Кленовая"
+  },
+  {
+    "city_type": "г.",
+    "city_name": "Светлогорск",
+    "street_type": "ул.",
+    "street_name": "Игната Устименко"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Осиновка",
+    "street_type": "ул.",
+    "street_name": "Строителей"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Осиновка",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Осиновка",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Песчаная Рудня",
+    "street_type": "ул.",
+    "street_name": "Первомайская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Петровичи",
+    "street_type": "ул.",
+    "street_name": "Бевзюка"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Петровичи",
+    "street_type": "ул.",
+    "street_name": "Краснопёрова"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Петровичи",
+    "street_type": "ул.",
+    "street_name": "Озёрная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Петровичи",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Малая Людвиновка",
+    "street_type": "ул.",
+    "street_name": "Полевая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Малимоны",
+    "street_type": "ул.",
+    "street_name": "Юрия Гагарина"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Малимоны",
+    "street_type": "ул.",
+    "street_name": "Гастелло"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Красновка",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Красновка",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Красновка",
+    "street_type": "ул.",
+    "street_name": "Юбилейная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Узнаж",
+    "street_type": "ул.",
+    "street_name": "Дружбы"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Узнаж",
+    "street_type": "ул.",
+    "street_name": "Дорожная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Узнаж",
+    "street_type": "ул.",
+    "street_name": "Шоссейная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Узнаж",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Узнаж",
+    "street_type": "ул.",
+    "street_name": "Придорожная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Узнаж",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Давыдовка",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Круки",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Рабочая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "пер.",
+    "street_name": "Садовый"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Светлая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Юрия Гагарина"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Шоссейная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "пер.",
+    "street_name": "Шоссейный"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Пасечная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Липовая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Боровики",
+    "street_type": "ул.",
+    "street_name": "Цветочная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Присторань",
+    "street_type": "ул.",
+    "street_name": "Первомайская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Присторань",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Просвет",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Просвет",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Просвет",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Василевка",
+    "street_type": "ул.",
+    "street_name": "Ленина"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Василевка",
+    "street_type": "ул.",
+    "street_name": "Набережная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Василевка",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Василевка",
+    "street_type": "ул.",
+    "street_name": "Гоголя"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Василевка",
+    "street_type": "пер.",
+    "street_name": "Малый"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Виша",
+    "street_type": "ул.",
+    "street_name": "Октябрьская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Виша",
+    "street_type": "ул.",
+    "street_name": "Полесская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Дедное",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Загорье",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Загорье",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Загорье",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Загорье",
+    "street_type": "ул.",
+    "street_name": "Шоссейная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Еланы",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Еланы",
+    "street_type": "пер.",
+    "street_name": "Центральный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Еланы",
+    "street_type": "ул.",
+    "street_name": "Полевая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Ельнички",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Санаторная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Юрия Гагарина"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "пер.",
+    "street_name": "Юрия Гагарина"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Александра Матросова"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "пер.",
+    "street_name": "Молодёжный"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Октябрьская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Брагинская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Полесская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Заречная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "пер.",
+    "street_name": "Заречный"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Комсомольская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Мостовая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Победы"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Полевая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "пер.",
+    "street_name": "Советский"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Петра Стефановского"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Шоссейная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "ул.",
+    "street_name": "Юбилейная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Чирковичи",
+    "street_type": "пер.",
+    "street_name": "Лесной"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Чкалово",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Чкалово",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Чкалово",
+    "street_type": "пер.",
+    "street_name": "Пожихарский"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Чкалово",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Селищи",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Селищи",
+    "street_type": "ул.",
+    "street_name": "Чапаева"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Здудичи",
+    "street_type": "ул.",
+    "street_name": "Набережная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Здудичи",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Здудичи",
+    "street_type": "ул.",
+    "street_name": "Школьная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Здудичи",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Здудичи",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Тумаровка",
+    "street_type": "ул.",
+    "street_name": "Первомайская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Карповичи",
+    "street_type": "ул.",
+    "street_name": "Ремизовского"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Карповичи",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Самораж",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Страковичи",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Страковичи",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Страковичи",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Страковичи",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Страковичи",
+    "street_type": "ул.",
+    "street_name": "Победы"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Страковичи",
+    "street_type": "ул.",
+    "street_name": "Цветочная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Страковичи",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Страковичи",
+    "street_type": "ул.",
+    "street_name": "Школьная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Страковичи",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Страковичи",
+    "street_type": "ул.",
+    "street_name": "Полевая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Рудня",
+    "street_type": "ул.",
+    "street_name": "Мира"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Рудня",
+    "street_type": "ул.",
+    "street_name": "Полевая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Рудня",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Рудня",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Залье",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Прудок",
+    "street_type": "ул.",
+    "street_name": "Школьная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Прудок",
+    "street_type": "ул.",
+    "street_name": "Калинина"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Шкловского"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Фроленкова"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Леухина"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Бобруйская"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Комсомольская"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Октябрьская"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Николая Тризно"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Гордиенко"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "75-я Гвардейская"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "9 Мая"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Социалистическая"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Спортивная"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Маяковского"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Больничная"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Днепровской Флотилии"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Владимира Мигая"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Интернациональная"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "пл.",
+    "street_name": "Майская"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Майская"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Первомайская"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Пролетарская"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Пущина"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Рогинского"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "пер.",
+    "street_name": "Советский"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Северная"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Сенная"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "пер.",
+    "street_name": "Сенной"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "г.п.",
+    "city_name": "Паричи",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Лядцы",
+    "street_type": "ул.",
+    "street_name": "Школьная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Лядцы",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Лядцы",
+    "street_type": "ул.",
+    "street_name": "Социалистическая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Лядцы",
+    "street_type": "ул.",
+    "street_name": "Интернациональная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "ул.",
+    "street_name": "Мира"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "пер.",
+    "street_name": "Солнечный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "ул.",
+    "street_name": "Дружбы"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "ул.",
+    "street_name": "Дорожная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "ул.",
+    "street_name": "Октябрьская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "ул.",
+    "street_name": "Красноозёрная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "ул.",
+    "street_name": "Полевая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "ул.",
+    "street_name": "Горковская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "пер.",
+    "street_name": "Наровлянский"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Корени",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Заречье",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Язвин",
+    "street_type": "ул.",
+    "street_name": "Победы"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Язвинцы",
+    "street_type": "ул.",
+    "street_name": "Будённого"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Язвинцы",
+    "street_type": "ул.",
+    "street_name": "Янки Купалы"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Якимова Слобода",
+    "street_type": "ул.",
+    "street_name": "Солнечная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Якимова Слобода",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Якимова Слобода",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Якимова Слобода",
+    "street_type": "ул.",
+    "street_name": "Школьная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Якимова Слобода",
+    "street_type": "ул.",
+    "street_name": "Цветочная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Якимова Слобода",
+    "street_type": "ул.",
+    "street_name": "Дорожная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Якимова Слобода",
+    "street_type": "пер.",
+    "street_name": "Дорожный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Якимова Слобода",
+    "street_type": "ул.",
+    "street_name": "Совхозная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Якимова Слобода",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Якимова Слобода",
+    "street_type": "ул.",
+    "street_name": "Набережная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Якимова Слобода",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Александровка",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Александровка",
+    "street_type": null,
+    "street_name": null
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Кнышевичи",
+    "street_type": "ул.",
+    "street_name": "Партизанская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Кнышевичи",
+    "street_type": "ул.",
+    "street_name": "Гастелло"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Жердь",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Жердь",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Жердь",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "п.",
+    "city_name": "Жердянский",
+    "street_type": "ул.",
+    "street_name": "Железнодорожная"
+  },
+  {
+    "city_type": "п.",
+    "city_name": "Жердянский",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Моисеевка",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Моисеевка",
+    "street_type": "ул.",
+    "street_name": "Пионерская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Моисеевка",
+    "street_type": "ул.",
+    "street_name": "Даниловская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Моисеевка",
+    "street_type": "ул.",
+    "street_name": "Юрия Гагарина"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Моисеевка",
+    "street_type": "ул.",
+    "street_name": "Ковчицкая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Мольча",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "п.",
+    "city_name": "Мольча",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "п.",
+    "city_name": "Мольча",
+    "street_type": "ул.",
+    "street_name": "Зои Космодемьянской"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Победы"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Юбилейная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Карла Маркса"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "пер.",
+    "street_name": "Цветочный"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "пер.",
+    "street_name": "Парковый"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Сосновая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Школьная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Октябрьская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Крестьянская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Вежны",
+    "street_type": "ул.",
+    "street_name": "Западная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Великий Бор",
+    "street_type": "ул.",
+    "street_name": "Светлогорская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Дражня",
+    "street_type": "ул.",
+    "street_name": "Щорса"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Стужки",
+    "street_type": "ул.",
+    "street_name": "Дачная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Стужки",
+    "street_type": "ул.",
+    "street_name": "Комсомольская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Стужки",
+    "street_type": "ул.",
+    "street_name": "Набережная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Судовица",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Судовица",
+    "street_type": "ул.",
+    "street_name": "Красноармейская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Судовица",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Судовица",
+    "street_type": "ул.",
+    "street_name": "Новая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Судовица",
+    "street_type": "ул.",
+    "street_name": "Юбилейная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Судовица",
+    "street_type": "ул.",
+    "street_name": "Полевая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Судовица",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Осопное",
+    "street_type": "ул.",
+    "street_name": "Дачная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Осопное",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Останковичи",
+    "street_type": "ул.",
+    "street_name": "Железнодорожная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Осташковичи",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Осташковичи",
+    "street_type": "ул.",
+    "street_name": "Юбилейная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Осташковичи",
+    "street_type": "ул.",
+    "street_name": "Совхозная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Осташковичи",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Осташковичи",
+    "street_type": "ул.",
+    "street_name": "Светлогорская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Осташковичи",
+    "street_type": "ул.",
+    "street_name": "Октябрьская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Осташковичи",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Осташковичи",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Островчицы",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Печищи",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Печищи",
+    "street_type": "ул.",
+    "street_name": "Юбилейная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Печищи",
+    "street_type": "ул.",
+    "street_name": "Мирошниченко"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Печищи",
+    "street_type": "ул.",
+    "street_name": "Соловьёва"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Печищи",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Печищи",
+    "street_type": "ул.",
+    "street_name": "Октябрьская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Королева Слобода-1",
+    "street_type": "ул.",
+    "street_name": "Фрунзе"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Королева Слобода-1",
+    "street_type": "ул.",
+    "street_name": "Кирова"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Королева Слобода-2",
+    "street_type": "пер.",
+    "street_name": "Молодёжный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Королева Слобода-2",
+    "street_type": "пер.",
+    "street_name": "Строителей"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Королева Слобода-2",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Королева Слобода-2",
+    "street_type": "пер.",
+    "street_name": "Речной"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Королева Слобода-2",
+    "street_type": "пер.",
+    "street_name": "Луговой"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Королева Слобода-2",
+    "street_type": "пер.",
+    "street_name": "Набережный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Высокий Борок",
+    "street_type": "ул.",
+    "street_name": "Заводская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Высокий Полк",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Высокий Полк",
+    "street_type": "ул.",
+    "street_name": "Бобруйская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Высокий Полк",
+    "street_type": "пер.",
+    "street_name": "Советский"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Вьюнищи",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Пожихарь",
+    "street_type": "ул.",
+    "street_name": "Центральная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Полесье",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Полесье",
+    "street_type": "ул.",
+    "street_name": "70 лет Октября"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Полесье",
+    "street_type": "ул.",
+    "street_name": "Юбилейная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Полесье",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Полесье",
+    "street_type": "ул.",
+    "street_name": "Минская 2-я"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Полесье",
+    "street_type": "ул.",
+    "street_name": "Минская 1-я"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Полесье",
+    "street_type": "ул.",
+    "street_name": "Советская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Полесье",
+    "street_type": "ул.",
+    "street_name": "Школьная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Полесье",
+    "street_type": "пер.",
+    "street_name": "Восточный"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Полесье",
+    "street_type": "ул.",
+    "street_name": "Комсомольская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Полесье",
+    "street_type": "пер.",
+    "street_name": "Северный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Николаевка",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Николаевка",
+    "street_type": "ул.",
+    "street_name": "60 лет Октября"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Николаевка",
+    "street_type": "ул.",
+    "street_name": "Юрия Гагарина"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Николаевка",
+    "street_type": "ул.",
+    "street_name": "Школьная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Николаевка",
+    "street_type": "ул.",
+    "street_name": "Лесная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Николаевка",
+    "street_type": "ул.",
+    "street_name": "Победы"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Николаевка",
+    "street_type": "ул.",
+    "street_name": "Мира"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Новая Белица",
+    "street_type": "ул.",
+    "street_name": "Дачная"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Новая Белица",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Новая Белица",
+    "street_type": "ул.",
+    "street_name": "Березинская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Новая Белица",
+    "street_type": "ул.",
+    "street_name": "Дорожная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "ул.",
+    "street_name": "Зелёная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "ул.",
+    "street_name": "Колхозная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "ул.",
+    "street_name": "Молодёжная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "пер.",
+    "street_name": "Первомайский"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "ул.",
+    "street_name": "Садовая"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "ул.",
+    "street_name": "Теплякова"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "ул.",
+    "street_name": "Полесская"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "ул.",
+    "street_name": "Редькина"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "пер.",
+    "street_name": "Садовый"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "пер.",
+    "street_name": "Северный"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "ул.",
+    "street_name": "Чигладзе"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "ул.",
+    "street_name": "Шоссейная"
+  },
+  {
+    "city_type": "аг.",
+    "city_name": "Дуброва",
+    "street_type": "пер.",
+    "street_name": "Школьный"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Скалка",
+    "street_type": "ул.",
+    "street_name": "Светлогорская"
+  },
+  {
+    "city_type": "д.",
+    "city_name": "Скалка",
+    "street_type": "ул.",
+    "street_name": "Луговая"
+  }
+]

@@ -1,0 +1,390 @@
+[
+    {
+        "workshop_id": 1,
+        "subobject_id": 11
+    },
+    {
+        "workshop_id": 1,
+        "subobject_id": 34
+    },
+    {
+        "workshop_id": 2,
+        "subobject_id": 122
+    },
+    {
+        "workshop_id": 3,
+        "subobject_id": 23
+    },
+    {
+        "workshop_id": 3,
+        "subobject_id": 46
+    },
+    {
+        "workshop_id": 3,
+        "subobject_id": 120
+    },
+    {
+        "workshop_id": 3,
+        "subobject_id": 143
+    },
+    {
+        "workshop_id": 3,
+        "subobject_id": 144
+    },
+    {
+        "workshop_id": 3,
+        "subobject_id": 145
+    },
+    {
+        "workshop_id": 3,
+        "subobject_id": 146
+    },
+    {
+        "workshop_id": 3,
+        "subobject_id": 147
+    },
+    {
+        "workshop_id": 4,
+        "subobject_id": 8
+    },
+    {
+        "workshop_id": 4,
+        "subobject_id": 93
+    },
+    {
+        "workshop_id": 5,
+        "subobject_id": 61
+    },
+    {
+        "workshop_id": 6,
+        "subobject_id": 77
+    },
+    {
+        "workshop_id": 7,
+        "subobject_id": 155
+    },
+    {
+        "workshop_id": 8,
+        "subobject_id": 86
+    },
+    {
+        "workshop_id": 8,
+        "subobject_id": 99
+    },
+    {
+        "workshop_id": 8,
+        "subobject_id": 121
+    },
+    {
+        "workshop_id": 9,
+        "subobject_id": 51
+    },
+    {
+        "workshop_id": 10,
+        "subobject_id": 19
+    },
+    {
+        "workshop_id": 2,
+        "subobject_id": 117
+    },
+    {
+        "workshop_id": 11,
+        "subobject_id": 40
+    },
+    {
+        "workshop_id": 12,
+        "subobject_id": 50
+    },
+    {
+        "workshop_id": 13,
+        "subobject_id": 35
+    },
+    {
+        "workshop_id": 13,
+        "subobject_id": 67
+    },
+    {
+        "workshop_id": 13,
+        "subobject_id": 130
+    },
+    {
+        "workshop_id": 14,
+        "subobject_id": 47
+    },
+    {
+        "workshop_id": 14,
+        "subobject_id": 48
+    },
+    {
+        "workshop_id": 14,
+        "subobject_id": 100
+    },
+    {
+        "workshop_id": 15,
+        "subobject_id": 94
+    },
+    {
+        "workshop_id": 16,
+        "subobject_id": 105
+    },
+    {
+        "workshop_id": 18,
+        "subobject_id": 29
+    },
+    {
+        "workshop_id": 19,
+        "subobject_id": 62
+    },
+    {
+        "workshop_id": 20,
+        "subobject_id": 64
+    },
+    {
+        "workshop_id": 20,
+        "subobject_id": 112
+    },
+    {
+        "workshop_id": 19,
+        "subobject_id": 72
+    },
+    {
+        "workshop_id": 21,
+        "subobject_id": 30
+    },
+    {
+        "workshop_id": 21,
+        "subobject_id": 81
+    },
+    {
+        "workshop_id": 21,
+        "subobject_id": 83
+    },
+    {
+        "workshop_id": 21,
+        "subobject_id": 106
+    },
+    {
+        "workshop_id": 21,
+        "subobject_id": 125
+    },
+    {
+        "workshop_id": 21,
+        "subobject_id": 150
+    },
+    {
+        "workshop_id": 22,
+        "subobject_id": 98
+    },
+    {
+        "workshop_id": 22,
+        "subobject_id": 123
+    },
+    {
+        "workshop_id": 22,
+        "subobject_id": 124
+    },
+    {
+        "workshop_id": 22,
+        "subobject_id": 126
+    },
+    {
+        "workshop_id": 23,
+        "subobject_id": 103
+    },
+    {
+        "workshop_id": 24,
+        "subobject_id": 24
+    },
+    {
+        "workshop_id": 1,
+        "subobject_id": 102
+    },
+    {
+        "workshop_id": 23,
+        "subobject_id": 108
+    },
+    {
+        "workshop_id": 25,
+        "subobject_id": 68
+    },
+    {
+        "workshop_id": 25,
+        "subobject_id": 157
+    },
+    {
+        "workshop_id": 26,
+        "subobject_id": 20
+    },
+    {
+        "workshop_id": 28,
+        "subobject_id": 21
+    },
+    {
+        "workshop_id": 3,
+        "subobject_id": 128
+    },
+    {
+        "workshop_id": 1,
+        "subobject_id": 32
+    },
+    {
+        "workshop_id": 30,
+        "subobject_id": 44
+    },
+    {
+        "workshop_id": 30,
+        "subobject_id": 95
+    },
+    {
+        "workshop_id": 31,
+        "subobject_id": 89
+    },
+    {
+        "workshop_id": 32,
+        "subobject_id": 151
+    },
+    {
+        "workshop_id": 33,
+        "subobject_id": 30
+    },
+    {
+        "workshop_id": 33,
+        "subobject_id": 84
+    },
+    {
+        "workshop_id": 33,
+        "subobject_id": 85
+    },
+    {
+        "workshop_id": 29,
+        "subobject_id": 5
+    },
+    {
+        "workshop_id": 27,
+        "subobject_id": 31
+    },
+    {
+        "workshop_id": 10,
+        "subobject_id": 45
+    },
+    {
+        "workshop_id": 34,
+        "subobject_id": 79
+    },
+    {
+        "workshop_id": 12,
+        "subobject_id": 12
+    },
+    {
+        "workshop_id": 24,
+        "subobject_id": 131
+    },
+    {
+        "workshop_id": 20,
+        "subobject_id": 132
+    },
+    {
+        "workshop_id": 11,
+        "subobject_id": 133
+    },
+    {
+        "workshop_id": 13,
+        "subobject_id": 138
+    },
+    {
+        "workshop_id": 14,
+        "subobject_id": 53
+    },
+    {
+        "workshop_id": 5,
+        "subobject_id": 63
+    },
+    {
+        "workshop_id": 10,
+        "subobject_id": 14
+    },
+    {
+        "workshop_id": 36,
+        "subobject_id": 58
+    },
+    {
+        "workshop_id": 20,
+        "subobject_id": 66
+    },
+    {
+        "workshop_id": 25,
+        "subobject_id": 104
+    },
+    {
+        "workshop_id": 14,
+        "subobject_id": 115
+    },
+    {
+        "workshop_id": 24,
+        "subobject_id": 111
+    },
+    {
+        "workshop_id": 37,
+        "subobject_id": 113
+    },
+    {
+        "workshop_id": 7,
+        "subobject_id": 129
+    },
+    {
+        "workshop_id": 38,
+        "subobject_id": 134
+    },
+    {
+        "workshop_id": 32,
+        "subobject_id": 113
+    },
+    {
+        "workshop_id": 39,
+        "subobject_id": 148
+    },
+    {
+        "workshop_id": 35,
+        "subobject_id": 36
+    },
+    {
+        "workshop_id": 14,
+        "subobject_id": 116
+    },
+    {
+        "workshop_id": 22,
+        "subobject_id": 26
+    },
+    {
+        "workshop_id": 40,
+        "subobject_id": 162
+    },
+    {
+        "workshop_id": 17,
+        "subobject_id": 118
+    },
+    {
+        "workshop_id": 17,
+        "subobject_id": 153
+    },
+    {
+        "workshop_id": 22,
+        "subobject_id": 163
+    },
+    {
+        "workshop_id": 3,
+        "subobject_id": 136
+    },
+    {
+        "workshop_id": 3,
+        "subobject_id": 137
+    },
+    {
+        "workshop_id": 26,
+        "subobject_id": 162
+    },
+    {
+        "workshop_id": 41,
+        "subobject_id": 165
+    }
+]

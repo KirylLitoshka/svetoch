@@ -1,0 +1,26 @@
+.form {
+  min-width: 450px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.form-row {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row:last-child {
+  justify-content: center;
+}
+
+.form_label {
+  width: inherit;
+}
+
+.form_input {
+  width: inherit;
+}

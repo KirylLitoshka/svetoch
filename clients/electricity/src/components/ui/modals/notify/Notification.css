@@ -1,0 +1,16 @@
+.notify {
+  background-color: white;
+  padding: 10px 15px;
+}
+
+.notify_message {
+  text-align: center;
+  margin-bottom: 10px;
+  white-space: pre-wrap
+}
+
+.notify-buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}

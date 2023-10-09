@@ -1,0 +1,39 @@
+html,
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'PT Serif', serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  height: 100%;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content_container {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}

@@ -1,0 +1,15 @@
+.confirm_message {
+  text-align: center;
+  white-space: pre-wrap;
+  margin-bottom: 15px;
+}
+
+.confirm_buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+}
+
+.confirm_buttons > .button {
+  flex: 1 0;
+}

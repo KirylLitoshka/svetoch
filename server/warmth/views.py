@@ -5,7 +5,7 @@ from sqlalchemy import select, literal_column, func, desc, text, and_
 from sqlalchemy.dialects import postgresql as psql
 from aiohttp import web
 
-from views import ListView, DetailView
+from views import ListView, DetailView, BaseView
 from utils import pretty_json, DATE_FORMAT
 from table import get_table_data
 from warmth.models import *
@@ -261,3 +261,42 @@ class RentersObjectsListView(ListView):
                 ))
             )
             return web.json_response({'success': True}, dumps=pretty_json)
+
+
+class PaymentsUploadView(BaseView):
+    model = payments
+
+    async def post(self):
+        post_data = await self.request.post()
+        table_data = await get_table_data(post_data['file'].file, self.request.app["app_name"])
+        required_codes = [row['KO'] for row in table_data]
+        app_info = self.request.app['subsystem']
+        async with self.request.app['db'].begin() as conn:
+            cursor = await conn.execute(objects.select().where(objects.c.code.in_(required_codes)))
+            selected_objects = [dict(row) for row in cursor.fetchall()]
+            selected_objects_codes = [row['code'] for row in selected_objects]
+            differences = set(required_codes).difference(selected_objects_codes)
+            print(differences)
+            if differences:
+                return web.json_response({
+                    "success": False, "reason": f"Не найдены объекты со следующими кодами: {', '.join(differences)}"
+                }, dumps=pretty_json)
+            insert_data = []
+            for row in table_data:
+                required_object_id = next((item['id'] for item in selected_objects if item['code'] == row['KO']), None)
+                if not required_object_id:
+                    raise
+                insert_data.append({
+                    'month': app_info['month'],
+                    'year': app_info['year'],
+                    'object_id': required_object_id,
+                    'payment_type': row['VID'],
+                    'ncen': row['NCEN'],
+                    'applied_rate_value': row['TARIF'],
+                    'heating_value': row.get['OTG'],
+                    'heating_cost': row.get['OTR'],
+                    'water_heating_value': row['GVG'],
+                    'water_heating_cost': row['GVR']
+                })
+            # await conn.execute(self.model.insert(), insert_data)
+        return web.json_response({"success": True}, dumps=pretty_json)

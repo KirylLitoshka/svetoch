@@ -3,7 +3,7 @@ import sqlalchemy as sa
 __all__ = [
     "metadata", "subsystem", "banks", "rates", "rates_history",
     "workshops", "currency_coefficients", "reconciliation_codes",
-    "objects", "renters", "renters_objects"
+    "objects", "renters", "renters_objects", "payments"
 ]
 
 metadata = sa.MetaData()
@@ -100,4 +100,20 @@ renters_objects = sa.Table(
     sa.Column("id", sa.Integer, primary_key=True),
     sa.Column("renter_id", sa.Integer, sa.ForeignKey("renters.id", ondelete="CASCADE")),
     sa.Column("object_id", sa.Integer, sa.ForeignKey("objects.id", ondelete="CASCADE"))
+)
+
+
+payments = sa.Table(
+    "payments", metadata,
+    sa.Column("id", sa.Integer, primary_key=True),
+    sa.Column("month", sa.Integer, nullable=False),
+    sa.Column("year", sa.Integer, nullable=False),
+    sa.Column("object_id", sa.Integer, sa.ForeignKey("objects.id", ondelete="CASCADE")),
+    sa.Column("payment_type", sa.Integer, nullable=False),
+    sa.Column("ncen", sa.Integer, nullable=False),
+    sa.Column("applied_rate_value", sa.Float, nullable=False),
+    sa.Column("heating_value", sa.Float, nullable=False),
+    sa.Column("heating_cost", sa.Float, nullable=False),
+    sa.Column("water_heating_value", sa.Float, nullable=False),
+    sa.Column("water_heating_cost", sa.Float, nullable=False)
 )

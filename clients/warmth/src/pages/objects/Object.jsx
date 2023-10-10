@@ -12,6 +12,7 @@ import ObjectSearch from "../../forms/object/ObjectSearch";
 import ConfirmModal from "../../components/modals/confirm/ConfirmModal";
 import Form from "../../components/ui/form/Form";
 import ObjectForm from "../../forms/object/ObjectForm";
+import PaymentsUploadForm from "../../forms/fee/PaymentsUploadForm";
 
 const Object = () => {
   const [objectItems, setObjectItems] = useState([]);
@@ -23,6 +24,7 @@ const Object = () => {
   const [modalsVisible, setModalsVisible] = useState({
     delete: false,
     create: false,
+    fee: false,
   });
 
   const filteredObjects = useObjects(objectItems, searchQuery);
@@ -135,7 +137,10 @@ const Object = () => {
   return (
     <React.Fragment>
       <PageTitle>
-        <Button text={"Начисления"} callback={() => console.log("asd")} />
+        <Button
+          text={"Начисления"}
+          callback={() => setModalsVisible({ ...modalsVisible, fee: true })}
+        />
         <Button
           text={"+ Добавить"}
           callback={() => {
@@ -199,6 +204,12 @@ const Object = () => {
           setSelectedItem({});
           setModalsVisible({ ...modalsVisible, create: false });
         }}
+      />
+      <Form
+        isModal={true}
+        modalVisible={modalsVisible.fee}
+        component={<PaymentsUploadForm isVisible={modalsVisible.fee} />}
+        closeModal={() => setModalsVisible({ ...modalsVisible, fee: false })}
       />
     </React.Fragment>
   );

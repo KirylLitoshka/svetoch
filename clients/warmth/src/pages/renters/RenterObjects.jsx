@@ -7,6 +7,8 @@ import ErrorMessage from "../../components/ui/messages/ErrorMessage";
 import Loader from "../../components/ui/loader/Loader";
 import PageTitle from "../../components/ui/title/PageTitle";
 import Button from "../../components/ui/buttons/base/Button";
+import ObjectSearch from "../../forms/object/ObjectSearch";
+import { useObjects } from "../../hooks/useObjects";
 
 const RenterObjects = ({ selectedItem, isVisible, closeModal }) => {
   const [renterObjects, setRenterObjects] = useState([]);
@@ -14,8 +16,10 @@ const RenterObjects = ({ selectedItem, isVisible, closeModal }) => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   const [editMode, setEditMode] = useState(false);
+  const [searchQuery, setSearchQuery] = useState({title: "", code: ""})
   const objectsIDs = renterObjects.map((obj) => obj.object_id);
   const selectedObjects = objects.filter((obj) => objectsIDs.includes(obj.id));
+  const filteredObjects = useObjects(objects, searchQuery);
 
   const getRenterObjects = async () => {
     axios
@@ -113,8 +117,9 @@ const RenterObjects = ({ selectedItem, isVisible, closeModal }) => {
           <PageTitle>
             <Button callback={() => setEditMode(false)} text={"Назад"} />
           </PageTitle>
+          <ObjectSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
           <Accordion>
-            {objects.map((obj) => (
+            {filteredObjects.map((obj) => (
               <AccordionItem
                 key={obj.id}
                 title={obj.title}

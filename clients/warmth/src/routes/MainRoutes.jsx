@@ -9,6 +9,7 @@ import Currency from "../pages/currency/Currency";
 import Code from "../pages/code/Code";
 import Object from "../pages/objects/Object";
 import Renter from "../pages/renters/Renter";
+import ObjectPayments from "../pages/payments/ObjectPayments";
 
 const MainRoutes = () => {
   return (
@@ -16,6 +17,7 @@ const MainRoutes = () => {
       <Route path="test" element={<Test />} />
       <Route path="/" element={<Home />} />
       <Route path="objects" element={<Object />} />
+      <Route path="objects/payments" element={<ObjectPayments />} />
       <Route path="renters" element={<Renter />} />
       <Route path="catalogues/banks" element={<Bank />} />
       <Route path="catalogues/workshops" element={<Workshop />} />

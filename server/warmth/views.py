@@ -269,14 +269,13 @@ class PaymentsUploadView(BaseView):
     async def post(self):
         post_data = await self.request.post()
         table_data = await get_table_data(post_data['file'].file, self.request.app["app_name"])
-        required_codes = [row['KO'] for row in table_data]
+        required_codes = {row['KO'] for row in table_data}
         app_info = self.request.app['subsystem']
         async with self.request.app['db'].begin() as conn:
             cursor = await conn.execute(objects.select().where(objects.c.code.in_(required_codes)))
             selected_objects = [dict(row) for row in cursor.fetchall()]
             selected_objects_codes = [row['code'] for row in selected_objects]
-            differences = set(required_codes).difference(selected_objects_codes)
-            print(differences)
+            differences = list(required_codes.difference(selected_objects_codes))
             if differences:
                 return web.json_response({
                     "success": False, "reason": f"Не найдены объекты со следующими кодами: {', '.join(differences)}"
@@ -293,10 +292,55 @@ class PaymentsUploadView(BaseView):
                     'payment_type': row['VID'],
                     'ncen': row['NCEN'],
                     'applied_rate_value': row['TARIF'],
-                    'heating_value': row.get['OTG'],
-                    'heating_cost': row.get['OTR'],
+                    'heating_value': row['OTG'],
+                    'heating_cost': row['OTR'],
                     'water_heating_value': row['GVG'],
                     'water_heating_cost': row['GVR']
                 })
-            # await conn.execute(self.model.insert(), insert_data)
-        return web.json_response({"success": True}, dumps=pretty_json)
+            await conn.execute(self.model.insert(), insert_data)
+        return web.json_response({"success": True, "items": insert_data}, dumps=pretty_json)
+
+
+class ObjectPaymentListView(ListView):
+    model = payments
+
+    async def get(self):
+        object_id = int(self.request.match_info['id'])
+        async with self.request.app['db'].connect() as conn:
+            cursor = await conn.execute(
+                select(self.model).where(self.model.c.object_id == object_id).order_by(
+                    desc(self.model.c.month), self.model.c.year
+                )
+            )
+            result = [dict(row) for row in cursor.fetchall()]
+            return web.json_response({"success": True, "items": result})
+
+
+class ObjectPaymentsDetailView(DetailView):
+    model = payments
+
+    async def patch(self):
+        obj_id = int(self.request.match_info['obj_id'])
+        payment_id = int(self.request.match_info['id'])
+        post_data = await self.request.json()
+        async with self.request.app['db'].begin() as conn:
+            cursor = await conn.execute(
+                self.model.update().returning(literal_column("*")).values(**post_data).where(and_(
+                    self.model.c.id == payment_id,
+                    self.model.c.object_id == obj_id
+                ))
+            )
+            result = dict(cursor.fetchone())
+            return web.json_response({"success": True, "item": result}, dumps=pretty_json)
+
+    async def delete(self):
+        obj_id = int(self.request.match_info['obj_id'])
+        payment_id = int(self.request.match_info['id'])
+        async with self.request.app['db'].begin() as conn:
+            await conn.execute(
+                self.model.delete().where(and_(
+                    self.model.c.id == payment_id,
+                    self.model.c.object_id == obj_id
+                ))
+            )
+            return web.json_response({"success": True}, dumps=pretty_json)

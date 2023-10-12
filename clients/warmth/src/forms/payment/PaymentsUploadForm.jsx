@@ -9,7 +9,6 @@ const PaymentsUploadForm = ({isVisible}) => {
   const [message, setMessage] = useState("")
 
   const sendFile = async (file) => {
-    console.log(file);
     axios
       .post("/api/v1/warmth/payments/:files", file)
       .then((r) => {

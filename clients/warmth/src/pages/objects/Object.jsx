@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ErrorMessage from "../../components/ui/messages/ErrorMessage";
 import Loader from "../../components/ui/loader/Loader";
 import PageTitle from "../../components/ui/title/PageTitle";
@@ -12,9 +13,10 @@ import ObjectSearch from "../../forms/object/ObjectSearch";
 import ConfirmModal from "../../components/modals/confirm/ConfirmModal";
 import Form from "../../components/ui/form/Form";
 import ObjectForm from "../../forms/object/ObjectForm";
-import PaymentsUploadForm from "../../forms/fee/PaymentsUploadForm";
+import PaymentsUploadForm from "../../forms/payment/PaymentsUploadForm";
 
 const Object = () => {
+  const navigate = useNavigate();
   const [objectItems, setObjectItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
@@ -35,6 +37,11 @@ const Object = () => {
   const pageCount = Math.ceil(filteredObjects.length / PER_PAGE);
 
   const controls = [
+    {
+      label: "История начислений",
+      callback: (item) =>
+        navigate("payments", { state: { objectID: item.id } }),
+    },
     {
       label: "Изменить",
       callback: (item) => {

@@ -100,7 +100,10 @@ const RenterObjects = ({ selectedItem, isVisible, closeModal }) => {
   }, []);
 
   return (
-    <ModalWrapper closeModal={closeModal} isVisible={isVisible}>
+    <ModalWrapper closeModal={() => {
+      setEditMode(false)
+      closeModal()
+    }} isVisible={isVisible}>
       {error ? (
         <ErrorMessage message={error} />
       ) : loading ? (
@@ -139,7 +142,7 @@ const RenterObjects = ({ selectedItem, isVisible, closeModal }) => {
             padding: "10px",
           }}
         >
-          <PageTitle>
+          <PageTitle title={`Объекты ${selectedItem.name}`}>
             <Button callback={() => setEditMode(true)} text={"Добавить"} />
           </PageTitle>
           <Accordion>

@@ -51,5 +51,7 @@ routes = [
     web.route("GET", "/renters/{renter_id}/objects", RentersObjectsListView),
     web.route("POST", "/renters/{renter_id}/objects", RentersObjectsListView),
     web.route("DELETE", "/renters/{renter_id}/objects/{id}", RentersObjectsListView),
+    web.route("GET", "/renters/{id}/payments", RenterPaymentListView),
+
     web.route("POST", "/payments/:files", PaymentsUploadView),
 ]

@@ -9,6 +9,7 @@ from views import ListView, DetailView, BaseView
 from utils import pretty_json, DATE_FORMAT
 from table import get_table_data
 from warmth.models import *
+from warmth.reports import get_renters_payments_report
 
 
 async def test_handler_post(request: web.Request):
@@ -271,6 +272,7 @@ class PaymentsUploadView(BaseView):
         table_data = await get_table_data(post_data['file'].file, self.request.app["app_name"])
         required_codes = {row['KO'] for row in table_data}
         app_info = self.request.app['subsystem']
+        print(app_info)
         async with self.request.app['db'].begin() as conn:
             cursor = await conn.execute(objects.select().where(objects.c.code.in_(required_codes)))
             selected_objects = [dict(row) for row in cursor.fetchall()]
@@ -278,7 +280,8 @@ class PaymentsUploadView(BaseView):
             differences = list(required_codes.difference(selected_objects_codes))
             if differences:
                 return web.json_response({
-                    "success": False, "reason": f"Не найдены объекты со следующими кодами: {', '.join(differences)}"
+                    "success": False,
+                    "reason": f"Не найдены объекты со следующими кодами: {', '.join(map(str, differences))}"
                 }, dumps=pretty_json)
             insert_data = []
             for row in table_data:
@@ -344,3 +347,23 @@ class ObjectPaymentsDetailView(DetailView):
                 ))
             )
             return web.json_response({"success": True}, dumps=pretty_json)
+
+
+class RenterPaymentListView(ListView):
+    model = payments
+
+    async def get(self):
+        renter_id = int(self.request.match_info['id'])
+        async with self.request.app['db'].connect() as conn:
+            coefficients_row = await conn.execute(
+                select(currency_coefficients)
+            )
+            coefficients = [dict(row) for row in coefficients_row.fetchall()]
+            payments_row = await conn.execute(
+                select(objects.c.title, objects.c.vat, self.model).select_from(
+                    renters_objects.join(objects).join(self.model)
+                ).where(renters_objects.c.renter_id == renter_id)
+            )
+            result = [dict(row) for row in payments_row.fetchall()]
+            data = await get_renters_payments_report(coefficients, result)
+            return web.json_response({"success": True, "items": data}, dumps=pretty_json)

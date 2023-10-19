@@ -10,6 +10,7 @@ import Code from "../pages/code/Code";
 import Object from "../pages/objects/Object";
 import Renter from "../pages/renters/Renter";
 import ObjectPayments from "../pages/payments/ObjectPayments";
+import RenterPayments from "../pages/payments/RenterPayments";
 
 const MainRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const MainRoutes = () => {
       <Route path="objects" element={<Object />} />
       <Route path="objects/payments" element={<ObjectPayments />} />
       <Route path="renters" element={<Renter />} />
+      <Route path="renters/payments" element={<RenterPayments />} />
       <Route path="catalogues/banks" element={<Bank />} />
       <Route path="catalogues/workshops" element={<Workshop />} />
       <Route path="catalogues/currency" element={<Currency />} />

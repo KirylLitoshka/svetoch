@@ -12,8 +12,10 @@ import RenterForm from "../../forms/renter/RenterForm";
 import RenterSearch from "../../forms/renter/RenterSearch";
 import { useRenters } from "../../hooks/useRenters";
 import RenterObjects from "./RenterObjects";
+import { useNavigate } from "react-router-dom";
 
 const Renter = () => {
+  const navigate = useNavigate();
   const [renters, setRenters] = useState([]);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
@@ -29,6 +31,12 @@ const Renter = () => {
   });
   const filteredRenters = useRenters(renters, searchQuery);
   const controls = [
+    {
+      label: "История начисления",
+      callback: (item) => {
+        navigate("payments", { state: { item: item } });
+      },
+    },
     {
       label: "Объекты",
       callback: (item) => {

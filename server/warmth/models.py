@@ -70,8 +70,6 @@ objects = sa.Table(
     sa.Column("workshop_id", sa.Integer, sa.ForeignKey("workshops.id", ondelete="SET NULL")),
     sa.Column("reconciliation_code_id", sa.Integer, sa.ForeignKey("reconciliation_codes.id", ondelete="SET NULL")),
     sa.Column("is_closed", sa.Boolean, default=False),
-    sa.Column("is_heating_available", sa.Boolean, default=True),
-    sa.Column("is_water_heating_available", sa.Boolean, default=True),
     sa.Column("is_meter_unavailable", sa.Boolean, default=False),
     sa.Column("vat", sa.Float, default=0)
 )
@@ -92,6 +90,10 @@ renters = sa.Table(
     sa.Column("address", sa.String, nullable=True),
     sa.Column("contacts", sa.String, nullable=True),
     sa.Column("is_public_sector", sa.Boolean, default=False),
+    sa.Column("is_heating_available", sa.Boolean, default=False),
+    sa.Column("heating_load", sa.Float, default=0, nullable=True),
+    sa.Column("is_water_heating_available", sa.Boolean, default=False),
+    sa.Column("water_heating_load", sa.Float, default=0, nullable=True),
     sa.Column("is_closed", sa.Boolean, default=False),
 )
 

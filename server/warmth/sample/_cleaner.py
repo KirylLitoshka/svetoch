@@ -133,8 +133,6 @@ def prepare_objects():
             "workshop_id": old_workshops_ids[row['CEX']],
             "reconciliation_code_id": int(row['TEN']) if int(row['TEN']) else None,
             "is_closed": row['PRBL'] == "*",
-            "is_heating_available": row['OTO'] == "*",
-            "is_water_heating_available": row['GVS'] == "*",
             "vat": temp_obj['vat']
         }))
         index += 1

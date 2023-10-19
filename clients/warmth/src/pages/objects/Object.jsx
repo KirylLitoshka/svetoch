@@ -161,15 +161,12 @@ const Object = () => {
         {currentPageData.map((obj) => (
           <AccordionItem
             key={obj.id}
-            title={obj.title}
+            title={`${obj.code}. ${obj.title}`}
             controls={controls.map((control) => ({ ...control, item: obj }))}
           >
-            <div>Код сбыта: {obj.code || "Не указан"}</div>
             <div>
               Стутас объекта: {obj.is_closed ? "Закрыт" : "Действителен"}
             </div>
-            <div>Отопление: {obj.is_heating_available ? "Да" : "Нет"}</div>
-            <div>ГВС: {obj.is_water_heating_available ? "Да" : "Нет"}</div>
             <div>НДС: {obj.vat}%</div>
             <div>Тариф: {obj?.rate ? obj.rate.title : "Не указан"}</div>
             <div>Цех: {obj?.workshop ? obj.workshop.title : "Не указан"}</div>

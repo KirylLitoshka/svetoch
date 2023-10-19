@@ -12,8 +12,6 @@ const ObjectForm = ({ selectedItem, onCreate, onUpdate }) => {
     workshop: null,
     reconciliation_code: null,
     is_closed: false,
-    is_heating_available: false,
-    is_water_heating_available: false,
     is_meter_unavailable: false,
     vat: 0,
   });
@@ -34,8 +32,6 @@ const ObjectForm = ({ selectedItem, onCreate, onUpdate }) => {
         workshop: null,
         reconciliation_code: null,
         is_closed: false,
-        is_heating_available: false,
-        is_water_heating_available: false,
         is_meter_unavailable: false,
         vat: 0,
       });
@@ -203,42 +199,6 @@ const ObjectForm = ({ selectedItem, onCreate, onUpdate }) => {
           checked={objectItem.is_closed}
           onChange={() =>
             setObjectItem({ ...objectItem, is_closed: !objectItem.is_closed })
-          }
-        />
-      </div>
-      <div className="form-row">
-        <label htmlFor="is_heating_available" className="form_label">
-          Отопление
-        </label>
-        <input
-          type="checkbox"
-          name="is_heating_available"
-          id="is_heating_available"
-          className="form_input"
-          checked={objectItem.is_heating_available}
-          onChange={() =>
-            setObjectItem({
-              ...objectItem,
-              is_heating_available: !objectItem.is_heating_available,
-            })
-          }
-        />
-      </div>
-      <div className="form-row">
-        <label htmlFor="is_water_heating_available" className="form_label">
-          ГВС
-        </label>
-        <input
-          type="checkbox"
-          id="is_water_heating_available"
-          className="form_input"
-          checked={objectItem.is_water_heating_available}
-          onChange={() =>
-            setObjectItem({
-              ...objectItem,
-              is_water_heating_available:
-                !objectItem.is_water_heating_available,
-            })
           }
         />
       </div>

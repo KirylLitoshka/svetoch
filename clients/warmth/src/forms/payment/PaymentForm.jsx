@@ -25,8 +25,6 @@ const PaymentForm = ({ selectedItem, onUpdate, onCreate }) => {
     }
   }, [selectedItem]);
 
-  console.log(payment);
-
   return (
     <React.Fragment>
       <div className="form-row">

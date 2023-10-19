@@ -17,6 +17,10 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
     address: null,
     contacts: null,
     is_public_sector: false,
+    is_heating_available: false,
+    heating_load: null,
+    is_water_heating_available: false,
+    water_heating_load: null,
     is_closed: false,
     bank: null,
   };
@@ -235,6 +239,93 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
           }
         />
       </div>
+      <div className="form-row">
+        <label htmlFor="is_heating_available" className="form_label">
+          Отопление
+        </label>
+        <input
+          type="checkbox"
+          className="form_input"
+          id="is_heating_available"
+          value={renter.is_heating_available}
+          onChange={() => {
+            if (renter.is_heating_available) {
+              setRenter({
+                ...renter,
+                is_heating_available: !renter.is_heating_available,
+                heating_load: null,
+              });
+            } else {
+              setRenter({
+                ...renter,
+                is_heating_available: !renter.is_heating_available,
+              });
+            }
+          }}
+        />
+      </div>
+      {renter.is_heating_available && (
+        <div className="form-row">
+          <label htmlFor="heating_load" className="form_label">
+            Нагрузка отопления
+          </label>
+          <input
+            type="number"
+            name="heating_load"
+            id="heating_load"
+            className="form_input"
+            value={renter.heating_load || ""}
+            onChange={(e) =>
+              setRenter({ ...renter, heating_load: e.target.value || null })
+            }
+          />
+        </div>
+      )}
+      <div className="form-row">
+        <label htmlFor="is_water_heating_available" className="form_label">
+          ГВС
+        </label>
+        <input
+          type="checkbox"
+          name="is_water_heating_available"
+          id="is_water_heating_available"
+          className="form_input"
+          onChange={() => {
+            if (renter.is_water_heating_available) {
+              setRenter({
+                ...renter,
+                water_heating_load: null,
+                is_water_heating_available: !renter.is_water_heating_available,
+              });
+            } else {
+              setRenter({
+                ...renter,
+                is_water_heating_available: !renter.is_water_heating_available,
+              });
+            }
+          }}
+        />
+      </div>
+      {renter.is_water_heating_available && (
+        <div className="form-row">
+          <label htmlFor="water_heating_load" className="form_label">
+            Нагрузка ГВС
+          </label>
+          <input
+            type="number"
+            name="water_heating_load"
+            id="water_heating_load"
+            className="form_input"
+            value={renter.water_heating_load || ""}
+            onChange={(e) =>
+              setRenter({
+                ...renter,
+                water_heating_load: e.target.value || null,
+              })
+            }
+          />
+        </div>
+      )}
       <div className="form-row">
         <label htmlFor="is_closed" className="form_label">
           Закрытый

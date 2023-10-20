@@ -26,6 +26,23 @@ const ObjectSearch = ({ searchQuery, setSearchQuery }) => {
           }
         />
       </div>
+      <div className="search_row">
+        <label htmlFor="search_closed">Статус объекта</label>
+        <select
+          name="search_closed"
+          id="search_closed"
+          value={searchQuery.is_closed ? "1" : "0"}
+          onChange={(e) =>
+            setSearchQuery({
+              ...searchQuery,
+              is_closed: Boolean(+e.target.value),
+            })
+          }
+        >
+          <option value="0">Открыт</option>
+          <option value="1">Закрыт</option>
+        </select>
+      </div>
     </Search>
   );
 };

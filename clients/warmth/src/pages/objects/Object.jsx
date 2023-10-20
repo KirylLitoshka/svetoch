@@ -22,7 +22,7 @@ const Object = () => {
   const [error, setError] = useState("");
   const [selectedItem, setSelectedItem] = useState(null);
   const [currentPage, setCurrentPage] = useState(0);
-  const [searchQuery, setSearchQuery] = useState({ title: "", code: "" });
+  const [searchQuery, setSearchQuery] = useState({ title: "", code: "", is_closed: false });
   const [modalsVisible, setModalsVisible] = useState({
     delete: false,
     create: false,

@@ -1,22 +1,35 @@
 import { useMemo } from "react";
 
-const useFilterByCode = (objects, code) => {
+const useFilterByStatus = (objects, searchQuery) => {
   return useMemo(() => {
-    if (code) {
-      return objects.filter((obj) => obj.code.toString().includes(code));
+    if (searchQuery.is_closed) {
+      return objects.filter((obj) => obj.is_closed);
+    } else {
+      return objects.filter((obj) => !obj.is_closed);
     }
-    return objects;
-  }, [objects, code]);
+  }, [objects, searchQuery])
+}
+
+const useFilterByCode = (objects, searchQuery) => {
+  const filteredObjects = useFilterByStatus(objects, searchQuery)
+  return useMemo(() => {
+    if (searchQuery.code) {
+      return filteredObjects.filter((obj) =>
+        obj.code.toString().includes(searchQuery.code)
+      );
+    }
+    return filteredObjects;
+  }, [filteredObjects, searchQuery]);
 };
 
 export const useObjects = (objects, searchQuery) => {
-  const sortedObjects = useFilterByCode(objects, searchQuery.code);
+  const filteredObjects = useFilterByCode(objects, searchQuery);
   return useMemo(() => {
     if (searchQuery.title) {
-      return sortedObjects.filter((obj) =>
+      return filteredObjects.filter((obj) =>
         obj.title.toLowerCase().includes(searchQuery.title.toLowerCase())
       );
     }
-    return sortedObjects;
-  }, [sortedObjects, searchQuery]);
+    return filteredObjects;
+  }, [filteredObjects, searchQuery]);
 };

@@ -10,7 +10,7 @@ async def get_renters_payments_report(coefficients, payments):
             item['month'] == payment['month'] and item['year'] == payment['year']
         ), None)
         if payment_coefficients is None:
-            raise
+            raise Exception("Коэффициент на текущий месяц не обнаружен")
         current_row = {
             "month": payment['month'],
             "year": payment['year'],

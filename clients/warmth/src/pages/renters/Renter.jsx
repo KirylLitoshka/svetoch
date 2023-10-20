@@ -28,7 +28,9 @@ const Renter = () => {
   const [searchQuery, setSearchQuery] = useState({
     title: "",
     registration_number: "",
+    is_closed: false,
   });
+
   const filteredRenters = useRenters(renters, searchQuery);
   const controls = [
     {

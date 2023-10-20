@@ -183,7 +183,7 @@ const Renter = () => {
             <div>
               Нагрузка на отопление: {renter.heating_load || "Не указан"}
             </div>
-            <div>ГВС: {renter.is_water_heating_avalailable ? "Да" : "Нет"}</div>
+            <div>ГВС: {renter.is_water_heating_available ? "Да" : "Нет"}</div>
             <div>
               Нагрузка на ГВС: {renter.water_heating_load || "Не указан"}
             </div>

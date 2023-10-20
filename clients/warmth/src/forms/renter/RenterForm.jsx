@@ -247,7 +247,7 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
           type="checkbox"
           className="form_input"
           id="is_heating_available"
-          value={renter.is_heating_available}
+          checked={renter.is_heating_available}
           onChange={() => {
             if (renter.is_heating_available) {
               setRenter({
@@ -290,6 +290,7 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
           name="is_water_heating_available"
           id="is_water_heating_available"
           className="form_input"
+          checked={renter.is_water_heating_available}
           onChange={() => {
             if (renter.is_water_heating_available) {
               setRenter({

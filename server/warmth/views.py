@@ -9,7 +9,7 @@ from views import ListView, DetailView, BaseView
 from utils import pretty_json, DATE_FORMAT
 from table import get_table_data
 from warmth.models import *
-from warmth.reports import get_renters_payments_report
+from warmth.calculations import get_renters_payments_calculations
 
 
 async def test_handler_post(request: web.Request):
@@ -376,7 +376,7 @@ class RenterPaymentListView(ListView):
                 ).where(renters_objects.c.renter_id == renter_id)
             )
             result = [dict(row) for row in payments_row.fetchall()]
-            data = await get_renters_payments_report(coefficients, result)
+            data = await get_renters_payments_calculations(coefficients, result)
             return web.json_response({"success": True, "items": data}, dumps=pretty_json)
 
 

@@ -99,6 +99,18 @@ class RateHistoryDetailView(DetailView):
 class WorkshopsListView(ListView):
     model = workshops
 
+    async def get(self):
+        async with self.request.app['db'].connect() as conn:
+            cursor = await conn.execute(
+                select(
+                    self.model.c.id,
+                    self.model.c.title,
+                    func.row_to_json(workshops_groups.table_valued()).label('group')
+                ).select_from(self.model.join(workshops_groups, isouter=True)).order_by(self.model.c.id)
+            )
+            result = [dict(row) for row in cursor.fetchall()]
+            return web.json_response({"success": True, "items": result}, dumps=pretty_json)
+
 
 class WorkshopDetailView(DetailView):
     model = workshops
@@ -144,14 +156,14 @@ class ObjectsListView(ListView):
 
     async def post(self):
         post_data = await self.request.json()
+        code_id = post_data['reconciliation_code']['id'] if post_data['reconciliation_code'] is not None else None
         async with self.request.app['db'].begin() as conn:
             cursor = await conn.execute(self.model.insert().returning(self.model.c.id).values(
                 title=post_data['title'],
                 code=post_data['code'],
                 rate_id=post_data['rate']['id'] if post_data['rate'] is not None else None,
                 workshop_id=post_data['workshop']['id'] if post_data['workshop'] is not None else None,
-                reconciliation_code_id=post_data['reconciliation_code']['id'] if post_data[
-                                                                                     'reconciliation_code'] is not None else None,
+                reconciliation_code_id=code_id,
                 is_closed=post_data['is_closed'],
                 is_heating_available=post_data['is_heating_available'],
                 is_water_heating_available=post_data['is_water_heating_available'],
@@ -168,14 +180,14 @@ class ObjectDetailView(DetailView):
     async def patch(self):
         post_data = await self.request.json()
         object_id = int(self.request.match_info['id'])
+        code_id = post_data['reconciliation_code']['id'] if post_data['reconciliation_code'] is not None else None
         async with self.request.app['db'].begin() as conn:
             await conn.execute(self.model.update().where(self.model.c.id == object_id).values(
                 title=post_data['title'],
                 code=post_data['code'],
                 rate_id=post_data['rate']['id'] if post_data['rate'] is not None else None,
                 workshop_id=post_data['workshop']['id'] if post_data['workshop'] is not None else None,
-                reconciliation_code_id=post_data['reconciliation_code']['id'] if post_data[
-                                                                                     'reconciliation_code'] is not None else None,
+                reconciliation_code_id=code_id,
                 is_closed=post_data['is_closed'],
                 is_heating_available=post_data['is_heating_available'],
                 is_water_heating_available=post_data['is_water_heating_available'],
@@ -272,7 +284,6 @@ class PaymentsUploadView(BaseView):
         table_data = await get_table_data(post_data['file'].file, self.request.app["app_name"])
         required_codes = {row['KO'] for row in table_data}
         app_info = self.request.app['subsystem']
-        print(app_info)
         async with self.request.app['db'].begin() as conn:
             cursor = await conn.execute(objects.select().where(objects.c.code.in_(required_codes)))
             selected_objects = [dict(row) for row in cursor.fetchall()]
@@ -296,9 +307,9 @@ class PaymentsUploadView(BaseView):
                     'ncen': row['NCEN'],
                     'applied_rate_value': row['TARIF'],
                     'heating_value': row['OTG'],
-                    'heating_cost': row['OTR'],
+                    'heating_cost': round(row['TARIF'] * row['OTG'], 5),
                     'water_heating_value': row['GVG'],
-                    'water_heating_cost': row['GVR']
+                    'water_heating_cost': round(row['TARIF'] * row['GVG'], 5)
                 })
             await conn.execute(self.model.insert(), insert_data)
         return web.json_response({"success": True, "items": insert_data}, dumps=pretty_json)
@@ -367,3 +378,11 @@ class RenterPaymentListView(ListView):
             result = [dict(row) for row in payments_row.fetchall()]
             data = await get_renters_payments_report(coefficients, result)
             return web.json_response({"success": True, "items": data}, dumps=pretty_json)
+
+
+class WorkshopsGroupsListView(ListView):
+    model = workshops_groups
+
+
+class WorkshopsGroupDetailView(DetailView):
+    model = workshops_groups

@@ -1,167 +1,222 @@
 [
     {
-        "title": "Жилфонд"
+        "title": "Жилфонд",
+        "workshop_group_id": 5
     },
     {
-        "title": "ЖЭС-1"
+        "title": "ЖЭС-1",
+        "workshop_group_id": 5
     },
     {
-        "title": "ЖЭС-2"
+        "title": "ЖЭС-2",
+        "workshop_group_id": 5
     },
     {
-        "title": "ЖЭС-3"
+        "title": "ЖЭС-3",
+        "workshop_group_id": 5
     },
     {
-        "title": "админ.пом.Соц.51"
+        "title": "админ.пом.Соц.51",
+        "workshop_group_id": 5
     },
     {
-        "title": "ФОК-1 Баня"
+        "title": "ФОК-1 Баня",
+        "workshop_group_id": 4
     },
     {
-        "title": "АРЦ"
+        "title": "АРЦ",
+        "workshop_group_id": 6
     },
     {
-        "title": "Теплоцех"
+        "title": "Теплоцех",
+        "workshop_group_id": 6
     },
     {
-        "title": "Электроцех"
+        "title": "Электроцех",
+        "workshop_group_id": 6
     },
     {
-        "title": "в/ч 5525"
+        "title": "в/ч 5525",
+        "workshop_group_id": 6
     },
     {
-        "title": "Спецавтобаза"
+        "title": "Спецавтобаза",
+        "workshop_group_id": 6
     },
     {
-        "title": "Водоснабжение"
+        "title": "Водоснабжение",
+        "workshop_group_id": 6
     },
     {
-        "title": "Водоотведение"
+        "title": "Водоотведение",
+        "workshop_group_id": 6
     },
     {
-        "title": "РМЦ"
+        "title": "РМЦ",
+        "workshop_group_id": 6
     },
     {
-        "title": "Участок ритуал.обслу"
+        "title": "Участок ритуал.обслу",
+        "workshop_group_id": 6
     },
     {
-        "title": "АДС (бытовки)"
+        "title": "АДС (бытовки)",
+        "workshop_group_id": 6
     },
     {
-        "title": "АБК"
+        "title": "АБК",
+        "workshop_group_id": 6
     },
     {
-        "title": "МТС"
+        "title": "МТС",
+        "workshop_group_id": 6
     },
     {
-        "title": "Частный сектор"
+        "title": "Население ЖЭС-1",
+        "workshop_group_id": 1
     },
     {
-        "title": "Население ЖЭС-1"
+        "title": "Население ЖЭС-2",
+        "workshop_group_id": 1
     },
     {
-        "title": "Население ЖЭС-2"
+        "title": "Население ЖЭС-3",
+        "workshop_group_id": 1
     },
     {
-        "title": "Население ЖЭС-3"
+        "title": "Частный сектор",
+        "workshop_group_id": 1
     },
     {
-        "title": "Потери"
+        "title": "Арендаторы",
+        "workshop_group_id": 2
     },
     {
-        "title": "Потери промышленност"
+        "title": "Потери",
+        "workshop_group_id": 7
     },
     {
-        "title": "Буфет ФОК-1 КБО"
+        "title": "Потери промышленност",
+        "workshop_group_id": 7
     },
     {
-        "title": "Склад"
+        "title": "Буфет ФОК-1 КБО",
+        "workshop_group_id": 6
     },
     {
-        "title": "ПСО"
+        "title": "Склад",
+        "workshop_group_id": 6
     },
     {
-        "title": "Потери РОО"
+        "title": "ПСО",
+        "workshop_group_id": 6
     },
     {
-        "title": "Пролетар.11 кап.рем."
+        "title": "Арендаторы КЖУП",
+        "workshop_group_id": 2
     },
     {
-        "title": "маневренный фонд"
+        "title": "Потери РОО",
+        "workshop_group_id": 7
     },
     {
-        "title": "охрана труда"
+        "title": "Пролетар.11 кап.рем.",
+        "workshop_group_id": 6
     },
     {
-        "title": "ИП Северин(Маникюр)"
+        "title": "маневренный фонд",
+        "workshop_group_id": 5
     },
     {
-        "title": "подпитка сверхнорм."
+        "title": "охрана труда",
+        "workshop_group_id": 6
     },
     {
-        "title": "Потери ЦРБ"
+        "title": "ИП Северин(Маникюр)",
+        "workshop_group_id": 2
     },
     {
-        "title": "УТОЖ Столярный цех"
+        "title": "подпитка сверхнорм.",
+        "workshop_group_id": 7
     },
     {
-        "title": "Потери прочие"
+        "title": "Потери ЦРБ",
+        "workshop_group_id": 7
     },
     {
-        "title": "Потери комунхоз"
+        "title": "УТОЖ Столярный цех",
+        "workshop_group_id": 6
     },
     {
-        "title": "УТиР(маг.рит.усл.)"
+        "title": "Потери прочие",
+        "workshop_group_id": 7
     },
     {
-        "title": "архив"
+        "title": "Потери комунхоз",
+        "workshop_group_id": 7
     },
     {
-        "title": "подпитка"
+        "title": "УТиР(маг.рит.усл.)",
+        "workshop_group_id": 6
     },
     {
-        "title": "магазин\"Коммунальник\""
+        "title": "архив",
+        "workshop_group_id": 6
     },
     {
-        "title": "стол.цех у.Привокзал"
+        "title": "подпитка",
+        "workshop_group_id": 7
     },
     {
-        "title": "маг.\"Дружок\""
+        "title": "магазин\"Коммунальник\"",
+        "workshop_group_id": 6
     },
     {
-        "title": "гост-ца Соц.53,3-45"
+        "title": "стол.цех у.Привокзал",
+        "workshop_group_id": 6
     },
     {
-        "title": "общественный туалет"
+        "title": "маг.\"Дружок\"",
+        "workshop_group_id": 6
     },
     {
-        "title": "Общежития Светочь"
+        "title": "гост-ца Соц.53,3-45",
+        "workshop_group_id": 6
     },
     {
-        "title": "Лифтовое хоз-во"
+        "title": "общественный туалет",
+        "workshop_group_id": 6
     },
     {
-        "title": "спортзал"
+        "title": "Общежития Светочь",
+        "workshop_group_id": 1
     },
     {
-        "title": "Расч.Справ.Центр"
+        "title": "Лифтовое хоз-во",
+        "workshop_group_id": 6
     },
     {
-        "title": "Программисты Светочь"
+        "title": "спортзал",
+        "workshop_group_id": 6
     },
     {
-        "title": "ЖЭС-1 нез.помещения"
+        "title": "Расч.Справ.Центр",
+        "workshop_group_id": 5
     },
     {
-        "title": "ЖЭС-2 нез.помещения"
+        "title": "Программисты Светочь",
+        "workshop_group_id": 6
     },
     {
-        "title": "ЖЭС-3 нез.помещения"
+        "title": "ЖЭС-3 нез.помещения",
+        "workshop_group_id": 5
     },
     {
-        "title": "Арендаторы КЖУП"
+        "title": "ЖЭС-1 нез.помещения",
+        "workshop_group_id": 5
     },
     {
-        "title": "Арендаторы"
+        "title": "ЖЭС-2 нез.помещения",
+        "workshop_group_id": 5
     }
 ]

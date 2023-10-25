@@ -3,7 +3,8 @@ import sqlalchemy as sa
 __all__ = [
     "metadata", "subsystem", "banks", "rates", "rates_history",
     "workshops", "currency_coefficients", "reconciliation_codes",
-    "objects", "renters", "renters_objects", "payments"
+    "objects", "renters", "renters_objects", "payments",
+    "workshops_groups"
 ]
 
 metadata = sa.MetaData()
@@ -43,7 +44,10 @@ rates_history = sa.Table(
 workshops = sa.Table(
     "workshops", metadata,
     sa.Column("id", sa.Integer, primary_key=True),
-    sa.Column("title", sa.String, nullable=False, unique=True)
+    sa.Column("title", sa.String, nullable=False, unique=True),
+    sa.Column("workshop_group_id", sa.Integer, sa.ForeignKey(
+        "workshops_groups.id", ondelete="SET NULL"
+    ), nullable=True)
 )
 
 currency_coefficients = sa.Table(
@@ -118,4 +122,10 @@ payments = sa.Table(
     sa.Column("heating_cost", sa.Float, nullable=False),
     sa.Column("water_heating_value", sa.Float, nullable=False),
     sa.Column("water_heating_cost", sa.Float, nullable=False)
+)
+
+workshops_groups = sa.Table(
+    "workshops_groups", metadata,
+    sa.Column("id", sa.Integer, primary_key=True),
+    sa.Column("title", sa.String, nullable=False)
 )

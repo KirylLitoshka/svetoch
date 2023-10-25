@@ -71,6 +71,7 @@ async def warmth_data(config, sub_app_name):
         await insert_data(conn, warmth_models.banks, sub_app_name)
         await insert_data(conn, warmth_models.rates, sub_app_name)
         await insert_data(conn, warmth_models.rates_history, sub_app_name)
+        await insert_data(conn, warmth_models.workshops_groups, sub_app_name)
         await insert_data(conn, warmth_models.workshops, sub_app_name)
         await insert_data(conn, warmth_models.currency_coefficients, sub_app_name)
         await insert_data(conn, warmth_models.reconciliation_codes, sub_app_name)

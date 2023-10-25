@@ -58,7 +58,10 @@ def prepare_workshops_data():
         if not row['C_HO']:
             continue
         old_workshops_ids[row['C_KO']] = start_index
-        result.append({"title": row['C_HO']})
+        result.append({
+            "title": row['C_HO'],
+            "workshop_group_id": int(row['C_3'])
+        })
         start_index += 1
     save_data("_old_workshops_ids.json", old_workshops_ids)
     save_data("workshops.json", result)

@@ -107,6 +107,7 @@ class WorkshopsListView(ListView):
                 select(
                     self.model.c.id,
                     self.model.c.title,
+                    self.model.c.is_currency_coefficient_applied,
                     func.row_to_json(workshops_groups.table_valued()).label('group')
                 ).select_from(self.model.join(workshops_groups, isouter=True)).order_by(self.model.c.id)
             )

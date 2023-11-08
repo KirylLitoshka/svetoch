@@ -67,3 +67,39 @@ async def get_renters_payments_calculations(coefficients, payments):
         if not current_row_index:
             result.append(current_row)
     return result
+
+
+async def get_workshops_calculation(data, currency_coefficient):
+    output = []
+    coefficient_value = currency_coefficient['value_1']
+    for row in data:
+        coefficient_applied = row.pop('is_currency_coefficient_applied')
+        if coefficient_applied:
+            row['heating_cost'] *= coefficient_value
+            row['water_heating_cost'] *= coefficient_value
+        row['value'] = row['heating_value'] + row['water_heating_value']
+        row['cost'] = row['heating_cost'] + row['water_heating_cost']
+        group_row_index = next((i for i, item in enumerate(output) if item['title'] == row['group_title']), None)
+        if group_row_index is None:
+            searched_row = {
+                "title": row.pop('group_title'),
+                "heating_value": 0,
+                "heating_cost": 0,
+                "water_heating_value": 0,
+                "water_heating_cost": 0,
+                "value": 0,
+                "cost": 0,
+                "includes": []
+            }
+            output.append(searched_row)
+        else:
+            row.pop('group_title')
+            searched_row = output[group_row_index]
+        searched_row['heating_value'] += row['heating_value']
+        searched_row['heating_cost'] += row['heating_cost']
+        searched_row['water_heating_value'] += row['water_heating_value']
+        searched_row['water_heating_cost'] += row['water_heating_cost']
+        searched_row['value'] += row['value']
+        searched_row['cost'] += row['cost']
+        searched_row['includes'].append(row)
+    return output

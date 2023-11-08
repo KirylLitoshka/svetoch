@@ -9,7 +9,9 @@ from views import ListView, DetailView, BaseView
 from utils import pretty_json, DATE_FORMAT
 from table import get_table_data
 from warmth.models import *
-from warmth.calculations import get_renters_payments_calculations
+from warmth.calculations import *
+from warmth.queries import *
+from warmth.reports import build_consolidated_report
 
 
 async def test_handler_post(request: web.Request):
@@ -386,3 +388,15 @@ class WorkshopsGroupsListView(ListView):
 
 class WorkshopsGroupDetailView(DetailView):
     model = workshops_groups
+
+
+class FileReportsView(BaseView):
+    async def get(self):
+        report_name = self.request.match_info['name']
+        app_info = self.request.app['subsystem']
+        async with self.request.app['db'].connect() as conn:
+            if report_name == "consolidated":
+                values = await get_total_values_by_workshop(conn, app_info)
+                currency_coefficient = await get_current_currency_coefficient(conn, app_info)
+                calculations = await get_workshops_calculation(values, currency_coefficient)
+                return await build_consolidated_report(calculations, app_info['month'], app_info['year'])

@@ -11,7 +11,7 @@ const RateHistoryForm = ({ selectedItem, onCreate, onUpdate }) => {
   });
 
   useEffect(() => {
-    if (selectedItem) {
+    if (selectedItem?.id) {
       setHistoryItem(selectedItem);
     } else {
       setHistoryItem({
@@ -33,7 +33,7 @@ const RateHistoryForm = ({ selectedItem, onCreate, onUpdate }) => {
           className="form_input"
           name="month"
           id="month"
-          defaultValue={historyItem.month || ""}
+          value={historyItem.month || ""}
           onChange={(e) =>
             setHistoryItem({ ...historyItem, month: +e.target.value + 1 })
           }
@@ -54,7 +54,8 @@ const RateHistoryForm = ({ selectedItem, onCreate, onUpdate }) => {
         </label>
         <input
           id="year"
-          type="text"
+          type="number"
+          step={1}
           className="form_input"
           value={historyItem.year || ""}
           onChange={(e) =>
@@ -71,13 +72,14 @@ const RateHistoryForm = ({ selectedItem, onCreate, onUpdate }) => {
           type="number"
           step={"any"}
           className="form_input"
-          value={historyItem.value_1 || 0}
-          onChange={(e) =>
+          value={historyItem.value_1 === null ? "" : historyItem.value_1}
+          onChange={(e) => {
+            const value = parseFloat(e.target.value);
             setHistoryItem({
               ...historyItem,
-              value_1: parseFloat(e.target.value) || null,
-            })
-          }
+              value_1: isNaN(value) ? null : value,
+            });
+          }}
         />
       </div>
       <div className="form-row">
@@ -89,13 +91,14 @@ const RateHistoryForm = ({ selectedItem, onCreate, onUpdate }) => {
           type="number"
           step={"any"}
           className="form_input"
-          value={historyItem.value_2 || 0}
-          onChange={(e) =>
+          value={historyItem.value_2 === null ? "" : historyItem.value_2}
+          onChange={(e) => {
+            const value = parseFloat(e.target.value);
             setHistoryItem({
               ...historyItem,
-              value_2: parseFloat(e.target.value) || null,
-            })
-          }
+              value_2: isNaN(value) ? null : value,
+            });
+          }}
         />
       </div>
       <div className="form-row">

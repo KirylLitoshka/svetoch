@@ -52,24 +52,33 @@ const Workshop = () => {
 
   const createWorkshopItem = async (item) => {
     axios
-      .post("/api/v1/warmth/workshops", item)
+      .post("/api/v1/warmth/workshops", {
+        title: item.title,
+        workshop_group_id: item.group.id,
+        is_currency_coefficient_applied: item.is_currency_coefficient_applied,
+      })
       .then((r) => {
         if (r.data.success) {
-          setWorkshopItems([...workshopItems, r.data.item]);
+          setWorkshopItems([...workshopItems, { ...item, id: r.data.item.id }]);
         } else {
           setError(r.data.reason);
         }
       })
       .catch((e) => setError(e.response.data.reason))
       .finally(() => {
-        setSelectedItem(null);
+        setSelectedItem({});
         setModalVisible({ ...modalVisible, create: false });
       });
   };
 
   const updateWorkshopItems = async (item) => {
     axios
-      .patch(`/api/v1/warmth/workshops/${item.id}`, item)
+      .patch(`/api/v1/warmth/workshops/${item.id}`, {
+        id: item.id,
+        title: item.title,
+        workshop_group_id: item.group.id,
+        is_currency_coefficient_applied: item.is_currency_coefficient_applied,
+      })
       .then((r) => {
         if (r.data.success) {
           setWorkshopItems(
@@ -139,7 +148,13 @@ const Workshop = () => {
               ...control,
               item: item,
             }))}
-          />
+          >
+            <div>Группа: {item?.group?.title || "Не указана"}</div>
+            <div>
+              Применение валютного коэффициента:{" "}
+              {item.is_currency_coefficient_applied ? "Да" : "Нет"}
+            </div>
+          </AccordionItem>
         ))}
       </Accordion>
       <Form
@@ -153,7 +168,7 @@ const Workshop = () => {
           />
         }
         closeModal={() => {
-          setSelectedItem(null);
+          setSelectedItem({});
           setModalVisible({ ...modalVisible, create: false });
         }}
       />
@@ -162,7 +177,7 @@ const Workshop = () => {
         isVisible={modalVisible.delete}
         onConfirm={() => deleteWorkshopItem(selectedItem)}
         closeModal={() => {
-          setSelectedItem(null);
+          setSelectedItem({});
           setModalVisible({ ...modalVisible, delete: false });
         }}
       />

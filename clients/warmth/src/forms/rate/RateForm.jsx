@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import Button from "../../components/ui/buttons/base/Button";
 
 const RateForm = ({ selectedItem, onCreate, onUpdate }) => {
-  const [rateItem, setRateItem] = useState({ title: "", is_currency_coefficient_applied: false });
+  const [rateItem, setRateItem] = useState({ title: ""});
 
   useEffect(() => {
     if (selectedItem) {
       setRateItem(selectedItem);
     } else {
-      setRateItem({ title: "", is_currency_coefficient_applied: false });
+      setRateItem({ title: ""});
     }
   }, [selectedItem]);
 
@@ -25,20 +25,6 @@ const RateForm = ({ selectedItem, onCreate, onUpdate }) => {
           value={rateItem.title}
           onChange={(e) => {
             setRateItem({ ...rateItem, title: e.target.value });
-          }}
-        />
-      </div>
-      <div className="form-row">
-        <label htmlFor="is_currency_coefficient_applied" className="form_label">
-          Применение
-        </label>
-        <input
-          type="checkbox"
-          id="is_currency_coefficient_applied"
-          className="form_input"
-          checked={rateItem.is_currency_coefficient_applied}
-          onChange={(e) => {
-            setRateItem({ ...rateItem, is_currency_coefficient_applied: !rateItem.is_currency_coefficient_applied });
           }}
         />
       </div>

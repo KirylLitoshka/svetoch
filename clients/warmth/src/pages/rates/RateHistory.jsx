@@ -28,7 +28,6 @@ const RateHistory = () => {
     {
       label: "Изменить",
       callback: (rateHistoryItem) => {
-        console.log(rateHistoryItem)
         setSelectedItem(rateHistoryItem);
         setModalVisible({ ...modalVisible, create: true });
       },
@@ -57,7 +56,6 @@ const RateHistory = () => {
   };
 
   const deleteRateHistoryItem = async (item) => {
-    console.log(selectedItem)
     axios
       .delete(`/api/v1/warmth/rates/${rateID}/history/${item.id}`)
       .then((r) => {
@@ -71,7 +69,7 @@ const RateHistory = () => {
       })
       .catch((e) => setError(e.response.data.reason))
       .finally(() => {
-        setSelectedItem(null);
+        setSelectedItem({});
         setModalVisible({ ...modalVisible, delete: false });
       });
   };
@@ -84,7 +82,7 @@ const RateHistory = () => {
       })
       .then((r) => {
         if (r.data.success) {
-          rateHistoryItems.unshift(r.data.item)
+          rateHistoryItems.unshift(r.data.item);
           setRateHistoryItems([...rateHistoryItems]);
         } else {
           setError(r.data.reason);
@@ -92,7 +90,7 @@ const RateHistory = () => {
       })
       .catch((e) => setError(e.response.data.reason))
       .finally(() => {
-        setSelectedItem(null);
+        setSelectedItem({});
         setModalVisible({ ...modalVisible, create: false });
       });
   };
@@ -113,7 +111,7 @@ const RateHistory = () => {
       })
       .catch((e) => setError(e.response.data.reason))
       .finally(() => {
-        setSelectedItem(null);
+        setSelectedItem({});
         setModalVisible({ ...modalVisible, create: false });
       });
   };
@@ -143,26 +141,34 @@ const RateHistory = () => {
         />
       </PageTitle>
       <Accordion>
-        {rateHistoryItems.map((item) => (
-          <AccordionItem
-            key={item.id}
-            title={months[item.month - 1] + " " + item.year}
-            controls={rateHistoryItemControls.map((control) => ({
-              ...control,
-              item: item,
-            }))}
-          >
-            <div>Тариф 1: {item.value_1 || 0}</div>
-            <div>Тариф 2: {item.value_2 || 0}</div>
-          </AccordionItem>
-        ))}
+        {rateHistoryItems.length !== 0 ? (
+          <React.Fragment>
+            {rateHistoryItems.map((item) => (
+              <AccordionItem
+                key={item.id}
+                title={months[item.month - 1] + " " + item.year}
+                controls={rateHistoryItemControls.map((control) => ({
+                  ...control,
+                  item: item,
+                }))}
+              >
+                <div>Тариф 1: {item.value_1 || 0}</div>
+                <div>Тариф 2: {item.value_2 || 0}</div>
+              </AccordionItem>
+            ))}
+          </React.Fragment>
+        ) : (
+          <div style={{ textAlign: "center", fontSize: "26px" }}>
+            История по выбранному тарифу не найдена
+          </div>
+        )}
       </Accordion>
       <ConfirmModal
         isVisible={modalVisible.delete}
         message={"Удалить?"}
         onConfirm={() => deleteRateHistoryItem(selectedItem)}
         closeModal={() => {
-          setSelectedItem(null);
+          setSelectedItem({});
           setModalVisible({ ...modalVisible, delete: false });
         }}
       />
@@ -171,7 +177,7 @@ const RateHistory = () => {
         modalVisible={modalVisible.create}
         closeModal={() => {
           setModalVisible({ ...modalVisible, create: false });
-          setSelectedItem(null);
+          setSelectedItem({});
         }}
         component={
           <RateHistoryForm

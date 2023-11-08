@@ -67,7 +67,7 @@ const Rate = () => {
       .post("/api/v1/warmth/rates", rateItem)
       .then((r) => {
         if (r.data.success) {
-          setRateItems([r.data.item, ...rateItems]);
+          setRateItems([...rateItems, r.data.item]);
         } else {
           setError(r.data.reason);
         }
@@ -163,11 +163,6 @@ const Rate = () => {
                 <div>Тариф 2: {rate.history.value_2 || 0}</div>
               </React.Fragment>
             )}
-
-            <div>
-              Применение валютного коэффициента:{" "}
-              {rate.is_currency_coefficient_applied ? "Да" : "Нет"}
-            </div>
           </AccordionItem>
         ))}
       </Accordion>

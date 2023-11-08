@@ -28,7 +28,6 @@ rates = sa.Table(
     "rates", metadata,
     sa.Column("id", sa.Integer, primary_key=True),
     sa.Column("title", sa.String),
-    sa.Column("is_currency_coefficient_applied", sa.Boolean, default=False)
 )
 
 rates_history = sa.Table(
@@ -47,7 +46,8 @@ workshops = sa.Table(
     sa.Column("title", sa.String, nullable=False, unique=True),
     sa.Column("workshop_group_id", sa.Integer, sa.ForeignKey(
         "workshops_groups.id", ondelete="SET NULL"
-    ), nullable=True)
+    ), nullable=True),
+    sa.Column("is_currency_coefficient_applied", sa.Boolean, default=False)
 )
 
 currency_coefficients = sa.Table(

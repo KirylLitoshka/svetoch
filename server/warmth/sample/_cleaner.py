@@ -30,7 +30,6 @@ def prepare_rates_data():
     for rate in old_rates_data:
         result.append({
             "title": rate['H_HO'],
-            "is_currency_coefficient_applied": rate["H_VAL"] == "*"
         })
     save_data("rates.json", result)
 
@@ -60,7 +59,8 @@ def prepare_workshops_data():
         old_workshops_ids[row['C_KO']] = start_index
         result.append({
             "title": row['C_HO'],
-            "workshop_group_id": int(row['C_3'])
+            "workshop_group_id": int(row['C_3']),
+            "is_currency_coefficient_applied": bool(row["C_1"])
         })
         start_index += 1
     save_data("_old_workshops_ids.json", old_workshops_ids)

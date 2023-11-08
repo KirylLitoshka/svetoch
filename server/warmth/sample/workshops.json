@@ -1,222 +1,277 @@
 [
     {
         "title": "Жилфонд",
-        "workshop_group_id": 5
+        "workshop_group_id": 5,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "ЖЭС-1",
-        "workshop_group_id": 5
+        "workshop_group_id": 5,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "ЖЭС-2",
-        "workshop_group_id": 5
+        "workshop_group_id": 5,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "ЖЭС-3",
-        "workshop_group_id": 5
+        "workshop_group_id": 5,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "админ.пом.Соц.51",
-        "workshop_group_id": 5
+        "workshop_group_id": 5,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "ФОК-1 Баня",
-        "workshop_group_id": 4
+        "workshop_group_id": 4,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "АРЦ",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Теплоцех",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Электроцех",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "в/ч 5525",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Спецавтобаза",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Водоснабжение",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Водоотведение",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "РМЦ",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Участок ритуал.обслу",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "АДС (бытовки)",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "АБК",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "МТС",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Население ЖЭС-1",
-        "workshop_group_id": 1
+        "workshop_group_id": 1,
+        "is_currency_coefficient_applied": false
     },
     {
         "title": "Население ЖЭС-2",
-        "workshop_group_id": 1
+        "workshop_group_id": 1,
+        "is_currency_coefficient_applied": false
     },
     {
         "title": "Население ЖЭС-3",
-        "workshop_group_id": 1
+        "workshop_group_id": 1,
+        "is_currency_coefficient_applied": false
     },
     {
         "title": "Частный сектор",
-        "workshop_group_id": 1
+        "workshop_group_id": 1,
+        "is_currency_coefficient_applied": false
     },
     {
         "title": "Арендаторы",
-        "workshop_group_id": 2
+        "workshop_group_id": 2,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Потери",
-        "workshop_group_id": 7
+        "workshop_group_id": 7,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Потери промышленност",
-        "workshop_group_id": 7
+        "workshop_group_id": 7,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Буфет ФОК-1 КБО",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Склад",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "ПСО",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Арендаторы КЖУП",
-        "workshop_group_id": 2
+        "workshop_group_id": 2,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Потери РОО",
-        "workshop_group_id": 7
+        "workshop_group_id": 7,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Пролетар.11 кап.рем.",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "маневренный фонд",
-        "workshop_group_id": 5
+        "workshop_group_id": 5,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "охрана труда",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "ИП Северин(Маникюр)",
-        "workshop_group_id": 2
+        "workshop_group_id": 2,
+        "is_currency_coefficient_applied": false
     },
     {
         "title": "подпитка сверхнорм.",
-        "workshop_group_id": 7
+        "workshop_group_id": 7,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Потери ЦРБ",
-        "workshop_group_id": 7
+        "workshop_group_id": 7,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "УТОЖ Столярный цех",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Потери прочие",
-        "workshop_group_id": 7
+        "workshop_group_id": 7,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Потери комунхоз",
-        "workshop_group_id": 7
+        "workshop_group_id": 7,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "УТиР(маг.рит.усл.)",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "архив",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "подпитка",
-        "workshop_group_id": 7
+        "workshop_group_id": 7,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "магазин\"Коммунальник\"",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "стол.цех у.Привокзал",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "маг.\"Дружок\"",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "гост-ца Соц.53,3-45",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "общественный туалет",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Общежития Светочь",
-        "workshop_group_id": 1
+        "workshop_group_id": 1,
+        "is_currency_coefficient_applied": false
     },
     {
         "title": "Лифтовое хоз-во",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "спортзал",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Расч.Справ.Центр",
-        "workshop_group_id": 5
+        "workshop_group_id": 5,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Программисты Светочь",
-        "workshop_group_id": 6
+        "workshop_group_id": 6,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "ЖЭС-3 нез.помещения",
-        "workshop_group_id": 5
+        "workshop_group_id": 5,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "ЖЭС-1 нез.помещения",
-        "workshop_group_id": 5
+        "workshop_group_id": 5,
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "ЖЭС-2 нез.помещения",
-        "workshop_group_id": 5
+        "workshop_group_id": 5,
+        "is_currency_coefficient_applied": true
     }
 ]

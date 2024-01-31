@@ -50,6 +50,7 @@ def prepare_rates_history_data():
 
 def prepare_workshops_data():
     old_data = load_data("CEXA1.json", is_old=True)
+    old_data = sorted(old_data, key=lambda x: int(x['C_KO']))
     old_workshops_ids = {}
     result = []
     start_index = 1
@@ -82,6 +83,7 @@ def prepare_currency_coefficients_data():
 
 def prepare_codes_data():
     old_data = load_data("ENNA1.json", is_old=True)
+    old_data = sorted(old_data, key=lambda x: int(x['X_KO']))
     keys = {}
     result = []
     for index, row in enumerate(old_data):
@@ -120,6 +122,7 @@ def prepare_objects():
     _required_objects_ids = load_data("_required_objects_ids.json")
     required_objects_ids = [row['object_id'] for row in _required_objects_ids]
     old_objects = load_data("SORG1.json", is_old=True)
+    old_objects = sorted(old_objects, key=lambda x: int(x['KO']))
     old_workshops_ids = load_data("_old_workshops_ids.json")
     index = 1
     old_objects_ids = {}
@@ -187,10 +190,13 @@ def prepare_renters_objects_data():
             continue
         if row['D_KO'] not in old_renters_ids.keys():
             continue
-        result.append({
-            "renter_id": old_renters_ids[row['D_KO']],
-            "object_id": old_objects_ids[row['D_KKO']]
-        })
+        try:
+            result.append({
+                "renter_id": old_renters_ids[row['D_KO']],
+                "object_id": old_objects_ids[row['D_KKO']]
+            })
+        except KeyError:
+            continue
     save_data("renters_objects.json", result)
 
 

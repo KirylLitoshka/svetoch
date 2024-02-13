@@ -103,3 +103,66 @@ async def get_workshops_calculation(data, currency_coefficient):
         searched_row['cost'] += row['cost']
         searched_row['includes'].append(row)
     return output
+
+
+async def get_calculation_by_workshop(data, currency_coefficient):
+    coefficient_value = currency_coefficient['value_1']
+    is_currency_coefficient_applied = data['is_currency_coefficient_applied']
+    for row in data['payments']:
+        if is_currency_coefficient_applied:
+            row['heating_cost'] *= coefficient_value
+            row['water_heating_cost'] *= coefficient_value
+        row['value'] = row['heating_value'] + row['water_heating_value']
+        row['cost'] = row['heating_cost'] + row['water_heating_cost']
+    data['total'] = {
+        "heating_value": sum([item['heating_value'] for item in data['payments']]),
+        "heating_cost": sum([item['heating_cost'] for item in data['payments']]),
+        "water_heating_value": sum([item['water_heating_value'] for item in data['payments']]),
+        "water_heating_cost": sum([item['water_heating_cost'] for item in data['payments']]),
+        "value": sum([item['value'] for item in data['payments']]),
+        "cost": sum([item['cost'] for item in data['payments']])
+    }
+    return data
+
+
+async def get_renters_report_calculations(data: dict, currency_coefficient: dict) -> dict:
+    coefficient_value = currency_coefficient['value_1']
+    for row in data:
+        if row['heating_cost']:
+            value_with_coefficient = row['heating_cost'] * coefficient_value
+            row['heating_vat'] = round(value_with_coefficient / 100 * 20, 2)
+            row['heating_currency_coefficient'] = round(value_with_coefficient - row['heating_cost'], 2)
+        else:
+            row['heating_currency_coefficient'] = 0
+            row['heating_vat'] = 0
+        if row['water_heating_cost']:
+            value_with_coefficient = row['water_heating_cost'] * coefficient_value
+            row['water_heating_vat'] = round(value_with_coefficient / 100 * 20, 2)
+            row['water_heating_currency_coefficient'] = round(value_with_coefficient - row['water_heating_cost'], 2)
+        else:
+            row['water_heating_currency_coefficient'] = 0
+            row['water_heating_vat'] = 0
+    return data
+
+
+async def get_detailed_renters_report_calculation(data, currency_coefficient):
+    coefficient_value = currency_coefficient['value_1']
+    for renter in data:
+        for obj in renter['includes']:
+            for payment in obj['payments']:
+                if payment['heating_cost']:
+                    value_with_coefficient = payment['heating_cost'] * coefficient_value
+                    payment['heating_vat'] = round(value_with_coefficient / 100 * 20, 2)
+                    payment['heating_currency_coefficient'] = round(value_with_coefficient - payment['heating_cost'], 2)
+                else:
+                    payment['heating_currency_coefficient'] = 0
+                    payment['heating_vat'] = 0
+                if payment['water_heating_cost']:
+                    value_with_coefficient = payment['water_heating_cost'] * coefficient_value
+                    payment['water_heating_vat'] = round(value_with_coefficient / 100 * 20, 2)
+                    payment['water_heating_currency_coefficient'] = round(
+                        value_with_coefficient - payment['water_heating_cost'], 2)
+                else:
+                    payment['water_heating_currency_coefficient'] = 0
+                    payment['water_heating_vat'] = 0
+    return data

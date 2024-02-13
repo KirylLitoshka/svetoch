@@ -11,7 +11,7 @@ from table import get_table_data
 from warmth.models import *
 from warmth.calculations import *
 from warmth.queries import *
-from warmth.reports import build_consolidated_report
+from warmth.reports import *
 
 
 async def test_handler_post(request: web.Request):
@@ -40,17 +40,12 @@ class SubsystemDetailView(DetailView):
 
     async def patch(self):
         current_data = await self.request.json()
-        if current_data['month'] == 12:
-            current_data['month'] = 1
-            current_data['year'] += 1
-        else:
-            current_data['month'] += 1
         async with self.request.app['db'].begin() as conn:
             await conn.execute(
                 self.model.update().where(self.model.c.id == current_data['id']).values(**current_data)
             )
         self.request.app['subsystem'] = current_data
-        return web.json_response({"success": True, "item": current_data}, dumps=pretty_json)
+        return web.json_response({"success": True}, dumps=pretty_json)
 
 
 class BanksListView(ListView):
@@ -135,6 +130,41 @@ class CurrencyCoefficientDetailView(DetailView):
 
 class ReconciliationCodesListView(ListView):
     model = reconciliation_codes
+
+    async def get(self):
+        revise_mode = None
+        if "revise" in self.request.query.keys():
+            revise_mode = True
+        app_info = self.request.app['subsystem']
+        async with self.request.app['db'].connect() as conn:
+            try:
+                if revise_mode:
+                    result = await get_reconciliation_codes_with_total(conn, app_info['month'], app_info['year'])
+                else:
+                    result = await get_reconciliation_codes(conn)
+            except Exception as e:
+                return web.json_response({'success': False, 'reason': str(e)})
+        return web.json_response({'success': True, "items": result}, dumps=pretty_json)
+
+
+class ReconciliationCodePayments(ListView):
+    model = payments
+
+    async def get(self):
+        code_id = int(self.request.match_info['id'])
+        app_info = self.request.app['subsystem']
+        async with self.request.app['db'].connect() as conn:
+            cursor = await conn.execute(
+                select(objects.c.code, objects.c.title, self.model).select_from(self.model.join(objects)).where(and_(
+                    objects.c.reconciliation_code_id == code_id,
+                    self.model.c.year == app_info['year'],
+                    self.model.c.month == app_info['month'],
+                ))
+            )
+            result = [dict(row) for row in cursor.fetchall()]
+            if not result:
+                return web.json_response({"success": False, "reason": "Начислений по указанному коду не найдено"})
+            return web.json_response({'success': True, "items": result}, dumps=pretty_json)
 
 
 class ReconciliationCodeDetailView(DetailView):
@@ -396,8 +426,29 @@ class FileReportsView(BaseView):
         report_name = self.request.match_info['name']
         app_info = self.request.app['subsystem']
         async with self.request.app['db'].connect() as conn:
+            currency_coefficient = await get_current_currency_coefficient(conn, app_info)
             if report_name == "consolidated":
                 values = await get_total_values_by_workshop(conn, app_info)
-                currency_coefficient = await get_current_currency_coefficient(conn, app_info)
                 calculations = await get_workshops_calculation(values, currency_coefficient)
-                return await build_consolidated_report(calculations, app_info['month'], app_info['year'])
+                return await build_consolidated_report(
+                    calculations,
+                    app_info['month'],
+                    app_info['year'],
+                    currency_coefficient
+                )
+            if report_name == "workshop":
+                workshop_id = int(self.request.query.get("id", 0))
+                if not workshop_id:
+                    return {"success": False, "reason": "Ошибка при выборе цеха"}
+                data = await get_detail_by_workshop(conn, workshop_id, app_info)
+                calculations = await get_calculation_by_workshop(data, currency_coefficient)
+                return await build_workshop_report(calculations, app_info['month'], app_info['year'])
+            if report_name == "renter_short":
+                renters_payments = await get_renters_payments(conn, app_info['month'], app_info['year'])
+                calculations = await get_renters_report_calculations(renters_payments, currency_coefficient)
+                return await build_renter_short_report(calculations, app_info['month'], app_info['year'])
+            if report_name == "renter_full":
+                renters_payments = await get_renters_payments(conn, app_info['month'], app_info['year'], True)
+                calculations = await get_detailed_renters_report_calculation(renters_payments, currency_coefficient)
+                return await build_renter_full_report(calculations, app_info['month'], app_info['year'])
+                # return web.json_response({"success": True, "items": calculations})

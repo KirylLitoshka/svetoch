@@ -8,7 +8,7 @@ const PaymentForm = ({ selectedItem, onUpdate, onCreate }) => {
     month: 1,
     year: new Date().getFullYear(),
     payment_type: 1,
-    ncen: 0,
+    ncen: 1,
     applied_rate_value: "",
     heating_value: "",
     heating_cost: "",
@@ -54,7 +54,7 @@ const PaymentForm = ({ selectedItem, onUpdate, onCreate }) => {
           id="year"
           className="form_input"
           value={payment.year}
-          onChange={(e) => setPayment({ ...payment, year: e.target.value })}
+          onChange={(e) => setPayment({ ...payment, year: +e.target.value })}
         />
       </div>
       <div className="form-row">

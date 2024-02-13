@@ -1,22 +1,22 @@
-.home {
+.main {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.home-menu {
+.main-menu {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
 }
 
-.home-menu_item {
+.main-menu_item {
   font-size: 32px;
   font-weight: bold;
 }
 
-.home-menu_item-link {
+.main-menu_item-link {
   padding: 10px 20px;
   display: block;
   text-align: center;
@@ -26,7 +26,7 @@
   min-width: 400px;
 }
 
-.home-menu_item-link:hover {
+.main-menu_item-link:hover {
   transform: scale(1.1);
   color: teal;
   background-color: white;

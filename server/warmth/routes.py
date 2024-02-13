@@ -34,6 +34,7 @@ routes = [
     web.route("GET", "/reconciliation_codes/{id}", ReconciliationCodeDetailView),
     web.route("PATCH", "/reconciliation_codes/{id}", ReconciliationCodeDetailView),
     web.route("DELETE", "/reconciliation_codes/{id}", ReconciliationCodeDetailView),
+    web.route("GET", "/reconciliation_codes/{id}/payments", ReconciliationCodePayments),
     web.route("GET", "/objects", ObjectsListView),
     web.route("POST", "/objects", ObjectsListView),
     web.route("GET", "/objects/{id}", ObjectDetailView),

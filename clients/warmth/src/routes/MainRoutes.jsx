@@ -3,7 +3,6 @@ import Home from "../pages/home/Home";
 import Bank from "../pages/banks/Bank";
 import Rate from "../pages/rates/Rate";
 import RateHistory from "../pages/rates/RateHistory";
-import Test from "../pages/reports/Test";
 import Workshop from "../pages/workshops/Workshop";
 import Currency from "../pages/currency/Currency";
 import Code from "../pages/code/Code";

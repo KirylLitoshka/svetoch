@@ -69,9 +69,9 @@ const RenterPayments = () => {
                 {("0" + item.month).slice(-2)}.{item.year}
               </div>
               <div>Отопление: {item.total.heating_value}</div>
-              <div>ГВС: {item.total.water_heating_value}</div>
-              <div>Начислено: {item.total.cost}</div>
-              <div>Эквивалент: {item.total.coefficient}</div>
+              <div>ГВС: {item.total.water_heating_value.toFixed(4)}</div>
+              <div>Начислено: {item.total.cost.toFixed(2)}</div>
+              <div>Эквивалент: {item.total.coefficient.toFixed(2)}</div>
               <div>НДС: {item.total.vat.toFixed(2)}</div>
               <div>Итого: {item.total.total.toFixed(2)}</div>
             </div>

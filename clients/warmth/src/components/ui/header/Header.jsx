@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 import { AppContext } from "../../../context";
 import { months } from "../../../utils/date";
-import ConfirmModal from "../../modals/confirm/ConfirmModal";
+import Form from "../form/Form";
+import ApplicationForm from "../../../forms/application/ApplicationForm";
 
 const Header = () => {
   const { currentApplication, updateCurrentApplication } =
@@ -26,9 +27,11 @@ const Header = () => {
                   <Link to="objects" className="header-navigation_sublist-item">
                     Объекты
                   </Link>
-
                   <Link to="renters" className="header-navigation_sublist-item">
                     Арендаторы
+                  </Link>
+                  <Link to="revise" className="header-navigation_sublist-item">
+                    Сверка
                   </Link>
                 </div>
               </li>
@@ -67,6 +70,13 @@ const Header = () => {
                   </Link>
                 </div>
               </li>
+              <li className="header-navigation_list-item">
+                <div className="header-navigation_list-button">
+                  <Link to="reports" className="header-navigation_list-item">
+                    Отчеты
+                  </Link>
+                </div>
+              </li>
             </ul>
           </nav>
           {currentApplication?.id && (
@@ -88,29 +98,25 @@ const Header = () => {
                 >
                   Новый месяц
                 </button>
-                <button className="header-app_button">
-                  Кнопка настройки 1
-                </button>
-                <button className="header-app_button">
-                  Кнопка настройки 2
-                </button>
-                <button className="header-app_button">
-                  Кнопка настройки 3
-                </button>
               </div>
             </div>
           )}
         </div>
       </div>
-      <ConfirmModal
-        message={"Текущий расчетный период будет сменен.\nВы уверены?"}
-        isVisible={modalVisible}
-        closeModal={() => setModalVisible(false)}
-        onConfirm={() => {
-          updateCurrentApplication();
-          setModalVisible(false);
-        }}
-      />
+      {currentApplication?.id && (
+        <Form
+          isModal={true}
+          component={
+            <ApplicationForm
+              appInfo={currentApplication}
+              updateAppInfo={updateCurrentApplication}
+              setVisible={setModalVisible}
+            />
+          }
+          modalVisible={modalVisible}
+          closeModal={() => setModalVisible(false)}
+        />
+      )}
     </header>
   );
 };

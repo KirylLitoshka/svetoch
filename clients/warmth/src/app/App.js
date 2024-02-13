@@ -28,12 +28,13 @@ function App() {
       .then(() => setIsLoading(false));
   };
 
-  const updateCurrentApplication = async () => {
+  const updateCurrentApplication = async (item) => {
+    const newAppInfo = {...currentApplication, ...item}
     axios
-      .patch("/api/v1/warmth/", currentApplication)
+      .patch("/api/v1/warmth/", newAppInfo)
       .then((r) => {
         if (r.data.success) {
-          setCurrentApplication(r.data.item);
+          setCurrentApplication(newAppInfo)
         } else {
           setError(r.data.reason);
         }

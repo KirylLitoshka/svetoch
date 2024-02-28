@@ -135,8 +135,42 @@ async def build_renter_short_report(report_data, month, year):
     )
 
 
-async def build_renter_full_report(report_data, month, year):
-    month = MONTHS[month - 1]
-    file_path = f"warmth/reports/consolidated_report.txt"
-    line = "│{:3s}│{:20s}│{3s}│{:7s}│{:8s}│{:5s}│{:9s}│{:9s}│{:11s}│{:9s}│{:10s}│{:11s}│"
-    sub_line = "│  -│{:20s}│{3s}│{:7s}│{:8.5f}│{:5.2f}│{:9.4f}│{:9.5f}│{:11.2f}│{:9.2f}│{:10.2f}│{:11.2f}│"
+async def build_renter_full_report(report_data, month, year, currency_coefficient):
+    month_name = MONTHS[month - 1]
+    coefficient = currency_coefficient['value_1']
+    file_path = f"warmth/reports/renter_full_report.txt"
+    line = "│{:4d}│{:20s}│{:3s}│{:7s}│{:8s}│{:5s}│{:9s}│{:9s}│{:11s}│{:9s}│{:10s}│{:11s}│"
+    sub_line = "│   -│{:20s}│{:3s}│{:7s}│{:8.5f}│{:5.2f}│{:9.4f}│{:9.5f}│{:11.2f}│{:9.2f}│{:10.2f}│{:11.2f}│"
+    content = ""
+    for row in report_data:
+        content += line.format(row['id'], row['name'], "", "", "", "", "", "", "", "", "", "") + "\n"
+        for r_object in row['includes']:
+            for payment in r_object['payments']:
+                if payment['heating_value']:
+                    total = sum(
+                        [payment['heating_cost'], payment['heating_currency_coefficient'], payment['heating_vat']]
+                    )
+                    content += sub_line.format(
+                        r_object['title'][:20], "Отп", f"{month}.{year}", coefficient, 20,
+                        payment['heating_value'], payment['applied_rate_value'], payment['heating_cost'],
+                        payment['heating_currency_coefficient'], payment['heating_vat'], total
+                    ) + "\n"
+                if payment['water_heating_value']:
+                    total = sum([
+                        payment['water_heating_cost'],
+                        payment['water_heating_currency_coefficient'],
+                        payment['water_heating_vat']
+                    ])
+                    content += sub_line.format(
+                        r_object['title'][:20], "ГВС", f"{month}.{year}", coefficient, 20,
+                        payment['water_heating_value'], payment['applied_rate_value'], payment['water_heating_cost'],
+                        payment['water_heating_currency_coefficient'], payment['water_heating_vat'], total
+                    ) + "\n"
+    async with aiofiles.open(file_path, mode="r", encoding="utf8") as fp:
+        template_data = await fp.read()
+    data = template_data.format(month_name, year, content)
+    return web.json_response(
+        data={'success': True, "item": data},
+        content_type="application/octet-stream",
+        headers={"Content-Disposition": "attachment;filename=renters_report.txt"}
+    )

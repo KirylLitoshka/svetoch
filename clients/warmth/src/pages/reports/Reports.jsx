@@ -46,7 +46,6 @@ const Reports = () => {
         link.href = url;
         link.setAttribute("download", "renters_report.txt");
         link.click();
-        // console.log(r.data.items)
       } else {
         setError(r.data.reason);
         setModalVisible({ ...modalVisible, error: true });

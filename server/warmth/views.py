@@ -198,9 +198,6 @@ class ObjectsListView(ListView):
                 workshop_id=post_data['workshop']['id'] if post_data['workshop'] is not None else None,
                 reconciliation_code_id=code_id,
                 is_closed=post_data['is_closed'],
-                is_heating_available=post_data['is_heating_available'],
-                is_water_heating_available=post_data['is_water_heating_available'],
-                is_meter_unavailable=post_data['is_meter_unavailable'],
                 vat=post_data['vat']
             ))
             post_data['id'] = dict(cursor.fetchone()).get('id')
@@ -222,9 +219,6 @@ class ObjectDetailView(DetailView):
                 workshop_id=post_data['workshop']['id'] if post_data['workshop'] is not None else None,
                 reconciliation_code_id=code_id,
                 is_closed=post_data['is_closed'],
-                is_heating_available=post_data['is_heating_available'],
-                is_water_heating_available=post_data['is_water_heating_available'],
-                is_meter_unavailable=post_data['is_meter_unavailable'],
                 vat=post_data['vat']
             ))
             return web.json_response({"success": True}, dumps=pretty_json)
@@ -450,5 +444,9 @@ class FileReportsView(BaseView):
             if report_name == "renter_full":
                 renters_payments = await get_renters_payments(conn, app_info['month'], app_info['year'], True)
                 calculations = await get_detailed_renters_report_calculation(renters_payments, currency_coefficient)
-                return await build_renter_full_report(calculations, app_info['month'], app_info['year'])
+                return await build_renter_full_report(
+                    calculations, app_info['month'], app_info['year'], currency_coefficient
+                )
+            if report_name == "renter_invoice":
+                renters_payments = await get_renters_payments(conn, app_info['month'], app_info['year'], True)
                 # return web.json_response({"success": True, "items": calculations})

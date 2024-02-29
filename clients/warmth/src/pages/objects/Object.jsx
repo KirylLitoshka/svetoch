@@ -102,7 +102,9 @@ const Object = () => {
       .post("/api/v1/warmth/objects", item)
       .then((r) => {
         if (r.data.success) {
-          setObjectItems([...objectItems, r.data.item]);
+          objectItems.push(r.data.item)
+          objectItems.sort((a, b) => {return a.code - b.code})
+          setObjectItems([...objectItems]);
         } else {
           setError(r.data.reason);
         }
@@ -120,7 +122,7 @@ const Object = () => {
       .then((r) => {
         if (r.data.success) {
           setObjectItems(
-            objectItems.map((obj) => (obj.id === item.id ? item : obj))
+            objectItems.map((obj) => (obj.id === item.id ? item : obj)).sort((a, b) => {return a.code - b.code})
           );
         } else {
           setError(r.data.reason);

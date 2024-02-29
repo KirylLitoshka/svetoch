@@ -1,9 +1,7 @@
 import asyncio
 from datetime import datetime
 
-from sqlalchemy import select, literal_column, func, desc, text, and_
-from sqlalchemy.dialects import postgresql as psql
-from aiohttp import web
+from sqlalchemy import select, literal_column, func, desc, and_
 
 from views import ListView, DetailView, BaseView
 from utils import pretty_json, DATE_FORMAT
@@ -182,8 +180,8 @@ class ObjectsListView(ListView):
                 func.row_to_json(workshops.table_valued()).label("workshop"),
                 func.row_to_json(reconciliation_codes.table_valued()).label("reconciliation_code")
             ).select_from(
-                self.model.join(rates).join(workshops).join(reconciliation_codes, isouter=True))
-            )
+                self.model.join(rates).join(workshops).join(reconciliation_codes, isouter=True)
+            ).order_by(self.model.c.code))
             result = [dict(row) for row in cursor.fetchall()]
             return web.json_response({"success": True, "items": result})
 
@@ -323,6 +321,8 @@ class PaymentsUploadView(BaseView):
                 }, dumps=pretty_json)
             insert_data = []
             for row in table_data:
+                if row['VID'] not in [1, 2, 3]:
+                    continue
                 required_object_id = next((item['id'] for item in selected_objects if item['code'] == row['KO']), None)
                 if not required_object_id:
                     raise

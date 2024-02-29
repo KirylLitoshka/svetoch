@@ -76,6 +76,15 @@ const Revise = () => {
     <React.Fragment>
       <div style={{ maxHeight: "30vh", overflow: "auto", marginBottom: "35px" }}>
         <Accordion>
+          <div style={{display: "flex", padding: "0 18px", fontWeight: "bold"}}>
+            <div style={{width: "20%"}}>Наименование</div>
+            <div style={{width: "16%"}}>Отопление|Гкал</div>
+            <div style={{width: "16%"}}>Отопление|Руб</div>
+            <div style={{width: "16%"}}>ГВС|Гкал</div>
+            <div style={{width: "16%"}}>ГВС|Руб</div>
+            <div style={{width: "16%"}}>Итого|Руб</div>
+            <div style={{width: "18px"}}></div>
+          </div>
           {codes.map((code, index) => (
             <div className="accordion-item" key={index}>
               <div
@@ -87,17 +96,20 @@ const Revise = () => {
                 style={{ display: "flex", justifyContent: "space-between" }}
               >
                 <div style={{ width: "20%" }}>{code.title}</div>
-                <div style={{ width: "20%" }}>
-                  Отопление|Гкал: {code.heating_value.toFixed(4)}
+                <div style={{ width: "16%" }}>
+                  {code.heating_value.toFixed(4)}
                 </div>
-                <div style={{ width: "20%" }}>
-                  Отопление|Руб: {code.heating_cost.toFixed(2)}
+                <div style={{ width: "16%" }}>
+                  {code.heating_cost.toFixed(2)}
                 </div>
-                <div style={{ width: "20%" }}>
-                  ГВС|Гкал: {code.water_heating_value.toFixed(4)}
+                <div style={{ width: "16%" }}>
+                  {code.water_heating_value.toFixed(4)}
                 </div>
-                <div style={{ width: "20%" }}>
-                  ГВС|Руб: {code.water_heating_cost.toFixed(2)}
+                <div style={{ width: "16%" }}>
+                  {code.water_heating_cost.toFixed(2)}
+                </div>
+                <div style={{ width: "16%" }}>
+                  {(code.water_heating_cost + code.heating_cost).toFixed(2)}
                 </div>
               </div>
               <div className="accordion-item_content">

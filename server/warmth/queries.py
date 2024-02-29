@@ -84,10 +84,10 @@ async def get_current_currency_coefficient(conn, app_info):
             currency_coefficients.c.year == app_info['year']
         ))
     )
-    result = dict(cursor.fetchone())
+    result = cursor.fetchone()
     if not result:
         raise RecordNotFound("Валютный коэффициент на текущий месяц не найден")
-    return result
+    return dict(result)
 
 
 async def get_reconciliation_codes(conn):

@@ -8,7 +8,8 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
     name: "",
     full_name: "",
     bank_id: null,
-    checking_account: null,
+    email: null,
+    banking_account: null,
     registration_number: null,
     respondent_number: null,
     contract_number: null,
@@ -115,9 +116,12 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
           type="text"
           id="checking_account"
           className="form_input"
-          value={renter.checking_account || ""}
+          value={renter.banking_account || ""}
           onChange={(e) =>
-            setRenter({ ...renter, checking_account: e.target.value || null })
+            setRenter({
+              ...renter,
+              banking_account: e.target.value.toUpperCase() || null,
+            })
           }
         />
       </div>
@@ -340,6 +344,18 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
           onChange={() =>
             setRenter({ ...renter, is_closed: !renter.is_closed })
           }
+        />
+      </div>
+      <div className="form-row">
+        <label htmlFor="email" className="form_label">
+          Почтовый адрес
+        </label>
+        <input
+          type="text"
+          className="form_input"
+          id="email"
+          value={renter.email || ""}
+          onChange={(e) => setRenter({ ...renter, email: e.target.value })}
         />
       </div>
       <div className="form-row">

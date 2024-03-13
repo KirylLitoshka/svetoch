@@ -169,7 +169,8 @@ const Renter = () => {
             controls={controls.map((control) => ({ ...control, item: renter }))}
           >
             <div>Наименование: {renter.full_name}</div>
-            <div>Расчетный счет: {renter.checking_account || "Не указан"}</div>
+            <div>Почта: {renter.email || "Не указана"}</div>
+            <div>Расчетный счет: {renter.banking_account || "Не указан"}</div>
             <div>УНП: {renter.registration_number || "Не указан"}</div>
             <div>ОКПО: {renter.respondent_number || "Не указан"}</div>
             <div>Номер договора: {renter.contract_number || "Не указан"}</div>

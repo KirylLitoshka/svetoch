@@ -3,17 +3,21 @@ async def get_renters_payments_calculations(coefficients, payments):
     for payment in payments:
         current_row_index = next((
             i for i, item in enumerate(result) if
-            item['month'] == payment['month'] and item['year'] == payment['year']
+            item['month'] == payment['operation_month'] and
+            item['year'] == payment['operation_year']
         ), None)
         payment_coefficients = next((
             item for item in coefficients if
-            item['month'] == payment['month'] and item['year'] == payment['year']
+            item['month'] == payment['operation_month'] and item['year'] == payment['operation_year']
         ), None)
         if payment_coefficients is None:
             raise Exception("Коэффициент на текущий месяц не обнаружен")
+        payment_coefficients = payment_coefficients['value_1']
+        if payment['is_additional_coefficient_applied']:
+            payment_coefficients = payment['additional_coefficient_value']
         current_row = {
-            "month": payment['month'],
-            "year": payment['year'],
+            "month": payment['operation_month'],
+            "year": payment['operation_year'],
             "total": {
                 "heating_value": 0,
                 "water_heating_value": 0,
@@ -24,10 +28,10 @@ async def get_renters_payments_calculations(coefficients, payments):
             },
             "includes": []
         }
-        if current_row_index:
+        if current_row_index is not None:
             current_row = result[current_row_index]
         if payment['heating_cost']:
-            value_with_coefficient = payment['heating_cost'] * payment_coefficients['value_1']
+            value_with_coefficient = payment['heating_cost'] * payment_coefficients
             vat = value_with_coefficient / 100 * payment['vat']
             coefficient = value_with_coefficient - payment['heating_cost']
             total_cost = value_with_coefficient + vat
@@ -46,7 +50,7 @@ async def get_renters_payments_calculations(coefficients, payments):
                 "total": round(total_cost, 2)
             })
         if payment['water_heating_cost']:
-            value_with_coefficient = payment['water_heating_cost'] * payment_coefficients['value_1']
+            value_with_coefficient = payment['water_heating_cost'] * payment_coefficients
             vat = value_with_coefficient / 100 * payment['vat']
             coefficient = value_with_coefficient - payment['water_heating_cost']
             total_cost = value_with_coefficient + vat
@@ -64,7 +68,7 @@ async def get_renters_payments_calculations(coefficients, payments):
                 "vat": round(vat, 2),
                 "total": round(total_cost, 2)
             })
-        if not current_row_index:
+        if current_row_index is None:
             result.append(current_row)
     return result
 

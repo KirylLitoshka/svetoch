@@ -65,11 +65,12 @@ const ObjectPayments = () => {
       .post(`/api/v1/warmth/objects/${objectID}/payments`, {
         ...item,
         object_id: objectID,
-        applied_rate_value: parseFloat(item["applied_rate_value"]) || 0,
-        heating_value: parseFloat(item["heating_value"]) || 0,
-        heating_cost: parseFloat(item["heating_cost"]) || 0,
-        water_heating_value: parseFloat(item["water_heating_value"]) || 0,
-        water_heating_cost: parseFloat(item["water_heating_cost"]) || 0,
+        applied_rate_value: parseFloat(item.applied_rate_value) || 0,
+        heating_value: parseFloat(item.heating_value) || 0,
+        heating_cost: parseFloat(item.heating_cost) || 0,
+        water_heating_value: parseFloat(item.water_heating_value) || 0,
+        water_heating_cost: parseFloat(item.water_heating_cost) || 0,
+        additional_coefficient_value: parseFloat(item.additional_coefficient_value) || null
       })
       .then((r) => {
         if (r.data.success) {
@@ -147,8 +148,8 @@ const ObjectPayments = () => {
           <tbody style={{ textAlign: "center" }}>
             {payments.map((obj) => (
               <tr key={obj.id}>
-                <td>{obj.month}</td>
-                <td>{obj.year}</td>
+                <td>{obj.operation_month}</td>
+                <td>{obj.operation_year}</td>
                 <td>{obj.payment_type == 3 ? "поправки" : "основной"}</td>
                 <td>{obj.applied_rate_value}</td>
                 <td>{obj.heating_value}</td>

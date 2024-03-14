@@ -1,12 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useState } from "react";
 import { months } from "../../utils/date";
 import Button from "../../components/ui/buttons/base/Button";
+import { AppContext } from "../../context";
 
 const PaymentForm = ({ selectedItem, onUpdate, onCreate }) => {
+  const { currentApplication } = useContext(AppContext);
+
   const initialPaymentValue = {
-    month: 1,
-    year: new Date().getFullYear(),
+    payment_month: currentApplication.month,
+    payment_year: currentApplication.year,
     payment_type: 1,
     ncen: 1,
     applied_rate_value: "",
@@ -14,6 +17,8 @@ const PaymentForm = ({ selectedItem, onUpdate, onCreate }) => {
     heating_cost: "",
     water_heating_value: "",
     water_heating_cost: "",
+    is_additional_coefficient_applied: false,
+    additional_coefficient_value: null,
   };
   const [payment, setPayment] = useState(initialPaymentValue);
 
@@ -35,8 +40,10 @@ const PaymentForm = ({ selectedItem, onUpdate, onCreate }) => {
           name="month"
           id="month"
           className="form_input"
-          value={payment.month}
-          onChange={(e) => setPayment({ ...payment, month: +e.target.value })}
+          value={payment.payment_month}
+          onChange={(e) =>
+            setPayment({ ...payment, payment_month: +e.target.value })
+          }
         >
           {months.map((month, index) => (
             <option key={index} value={index + 1}>
@@ -53,8 +60,10 @@ const PaymentForm = ({ selectedItem, onUpdate, onCreate }) => {
           type="number"
           id="year"
           className="form_input"
-          value={payment.year}
-          onChange={(e) => setPayment({ ...payment, year: +e.target.value })}
+          value={payment.payment_year}
+          onChange={(e) =>
+            setPayment({ ...payment, payment_year: +e.target.value })
+          }
         />
       </div>
       <div className="form-row">
@@ -97,7 +106,9 @@ const PaymentForm = ({ selectedItem, onUpdate, onCreate }) => {
           id="applied_rate_value"
           className="form_input"
           value={payment.applied_rate_value}
-          onChange={(e) => setPayment({...payment, applied_rate_value: e.target.value})}
+          onChange={(e) =>
+            setPayment({ ...payment, applied_rate_value: e.target.value })
+          }
         />
       </div>
       <div className="form-row">
@@ -156,6 +167,52 @@ const PaymentForm = ({ selectedItem, onUpdate, onCreate }) => {
           }
         />
       </div>
+      <div className="form-row">
+        <label htmlFor="is_coefficient_applied" className="form_label">
+          Другой коэффициент
+        </label>
+        <input
+          type="checkbox"
+          id="is_coefficient_applied"
+          className="form_input"
+          checked={payment.is_additional_coefficient_applied}
+          onChange={() => {
+            const value = !payment.is_additional_coefficient_applied;
+            if (!value) {
+              setPayment({
+                ...payment,
+                additional_coefficient_value: null,
+                is_additional_coefficient_applied: value,
+              });
+            } else {
+              setPayment({
+                ...payment,
+                is_additional_coefficient_applied: value,
+              });
+            }
+          }}
+        />
+      </div>
+      {payment.is_additional_coefficient_applied && (
+        <div className="form-row">
+          <label htmlFor="coefficient_value" className="form_label">
+            Значение коэффициента
+          </label>
+          <input
+            type="number"
+            className="form_input"
+            id="coefficient_value"
+            value={payment.additional_coefficient_value || ""}
+            onChange={(e) =>
+              setPayment({
+                ...payment,
+                additional_coefficient_value: e.target.value || null,
+              })
+            }
+          />
+        </div>
+      )}
+
       <div className="form-row">
         {selectedItem?.id ? (
           <Button text={"Обновить"} callback={() => onUpdate(payment)} />

@@ -155,8 +155,8 @@ class ReconciliationCodePayments(ListView):
             cursor = await conn.execute(
                 select(objects.c.code, objects.c.title, self.model).select_from(self.model.join(objects)).where(and_(
                     objects.c.reconciliation_code_id == code_id,
-                    self.model.c.year == app_info['year'],
-                    self.model.c.month == app_info['month'],
+                    self.model.c.operation_year == app_info['year'],
+                    self.model.c.operation_month == app_info['month'],
                 ))
             )
             result = [dict(row) for row in cursor.fetchall()]
@@ -327,8 +327,10 @@ class PaymentsUploadView(BaseView):
                 if not required_object_id:
                     raise
                 insert_data.append({
-                    'month': app_info['month'],
-                    'year': app_info['year'],
+                    'operation_month': app_info['month'],
+                    'operation_year': app_info['year'],
+                    'payment_month': app_info['month'],
+                    'payment_year': app_info['year'],
                     'object_id': required_object_id,
                     'payment_type': row['VID'],
                     'ncen': row['NCEN'],
@@ -350,11 +352,25 @@ class ObjectPaymentListView(ListView):
         async with self.request.app['db'].connect() as conn:
             cursor = await conn.execute(
                 select(self.model).where(self.model.c.object_id == object_id).order_by(
-                    desc(self.model.c.month), self.model.c.year
+                    desc(self.model.c.operation_month), self.model.c.operation_year
                 )
             )
             result = [dict(row) for row in cursor.fetchall()]
             return web.json_response({"success": True, "items": result})
+
+    async def post(self):
+        app_info = self.request.app['subsystem']
+        post_data = await self.request.json()
+        async with self.request.app['db'].begin() as conn:
+            cursor = await conn.execute(
+                self.model.insert().returning(literal_column('*')).values(
+                    operation_month=app_info['month'],
+                    operation_year=app_info['year'],
+                    **post_data
+                )
+            )
+            result = dict(cursor.fetchone())
+        return web.json_response({"success": True, "item": result})
 
 
 class ObjectPaymentsDetailView(DetailView):
@@ -418,35 +434,32 @@ class WorkshopsGroupDetailView(DetailView):
 class FileReportsView(BaseView):
     async def get(self):
         report_name = self.request.match_info['name']
-        app_info = self.request.app['subsystem']
+        month = self.request.app['subsystem']['month']
+        year = self.request.app['subsystem']['year']
         async with self.request.app['db'].connect() as conn:
-            currency_coefficient = await get_current_currency_coefficient(conn, app_info)
+            currency_coefficient = await get_current_currency_coefficient(conn, month, year)
             if report_name == "consolidated":
-                values = await get_total_values_by_workshop(conn, app_info)
+                values = await get_total_values_by_workshop(conn, month, year)
                 calculations = await get_workshops_calculation(values, currency_coefficient)
-                return await build_consolidated_report(
-                    calculations,
-                    app_info['month'],
-                    app_info['year'],
-                    currency_coefficient
-                )
+                return await build_consolidated_report(calculations, month, year, currency_coefficient)
             if report_name == "workshop":
                 workshop_id = int(self.request.query.get("id", 0))
                 if not workshop_id:
                     return {"success": False, "reason": "Ошибка при выборе цеха"}
-                data = await get_detail_by_workshop(conn, workshop_id, app_info)
+                data = await get_detail_by_workshop(conn, workshop_id, month, year)
                 calculations = await get_calculation_by_workshop(data, currency_coefficient)
-                return await build_workshop_report(calculations, app_info['month'], app_info['year'])
+                return await build_workshop_report(calculations, month, year)
             if report_name == "renter_short":
-                renters_payments = await get_renters_payments(conn, app_info['month'], app_info['year'])
+                renters_payments = await get_renters_payments(conn, month, year)
                 calculations = await get_renters_report_calculations(renters_payments, currency_coefficient)
-                return await build_renter_short_report(calculations, app_info['month'], app_info['year'])
+                return await build_renter_short_report(calculations, month, year)
             if report_name == "renter_full":
-                renters_payments = await get_renters_payments(conn, app_info['month'], app_info['year'], True)
+                renters_payments = await get_renters_payments(conn, month, year, is_detailed=True)
                 calculations = await get_detailed_renters_report_calculation(renters_payments, currency_coefficient)
-                return await build_renter_full_report(
-                    calculations, app_info['month'], app_info['year'], currency_coefficient
-                )
+                return await build_renter_full_report(calculations, month, year, currency_coefficient)
             if report_name == "renter_invoice":
-                renters_payments = await get_renters_payments(conn, app_info['month'], app_info['year'], True)
-                # return web.json_response({"success": True, "items": calculations})
+                renters_payments = await get_renters_payments(conn, month, year, is_detailed=True)
+                return web.json_response({"success": True, "items": renters_payments})
+            if report_name == "renter_bank_payment":
+                renters_payments = await get_renters_payments(conn, month, year, is_detailed=True, is_bank_payment=True)
+                return await build_renters_payment_requirements(renters_payments, month, year, currency_coefficient)

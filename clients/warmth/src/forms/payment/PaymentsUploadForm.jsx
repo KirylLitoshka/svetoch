@@ -3,7 +3,7 @@ import Button from "../../components/ui/buttons/base/Button";
 import axios from "axios";
 import ErrorMessage from "../../components/ui/messages/ErrorMessage";
 
-const PaymentsUploadForm = ({isVisible}) => {
+const PaymentsUploadForm = ({isVisible, closeModal}) => {
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState("");
   const [message, setMessage] = useState("")
@@ -13,7 +13,7 @@ const PaymentsUploadForm = ({isVisible}) => {
       .post("/api/v1/warmth/payments/:files", file)
       .then((r) => {
         if (r.data.success) {
-          setMessage("ОК! Можно закрыть модальное окно")
+          closeModal()
         } else {
           setMessage(r.data.reason)
         }

@@ -23,12 +23,16 @@ const Object = () => {
   const [error, setError] = useState("");
   const [selectedItem, setSelectedItem] = useState(null);
   const [currentPage, setCurrentPage] = useState(0);
-  const [searchQuery, setSearchQuery] = useState({ title: "", code: "", is_closed: false });
+  const [searchQuery, setSearchQuery] = useState({
+    title: "",
+    code: "",
+    is_closed: false,
+  });
   const [modalsVisible, setModalsVisible] = useState({
     delete: false,
     create: false,
     fee: false,
-    payment: false
+    payment: false,
   });
 
   const filteredObjects = useObjects(objectItems, searchQuery);
@@ -43,8 +47,8 @@ const Object = () => {
       label: "Начислить",
       callback: (item) => {
         setSelectedItem(item);
-        setModalsVisible({...modalsVisible, payment: true})
-      }
+        setModalsVisible({ ...modalsVisible, payment: true });
+      },
     },
     {
       label: "История начислений",
@@ -111,8 +115,10 @@ const Object = () => {
       .post("/api/v1/warmth/objects", item)
       .then((r) => {
         if (r.data.success) {
-          objectItems.push(r.data.item)
-          objectItems.sort((a, b) => {return a.code - b.code})
+          objectItems.push(r.data.item);
+          objectItems.sort((a, b) => {
+            return a.code - b.code;
+          });
           setObjectItems([...objectItems]);
         } else {
           setError(r.data.reason);
@@ -131,7 +137,11 @@ const Object = () => {
       .then((r) => {
         if (r.data.success) {
           setObjectItems(
-            objectItems.map((obj) => (obj.id === item.id ? item : obj)).sort((a, b) => {return a.code - b.code})
+            objectItems
+              .map((obj) => (obj.id === item.id ? item : obj))
+              .sort((a, b) => {
+                return a.code - b.code;
+              })
           );
         } else {
           setError(r.data.reason);
@@ -154,7 +164,8 @@ const Object = () => {
         heating_cost: parseFloat(item.heating_cost) || 0,
         water_heating_value: parseFloat(item.water_heating_value) || 0,
         water_heating_cost: parseFloat(item.water_heating_cost) || 0,
-        additional_coefficient_value: parseFloat(item.additional_coefficient_value) || null
+        additional_coefficient_value:
+          parseFloat(item.additional_coefficient_value) || null,
       })
       .then((r) => {
         if (!r.data.success) {
@@ -247,14 +258,23 @@ const Object = () => {
       <Form
         isModal={true}
         modalVisible={modalsVisible.fee}
-        component={<PaymentsUploadForm isVisible={modalsVisible.fee} />}
+        component={
+          <PaymentsUploadForm
+            isVisible={modalsVisible.fee}
+            closeModal={() =>
+              setModalsVisible({ ...modalsVisible, fee: false })
+            }
+          />
+        }
         closeModal={() => setModalsVisible({ ...modalsVisible, fee: false })}
       />
       <Form
         isModal={true}
         modalVisible={modalsVisible.payment}
         component={<PaymentForm onCreate={createObjectPayment} />}
-        closeModal={() => setModalsVisible({ ...modalsVisible, payment: false })}
+        closeModal={() =>
+          setModalsVisible({ ...modalsVisible, payment: false })
+        }
       />
     </React.Fragment>
   );

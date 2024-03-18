@@ -22,8 +22,8 @@ async def get_renters_payments(conn, month, year, is_detailed=False, is_bank_pay
         func.sum(payments.c.water_heating_value).label("water_heating_value"),
         func.sum(payments.c.water_heating_cost).label("water_heating_cost")
     ).select_from(renters.join(renters_objects).join(objects).join(payments)).group_by(renters.c.id).where(and_(
-        payments.c.month == month,
-        payments.c.year == year,
+        payments.c.operation_month == month,
+        payments.c.operation_year == year,
         payments.c.payment_type == 1,
         payments.c.ncen != 0
     )).order_by(renters.c.id)
@@ -31,8 +31,8 @@ async def get_renters_payments(conn, month, year, is_detailed=False, is_bank_pay
         objects_payment = select(
             objects, func.json_agg(payments.table_valued()).label("payments")
         ).select_from(objects.join(payments)).group_by(objects.c.id).where(and_(
-            payments.c.month == month,
-            payments.c.year == year,
+            payments.c.operation_month == month,
+            payments.c.operation_year == year,
             payments.c.payment_type == 1,
             payments.c.ncen != 0
         )).order_by(objects.c.id).alias("objects_payment")
@@ -72,12 +72,25 @@ async def get_total_values_by_workshop(conn, month, year):
                 payments, onclause=payments.c.object_id == objects.c.id
             )
         ).where(and_(
-            payments.c.month == month,
-            payments.c.year == year,
+            payments.c.operation_month == month,
+            payments.c.operation_year == year,
             payments.c.payment_type == 1,
             payments.c.ncen != 0
         )).group_by(workshops.c.id, workshops_groups.c.title).order_by(workshops.c.id)
     )
+    # cursor = await conn.execute(select(
+    #     workshops.c.title,
+    #     workshops.c.is_currency_coefficient_applied,
+    #     workshops_groups.c.title.label("group_title"),
+    #     payments
+    # ).select_from(
+    #     workshops_groups.join(workshops).join(objects).join(payments)
+    # ).where(and_(
+    #     payments.c.operation_month == month,
+    #     payments.c.operation_year == year,
+    #     payments.c.payment_type == 1,
+    #     payments.c.ncen != 0
+    # )).order_by(workshops_groups.c.id, workshops.c.id))
     result = [dict(row) for row in cursor.fetchall()]
     if not result:
         raise RecordNotFound("Записи на текущий месяц не найдены")
@@ -145,8 +158,8 @@ async def get_payments_info_by_workshop(conn, workshop_id, month, year):
         func.sum(payments.c.water_heating_cost).label('water_heating_cost'),
     ).select_from(objects.join(payments)).where(and_(
         objects.c.workshop_id == workshop_id,
-        payments.c.month == month,
-        payments.c.year == year,
+        payments.c.operation_month == month,
+        payments.c.operation_year == year,
         payments.c.payment_type == 1,
         payments.c.ncen != 0
     )).group_by(objects.c.title))

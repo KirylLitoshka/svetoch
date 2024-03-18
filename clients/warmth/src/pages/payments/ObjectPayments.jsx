@@ -136,6 +136,7 @@ const ObjectPayments = () => {
             <tr>
               <th>Месяц</th>
               <th>Год</th>
+              <th>Период</th>
               <th>Вид</th>
               <th>Тариф</th>
               <th>Отопление/Гкал</th>
@@ -150,6 +151,7 @@ const ObjectPayments = () => {
               <tr key={obj.id}>
                 <td>{obj.operation_month}</td>
                 <td>{obj.operation_year}</td>
+                <td>{("0" + obj.payment_month).slice(-2)}.{obj.payment_year}</td>
                 <td>{obj.payment_type == 3 ? "поправки" : "основной"}</td>
                 <td>{obj.applied_rate_value}</td>
                 <td>{obj.heating_value}</td>

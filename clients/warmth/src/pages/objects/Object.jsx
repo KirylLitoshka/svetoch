@@ -14,6 +14,7 @@ import ConfirmModal from "../../components/modals/confirm/ConfirmModal";
 import Form from "../../components/ui/form/Form";
 import ObjectForm from "../../forms/object/ObjectForm";
 import PaymentsUploadForm from "../../forms/payment/PaymentsUploadForm";
+import PaymentForm from "../../forms/payment/PaymentForm";
 
 const Object = () => {
   const navigate = useNavigate();
@@ -27,6 +28,7 @@ const Object = () => {
     delete: false,
     create: false,
     fee: false,
+    payment: false
   });
 
   const filteredObjects = useObjects(objectItems, searchQuery);
@@ -37,6 +39,13 @@ const Object = () => {
   const pageCount = Math.ceil(filteredObjects.length / PER_PAGE);
 
   const controls = [
+    {
+      label: "Начислить",
+      callback: (item) => {
+        setSelectedItem(item);
+        setModalsVisible({...modalsVisible, payment: true})
+      }
+    },
     {
       label: "История начислений",
       callback: (item) =>
@@ -135,6 +144,30 @@ const Object = () => {
       });
   };
 
+  const createObjectPayment = async (item) => {
+    axios
+      .post(`/api/v1/warmth/objects/${selectedItem.id}/payments`, {
+        ...item,
+        object_id: selectedItem.id,
+        applied_rate_value: parseFloat(item.applied_rate_value) || 0,
+        heating_value: parseFloat(item.heating_value) || 0,
+        heating_cost: parseFloat(item.heating_cost) || 0,
+        water_heating_value: parseFloat(item.water_heating_value) || 0,
+        water_heating_cost: parseFloat(item.water_heating_cost) || 0,
+        additional_coefficient_value: parseFloat(item.additional_coefficient_value) || null
+      })
+      .then((r) => {
+        if (!r.data.success) {
+          setError(r.data.reason);
+        }
+      })
+      .catch((e) => setError(e.response.data.reason))
+      .then(() => {
+        setSelectedItem({});
+        setModalsVisible({ ...modalsVisible, payment: false });
+      });
+  };
+
   if (error) {
     return <ErrorMessage message={error} />;
   }
@@ -216,6 +249,12 @@ const Object = () => {
         modalVisible={modalsVisible.fee}
         component={<PaymentsUploadForm isVisible={modalsVisible.fee} />}
         closeModal={() => setModalsVisible({ ...modalsVisible, fee: false })}
+      />
+      <Form
+        isModal={true}
+        modalVisible={modalsVisible.payment}
+        component={<PaymentForm onCreate={createObjectPayment} />}
+        closeModal={() => setModalsVisible({ ...modalsVisible, payment: false })}
       />
     </React.Fragment>
   );

@@ -437,29 +437,8 @@ class FileReportsView(BaseView):
         month = self.request.app['subsystem']['month']
         year = self.request.app['subsystem']['year']
         async with self.request.app['db'].connect() as conn:
-            currency_coefficient = await get_current_currency_coefficient(conn, month, year)
             if report_name == "consolidated":
-                values = await get_total_values_by_workshop(conn, month, year)
-                calculations = await get_workshops_calculation(values, currency_coefficient)
-                return await build_consolidated_report(calculations, month, year, currency_coefficient)
-            if report_name == "workshop":
-                workshop_id = int(self.request.query.get("id", 0))
-                if not workshop_id:
-                    return {"success": False, "reason": "Ошибка при выборе цеха"}
-                data = await get_detail_by_workshop(conn, workshop_id, month, year)
-                calculations = await get_calculation_by_workshop(data, currency_coefficient)
-                return await build_workshop_report(calculations, month, year)
-            if report_name == "renter_short":
-                renters_payments = await get_renters_payments(conn, month, year)
-                calculations = await get_renters_report_calculations(renters_payments, currency_coefficient)
-                return await build_renter_short_report(calculations, month, year)
-            if report_name == "renter_full":
-                renters_payments = await get_renters_payments(conn, month, year, is_detailed=True)
-                calculations = await get_detailed_renters_report_calculation(renters_payments, currency_coefficient)
-                return await build_renter_full_report(calculations, month, year, currency_coefficient)
-            if report_name == "renter_invoice":
-                renters_payments = await get_renters_payments(conn, month, year, is_detailed=True)
-                return web.json_response({"success": True, "items": renters_payments})
-            if report_name == "renter_bank_payment":
-                renters_payments = await get_renters_payments(conn, month, year, is_detailed=True, is_bank_payment=True)
-                return await build_renters_payment_requirements(renters_payments, month, year, currency_coefficient)
+                workshop_groups_payments = await get_workshop_groups_payments(conn, month, year)
+                current_currency_coefficient = await get_current_currency_coefficient(conn, month, year)
+                calculations = await get_workshops_calculation(workshop_groups_payments)
+                return await build_consolidated_report(calculations, month, year, current_currency_coefficient)

@@ -5,7 +5,8 @@ from utils import MONTHS
 
 async def build_consolidated_report(report_data, month, year, currency_coefficient):
     month = MONTHS[month - 1]
-    file_path = f"warmth/reports/consolidated_report.txt"
+    file_path = "warmth/reports/templates/consolidated_report.txt"
+    output_file_path = "warmth/reports/out/consolidated_report.txt"
     title_line = "│{:3d}│{:26s}│{:12.4f}│{:14.2f}│{:12.4f}│{:14.2f}│{:12.4f}│{:14.2f}│"
     sub_line = "│{:3s}│ - {:23s}│{:12.4f}│{:14.2f}│{:12.4f}│{:14.2f}│{:12.4f}│{:14.2f}│"
     empty_line = "│{:3s}│{:26s}│{:12s}│{:14s}│{:12s}│{:14s}│{:12s}│{:14s}│"
@@ -15,14 +16,16 @@ async def build_consolidated_report(report_data, month, year, currency_coefficie
         "heating_cost": sum([item['heating_cost'] for item in report_data]),
         "water_heating_value": sum([item['water_heating_value'] for item in report_data]),
         "water_heating_cost": sum([item['water_heating_cost'] for item in report_data]),
-        "value": sum([item['value'] for item in report_data]),
-        "cost": sum([item['cost'] for item in report_data])
+        "total_value": sum([item['total_value'] for item in report_data]),
+        "total_cost": sum([item['total_cost'] for item in report_data])
     }
     main_content = ""
     for index, item in enumerate(report_data):
-        entries = item.pop('includes')
+        entries = item.pop('workshops')
         main_content += title_line.format(index + 1, *item.values()) + "\n"
         for entry in entries:
+            for key in ['id', 'workshop_group_id', 'is_currency_coefficient_applied']:
+                entry.pop(key)
             main_content += sub_line.format("", *entry.values()) + "\n"
         main_content += empty_line.format(*[""] * 8)
         if index != len(report_data) - 1:
@@ -32,9 +35,11 @@ async def build_consolidated_report(report_data, month, year, currency_coefficie
     async with aiofiles.open(file_path, mode="r", encoding="utf8") as fp:
         template_data = await fp.read()
     data = template_data.format(month, year, currency_coefficient['value_1'], main_content, end_content)
-    return web.json_response(
-        data={"success": True, "item": data},
-        content_type="application/octet-stream",
+    async with aiofiles.open(output_file_path, mode="w", encoding="utf8") as output_fp:
+        await output_fp.write(data)
+    return web.FileResponse(
+        path=output_file_path,
+        status=200,
         headers={"Content-Disposition": "attachment;filename=report.txt"}
     )
 
@@ -174,3 +179,12 @@ async def build_renter_full_report(report_data, month, year, currency_coefficien
         content_type="application/octet-stream",
         headers={"Content-Disposition": "attachment;filename=renters_report.txt"}
     )
+
+
+async def build_renters_payment_requirements(renters, year, month, currency_coefficient):
+    return web.json_response({"success": True, "items": {
+        "renters": renters,
+        "year": year,
+        "month": month,
+        "currency_coefficient": currency_coefficient
+    }})

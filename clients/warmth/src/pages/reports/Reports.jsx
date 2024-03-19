@@ -21,8 +21,8 @@ const Reports = () => {
   const getNormReport = async (e) => {
     e.preventDefault();
     axios.get("/api/v1/warmth/reports/files/consolidated").then((r) => {
-      if (r.data.success) {
-        const url = URL.createObjectURL(new Blob([r.data.item]));
+      if (r.status === 200) {
+        const url = URL.createObjectURL(new Blob([r.data]));
         const link = document.createElement("a");
         link.href = url;
         link.setAttribute("download", "report.txt");

@@ -421,8 +421,9 @@ class ReviseListView(BaseView):
         month = self.request.app['subsystem']['month']
         year = self.request.app['subsystem']['year']
         async with self.request.app['db'].connect() as conn:
-            data = await get_reconciliation_codes_payments(conn, month, year)
-            return web.json_response({"success": True, "items": data})
+            codes = await get_reconciliation_codes_payments(conn, month, year)
+            calculations = await get_reconciliation_codes_payments_calculation(codes)
+            return web.json_response({"success": True, "items": calculations})
 
 
 class FileReportsView(BaseView):

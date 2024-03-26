@@ -108,3 +108,12 @@ async def get_detailed_renters_report_calculation(data, currency_coefficient):
                     payment['water_heating_currency_coefficient'] = 0
                     payment['water_heating_vat'] = 0
     return data
+
+
+async def get_reconciliation_codes_payments_calculation(data):
+    for code in data:
+        code['heating_value'] = sum([row['heating_value'] for row in code['payments']])
+        code['heating_cost'] = sum([row['heating_cost'] for row in code['payments']])
+        code['water_heating_value'] = sum([row['water_heating_value'] for row in code['payments']])
+        code['water_heating_cost'] = sum([row['water_heating_cost'] for row in code['payments']])
+    return data

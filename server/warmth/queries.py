@@ -145,13 +145,14 @@ async def get_reconciliation_codes_payments(conn, month, year):
             aggregate_order_by(
                 func.json_build_object(
                     "id", objects.c.id,
+                    "code", objects.c.code,
                     "title", objects.c.title,
                     "applied_rate_value", payments.c.applied_rate_value,
                     "heating_value", payments.c.heating_value,
                     "heating_cost", payments.c.heating_cost,
                     "water_heating_value", payments.c.water_heating_value,
                     "water_heating_cost", payments.c.water_heating_cost
-                ), objects.c.id
+                ), objects.c.code
             )
         ).label("payments")).select_from(reconciliation_codes.join(objects).join(payments)).group_by(
             reconciliation_codes.c.id, reconciliation_codes.c.title

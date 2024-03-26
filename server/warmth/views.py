@@ -129,21 +129,6 @@ class CurrencyCoefficientDetailView(DetailView):
 class ReconciliationCodesListView(ListView):
     model = reconciliation_codes
 
-    async def get(self):
-        revise_mode = None
-        if "revise" in self.request.query.keys():
-            revise_mode = True
-        app_info = self.request.app['subsystem']
-        async with self.request.app['db'].connect() as conn:
-            try:
-                if revise_mode:
-                    result = await get_reconciliation_codes_with_total(conn, app_info['month'], app_info['year'])
-                else:
-                    result = await get_reconciliation_codes(conn)
-            except Exception as e:
-                return web.json_response({'success': False, 'reason': str(e)})
-        return web.json_response({'success': True, "items": result}, dumps=pretty_json)
-
 
 class ReconciliationCodePayments(ListView):
     model = payments
@@ -431,6 +416,15 @@ class WorkshopsGroupDetailView(DetailView):
     model = workshops_groups
 
 
+class ReviseListView(BaseView):
+    async def get(self):
+        month = self.request.app['subsystem']['month']
+        year = self.request.app['subsystem']['year']
+        async with self.request.app['db'].connect() as conn:
+            data = await get_reconciliation_codes_payments(conn, month, year)
+            return web.json_response({"success": True, "items": data})
+
+
 class FileReportsView(BaseView):
     async def get(self):
         report_name = self.request.match_info['name']
@@ -442,3 +436,11 @@ class FileReportsView(BaseView):
                 current_currency_coefficient = await get_current_currency_coefficient(conn, month, year)
                 calculations = await get_workshops_calculation(workshop_groups_payments)
                 return await build_consolidated_report(calculations, month, year, current_currency_coefficient)
+            if report_name == "workshops":
+                workshop_id = int(self.request.query.get("workshop_id", None))
+                if not workshop_id:
+                    return web.json_response({"success": False, "reason": "Не верно указан идентификатор цеха"})
+                workshop_payments = await get_workshop_payments(conn, workshop_id, month, year)
+                calculations = await get_workshop_objects_calculation(workshop_payments)
+                return await build_workshop_report(calculations, month, year)
+            

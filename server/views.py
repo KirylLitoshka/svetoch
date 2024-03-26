@@ -13,7 +13,6 @@ class BaseView(web.View):
 class DetailView(BaseView):
     async def get(self):
         item_id = int(self.request.match_info["id"])
-        print(item_id)
         async with self.request.app["db"].connect() as conn:
             cursor = await conn.execute(select(self.model).where(self.model.c.id == item_id))
             result = dict(cursor.fetchone())

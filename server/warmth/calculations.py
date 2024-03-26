@@ -1,91 +1,18 @@
-async def get_renters_payments_calculations(coefficients, payments):
-    result = []
-    for payment in payments:
-        current_row_index = next((
-            i for i, item in enumerate(result) if
-            item['month'] == payment['operation_month'] and
-            item['year'] == payment['operation_year']
-        ), None)
-        payment_coefficients = next((
-            item for item in coefficients if
-            item['month'] == payment['operation_month'] and item['year'] == payment['operation_year']
-        ), None)
-        if payment_coefficients is None:
-            raise Exception("Коэффициент на текущий месяц не обнаружен")
-        payment_coefficients = payment_coefficients['value_1']
-        if payment['is_additional_coefficient_applied']:
-            payment_coefficients = payment['additional_coefficient_value']
-        current_row = {
-            "month": payment['operation_month'],
-            "year": payment['operation_year'],
-            "total": {
-                "heating_value": 0,
-                "water_heating_value": 0,
-                "cost": 0,
-                "coefficient": 0,
-                "vat": 0,
-                "total": 0
-            },
-            "includes": []
-        }
-        if current_row_index is not None:
-            current_row = result[current_row_index]
-        if payment['heating_cost']:
-            value_with_coefficient = payment['heating_cost'] * payment_coefficients
-            vat = value_with_coefficient / 100 * payment['vat']
-            coefficient = value_with_coefficient - payment['heating_cost']
-            total_cost = value_with_coefficient + vat
-            current_row['total']['heating_value'] += payment['heating_value']
-            current_row['total']['cost'] += payment['heating_cost']
-            current_row['total']['coefficient'] += round(coefficient, 2)
-            current_row['total']['vat'] += round(vat, 2)
-            current_row['total']['total'] += round(total_cost, 2)
-            current_row['includes'].append({
-                "title": payment['title'],
-                "type": "Отопление",
-                "value": payment['heating_value'],
-                "cost": payment['heating_cost'],
-                "coefficient": round(coefficient, 2),
-                "vat": round(vat, 2),
-                "total": round(total_cost, 2)
-            })
-        if payment['water_heating_cost']:
-            value_with_coefficient = payment['water_heating_cost'] * payment_coefficients
-            vat = value_with_coefficient / 100 * payment['vat']
-            coefficient = value_with_coefficient - payment['water_heating_cost']
-            total_cost = value_with_coefficient + vat
-            current_row['total']['water_heating_value'] += payment['water_heating_value']
-            current_row['total']['cost'] += payment['water_heating_cost']
-            current_row['total']['coefficient'] += round(coefficient, 2)
-            current_row['total']['vat'] += round(vat, 2)
-            current_row['total']['total'] += round(total_cost, 2)
-            current_row['includes'].append({
-                "title": payment['title'],
-                "type": "Подогрев",
-                "value": payment['water_heating_value'],
-                "cost": payment['water_heating_cost'],
-                "coefficient": round(coefficient, 2),
-                "vat": round(vat, 2),
-                "total": round(total_cost, 2)
-            })
-        if current_row_index is None:
-            result.append(current_row)
-    return result
+additional_calculation_values = {
+    "heating_value": 0,
+    "heating_cost": 0,
+    "water_heating_value": 0,
+    "water_heating_cost": 0,
+    "total_value": 0,
+    "total_cost": 0
+}
 
 
 async def get_workshops_calculation(workshops_groups):
-    additional_values = {
-        "heating_value": 0,
-        "heating_cost": 0,
-        "water_heating_value": 0,
-        "water_heating_cost": 0,
-        "total_value": 0,
-        "total_cost": 0
-    }
     for group in workshops_groups:
-        group.update(additional_values)
+        group.update(additional_calculation_values)
         for workshop in group['workshops']:
-            workshop.update(additional_values)
+            workshop.update(additional_calculation_values)
             workshop_payment = workshop.pop("payments")
             for payment in workshop_payment:
                 heating_cost = payment['heating_cost']
@@ -111,24 +38,33 @@ async def get_workshops_calculation(workshops_groups):
     return workshops_groups
 
 
-async def get_calculation_by_workshop(data, currency_coefficient):
-    coefficient_value = currency_coefficient['value_1']
-    is_currency_coefficient_applied = data['is_currency_coefficient_applied']
-    for row in data['payments']:
-        if is_currency_coefficient_applied:
-            row['heating_cost'] *= coefficient_value
-            row['water_heating_cost'] *= coefficient_value
-        row['value'] = row['heating_value'] + row['water_heating_value']
-        row['cost'] = row['heating_cost'] + row['water_heating_cost']
-    data['total'] = {
-        "heating_value": sum([item['heating_value'] for item in data['payments']]),
-        "heating_cost": sum([item['heating_cost'] for item in data['payments']]),
-        "water_heating_value": sum([item['water_heating_value'] for item in data['payments']]),
-        "water_heating_cost": sum([item['water_heating_cost'] for item in data['payments']]),
-        "value": sum([item['value'] for item in data['payments']]),
-        "cost": sum([item['cost'] for item in data['payments']])
-    }
-    return data
+async def get_workshop_objects_calculation(workshop_objects):
+    for obj in workshop_objects['objects']:
+        obj.update(additional_calculation_values)
+        payments = obj.pop('payments')
+        del obj['workshop_id']
+        for payment in payments:
+            heating_cost = payment['heating_cost']
+            water_heating_cost = payment['water_heating_cost']
+            if workshop_objects['is_currency_coefficient_applied']:
+                payment_coefficient = payment['currency_coefficient']
+                if payment['is_additional_coefficient_applied']:
+                    payment_coefficient = payment['additional_coefficient_value']
+                heating_cost = round(payment['heating_cost'] * payment_coefficient, 2)
+                water_heating_cost = round(payment['water_heating_cost'] * payment_coefficient, 2)
+            obj['heating_cost'] += heating_cost
+            obj['water_heating_cost'] += water_heating_cost
+            obj['heating_value'] += payment['heating_value']
+            obj['water_heating_value'] += payment['water_heating_value']
+            obj['total_value'] += payment['heating_value'] + payment['water_heating_value']
+            obj['total_cost'] += heating_cost + water_heating_cost
+    workshop_objects['heating_value'] = sum([row['heating_value'] for row in workshop_objects['objects']])
+    workshop_objects['heating_cost'] = sum([row['heating_cost'] for row in workshop_objects['objects']])
+    workshop_objects['water_heating_value'] = sum([row['water_heating_value'] for row in workshop_objects['objects']])
+    workshop_objects['water_heating_cost'] = sum([row['water_heating_cost'] for row in workshop_objects['objects']])
+    workshop_objects['total_value'] = workshop_objects['heating_value'] + workshop_objects['water_heating_value']
+    workshop_objects['total_cost'] = workshop_objects['heating_cost'] + workshop_objects['water_heating_cost']
+    return workshop_objects
 
 
 async def get_renters_report_calculations(data: dict, currency_coefficient: dict) -> dict:

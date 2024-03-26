@@ -4,6 +4,9 @@ from utils import MONTHS
 
 
 async def build_consolidated_report(report_data, month, year, currency_coefficient):
+    """
+    Построитель сводной ведомости
+    """
     month = MONTHS[month - 1]
     file_path = "warmth/reports/templates/consolidated_report.txt"
     output_file_path = "warmth/reports/out/consolidated_report.txt"
@@ -46,20 +49,23 @@ async def build_consolidated_report(report_data, month, year, currency_coefficie
 
 async def build_workshop_report(data, month, year):
     month = MONTHS[month - 1]
-    file_path = f"warmth/reports/workshop_report.txt"
+    file_path = f"warmth/reports/templates/workshop_report.txt"
+    output_file_path = f"warmth/reports/out/workshop_report.txt"
     line = '│{:27s}│{:11.4f}│{:11.2f}│{:11.4f}│{:11.2f}│{:11.4f}│{:11.2f}│'
     main_content = ""
-    for index, row in enumerate(data['payments']):
+    for index, row in enumerate(data['objects']):
         main_content += line.format(*row.values())
-        main_content += "" if index == len(data['payments']) - 1 else "\n"
-    end_line = line.format("Итого", *data['total'].values())
+        main_content += "" if index == len(data['objects']) - 1 else "\n"
+    end_line = line.format("Итого", *list(data.values())[3:])
     async with aiofiles.open(file_path, mode="r", encoding="utf8") as fp:
         template_data = await fp.read()
     data = template_data.format(data['title'], month, year, main_content, end_line)
-    return web.json_response(
-        data={"success": True, "item": data},
-        content_type="application/octet-stream",
-        headers={"Content-Disposition": "attachment;filename=workshop_report.txt"}
+    async with aiofiles.open(output_file_path, mode="w", encoding="utf8") as output_fp:
+        await output_fp.write(data)
+    return web.FileResponse(
+        output_file_path,
+        status=200,
+        headers={"Content-Disposition": "attachment;filename=report.txt"}
     )
 
 

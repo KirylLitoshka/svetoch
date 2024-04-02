@@ -8,7 +8,8 @@ __all__ = [
     "get_workshop_groups_payments",
     "get_current_currency_coefficient",
     "get_workshop_payments",
-    "get_reconciliation_codes_payments"
+    "get_reconciliation_codes_payments",
+    "get_renters_payments"
 ]
 
 
@@ -95,47 +96,71 @@ async def get_workshop_payments(conn, workshop_id, month, year):
     try:
         workshops_payments = dict(cursor.fetchone())
     except TypeError:
-        raise RecordNotFound("Начиления за указанный период не найден")
+        raise RecordNotFound("Начиления за текущий период не найден")
     return workshops_payments
 
 
-async def get_renters_payments(conn, month, year, is_detailed=False, is_bank_payment=False):
-    stmt = select(
-        renters.c.id, renters.c.name.label("renter_title"),
-        func.sum(payments.c.heating_value).label("heating_value"),
-        func.sum(payments.c.heating_cost).label("heating_cost"),
-        func.sum(payments.c.water_heating_value).label("water_heating_value"),
-        func.sum(payments.c.water_heating_cost).label("water_heating_cost")
-    ).select_from(renters.join(renters_objects).join(objects).join(payments)).group_by(renters.c.id).where(and_(
-        payments.c.operation_month == month,
-        payments.c.operation_year == year,
-        payments.c.payment_type == 1,
-        payments.c.ncen != 0
-    )).order_by(renters.c.id)
-    if is_detailed:
-        objects_payment = select(
-            objects, func.json_agg(payments.table_valued()).label("payments")
-        ).select_from(objects.join(payments)).group_by(objects.c.id).where(and_(
-            payments.c.operation_month == month,
-            payments.c.operation_year == year,
-            payments.c.payment_type == 1,
-            payments.c.ncen != 0
-        )).order_by(objects.c.id).alias("objects_payment")
-        stmt = select(
-            renters,
-            banks.c.title.label("bank_title"),
-            banks.c.code.label("bank_code"),
-            func.json_agg(text("objects_payment.*")).label("includes")
-        ).select_from(
-            renters.join(renters_objects).join(banks, isouter=True).join(objects_payment)
-        )
-        if is_bank_payment:
-            stmt = stmt.where(renters.c.is_bank_payer)
-        stmt = stmt.group_by(renters.c.id, banks).order_by(renters.c.id)
-    cursor = await conn.execute(stmt)
+async def get_renters_payments(conn, renter_id=None, month=None, year=None, is_detailed=False, is_bank_payment=False):
+    # stmt = select(
+    #     renters.c.id, renters.c.name.label("renter_title"),
+    #     func.sum(payments.c.heating_value).label("heating_value"),
+    #     func.sum(payments.c.heating_cost).label("heating_cost"),
+    #     func.sum(payments.c.water_heating_value).label("water_heating_value"),
+    #     func.sum(payments.c.water_heating_cost).label("water_heating_cost")
+    # ).select_from(renters.join(renters_objects).join(objects).join(payments)).group_by(renters.c.id).where(and_(
+    #     payments.c.operation_month == month,
+    #     payments.c.operation_year == year,
+    #     payments.c.payment_type == 1,
+    #     payments.c.ncen != 0
+    # )).order_by(renters.c.id)
+    # if is_detailed:
+    #     objects_payment = select(
+    #         objects, func.json_agg(payments.table_valued()).label("payments")
+    #     ).select_from(objects.join(payments)).group_by(objects.c.id).where(and_(
+    #         payments.c.operation_month == month,
+    #         payments.c.operation_year == year,
+    #         payments.c.payment_type == 1,
+    #         payments.c.ncen != 0
+    #     )).order_by(objects.c.id).alias("objects_payment")
+    #     stmt = select(
+    #         renters,
+    #         banks.c.title.label("bank_title"),
+    #         banks.c.code.label("bank_code"),
+    #         func.json_agg(text("objects_payment.*")).label("includes")
+    #     ).select_from(
+    #         renters.join(renters_objects).join(banks, isouter=True).join(objects_payment)
+    #     )
+    #     if is_bank_payment:
+    #         stmt = stmt.where(renters.c.is_bank_payer)
+    #     stmt = stmt.group_by(renters.c.id, banks).order_by(renters.c.id)
+    payments_with_coefficient = select(
+        objects.c.code,
+        objects.c.title,
+        payments,
+        currency_coefficients.c.value_1.label('coefficient_value'),
+        objects.c.vat
+    ).select_from(
+        payments.join(currency_coefficients, onclause=and_(
+            currency_coefficients.c.month == payments.c.payment_month,
+            currency_coefficients.c.year == payments.c.payment_year
+        )).join(objects)
+    ).where(and_(payments.c.payment_type == 1, payments.c.ncen != 0))
+
+    if month and year:
+        payments_with_coefficient = payments_with_coefficient.where(and_(
+            payments.c.operation_month == month, payments.c.operation_year == year,
+        ))
+
+    payments_with_coefficient = payments_with_coefficient.alias("payments")
+    query = select(renters, func.json_agg(text("payments.*")).label("payments")).select_from(
+        renters.join(renters_objects).join(objects).join(payments_with_coefficient)
+    ).group_by(renters)
+    if renter_id:
+        query = query.where(renters.c.id == renter_id)
+    cursor = await conn.execute(query)
     result = [dict(row) for row in cursor.fetchall()]
     if not result:
-        return RecordNotFound("Не найдено")
+        raise RecordNotFound("Не найдено")
     return result
 
 

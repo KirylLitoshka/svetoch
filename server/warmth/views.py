@@ -6,6 +6,7 @@ from sqlalchemy import select, literal_column, func, desc, and_
 from views import ListView, DetailView, BaseView
 from utils import pretty_json, DATE_FORMAT
 from table import get_table_data
+from exceptions import RecordNotFound
 from warmth.models import *
 from warmth.calculations import *
 from warmth.queries import *
@@ -394,18 +395,9 @@ class RenterPaymentListView(ListView):
     async def get(self):
         renter_id = int(self.request.match_info['id'])
         async with self.request.app['db'].connect() as conn:
-            coefficients_row = await conn.execute(
-                select(currency_coefficients)
-            )
-            coefficients = [dict(row) for row in coefficients_row.fetchall()]
-            payments_row = await conn.execute(
-                select(objects.c.title, objects.c.vat, self.model).select_from(
-                    renters_objects.join(objects).join(self.model)
-                ).where(renters_objects.c.renter_id == renter_id)
-            )
-            result = [dict(row) for row in payments_row.fetchall()]
-            data = await get_renters_payments_calculations(coefficients, result)
-            return web.json_response({"success": True, "items": data}, dumps=pretty_json)
+            renter_payments = await get_renters_payments(conn, renter_id=renter_id)
+            calculations = await get_renter_payments_calculation(renter_payments)
+            return web.json_response({"success": True, "items": calculations}, dumps=pretty_json)
 
 
 class WorkshopsGroupsListView(ListView):
@@ -433,15 +425,30 @@ class FileReportsView(BaseView):
         year = self.request.app['subsystem']['year']
         async with self.request.app['db'].connect() as conn:
             if report_name == "consolidated":
-                workshop_groups_payments = await get_workshop_groups_payments(conn, month, year)
+                try:
+                    workshop_groups_payments = await get_workshop_groups_payments(conn, month, year)
+                except RecordNotFound as e:
+                    return web.json_response({"success": False, "reason": str(e)}, status=404)
                 current_currency_coefficient = await get_current_currency_coefficient(conn, month, year)
                 calculations = await get_workshops_calculation(workshop_groups_payments)
                 return await build_consolidated_report(calculations, month, year, current_currency_coefficient)
-            if report_name == "workshops":
-                workshop_id = int(self.request.query.get("workshop_id", None))
+            elif report_name == "workshop":
+                workshop_id = int(self.request.query.get("id", None))
                 if not workshop_id:
                     return web.json_response({"success": False, "reason": "Не верно указан идентификатор цеха"})
-                workshop_payments = await get_workshop_payments(conn, workshop_id, month, year)
+                try:
+                    workshop_payments = await get_workshop_payments(conn, workshop_id, month, year)
+                except RecordNotFound as e:
+                    return web.json_response({"success": False, "reason": str(e)}, status=404)
                 calculations = await get_workshop_objects_calculation(workshop_payments)
                 return await build_workshop_report(calculations, month, year)
+            elif report_name == "renter_short":
+                renters_payments = await get_renters_payments(conn, month=month, year=year)
+                calculations = await get_renter_payments_calculation_short(renters_payments)
+                return await build_renter_short_report(calculations, month, year)
+            elif report_name == "renter_full":
+                renters_payments = await get_renters_payments(conn, month=month, year=year)
+                return await build_renter_full_report(renters_payments, month, year)
+            else:
+                return web.json_response({"success": False, "reason": "Отчет не найден"})
             

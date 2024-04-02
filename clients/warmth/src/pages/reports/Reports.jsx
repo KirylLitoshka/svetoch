@@ -40,8 +40,8 @@ const Reports = () => {
     }
     setModalVisible({ ...modalVisible, renter: false });
     axios.get(`/api/v1/warmth/reports/files/${reportType}`).then((r) => {
-      if (r.data.success) {
-        const url = URL.createObjectURL(new Blob([r.data.item]));
+      if (r.status === 200) {
+        const url = URL.createObjectURL(new Blob([r.data]));
         const link = document.createElement("a");
         link.href = url;
         link.setAttribute("download", "renters_report.txt");
@@ -61,11 +61,11 @@ const Reports = () => {
     axios
       .get("/api/v1/warmth/reports/files/workshop", { params: { id: id } })
       .then((r) => {
-        if (r.data.success) {
-          const url = URL.createObjectURL(new Blob([r.data.item]));
+        if (r.status === 200) {
+          const url = URL.createObjectURL(new Blob([r.data]));
           const link = document.createElement("a");
           link.href = url;
-          link.setAttribute("download", "workshop_report.txt");
+          link.setAttribute("download", "report.txt");
           link.click();
         } else {
           setError(r.data.reason);

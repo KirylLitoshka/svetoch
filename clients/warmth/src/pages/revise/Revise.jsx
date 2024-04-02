@@ -8,10 +8,9 @@ const Revise = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   const [codes, setCodes] = useState([]);
-  const [objects, setObjects] = useState([]);
-  const [selectedCodeID, setSelectedCodeID] = useState(null);
+  const [payments, setPayments] = useState([])
 
-  const onSelect = (e) => {
+  const appendStyle = (e) => {
     const codeItemButtons = document.querySelectorAll(".accordion-item_button");
     codeItemButtons.forEach((item) =>
       item.classList.remove("accordion-item_button__active")
@@ -25,9 +24,7 @@ const Revise = () => {
 
   const getCodes = async () => {
     axios
-      .get("/api/v1/warmth/reconciliation_codes", {
-        params: { revise: true },
-      })
+      .get("/api/v1/warmth/revise")
       .then((r) => {
         if (r.data.success) {
           setCodes(r.data.items);
@@ -39,30 +36,11 @@ const Revise = () => {
       .finally(() => setLoading(false));
   };
 
-  const getObjects = async () => {
-    axios
-      .get(`/api/v1/warmth/reconciliation_codes/${selectedCodeID}/payments`)
-      .then((r) => {
-        if (r.data.success) {
-          setObjects(r.data.items);
-        } else {
-          setError(r.data.reason);
-        }
-      })
-      .catch((e) => setError(e.response.data.reason));
-  };
 
   useEffect(() => {
     getCodes();
   }, []);
 
-  useEffect(() => {
-    if (selectedCodeID) {
-      getObjects();
-    } else {
-      setObjects([]);
-    }
-  }, [selectedCodeID]);
 
   if (error) {
     return <ErrorMessage message={error} />;
@@ -90,8 +68,8 @@ const Revise = () => {
               <div
                 className="accordion-item_button"
                 onClick={(e) => {
-                  onSelect(e);
-                  setSelectedCodeID(code.id);
+                  appendStyle(e);
+                  setPayments(code.payments)
                 }}
                 style={{ display: "flex", justifyContent: "space-between" }}
               >
@@ -120,13 +98,12 @@ const Revise = () => {
         </Accordion>
       </div>
       <div style={{maxHeight: "60vh", overflow: "auto"}}>
-        {objects.length > 0 ? (
+        {payments.length > 0 ? (
           <table style={{ width: "100%", textAlign: "center" }}>
             <thead>
               <tr>
                 <th>Код</th>
                 <th>Наименование</th>
-                <th>Тип платежа</th>
                 <th>Тариф</th>
                 <th>Отопление/Гкал</th>
                 <th>Отопление/Руб</th>
@@ -135,11 +112,10 @@ const Revise = () => {
               </tr>
             </thead>
             <tbody>
-              {objects.map((obj, index) => (
+              {payments.map((obj, index) => (
                 <tr key={index} style={{lineHeight: "27px"}}>
                   <td>{obj.code}</td>
                   <td>{obj.title}</td>
-                  <td>{obj.payment_type == 1 ? "Основной" : "Поправка"}</td>
                   <td>{obj.applied_rate_value}</td>
                   <td>{obj.heating_value.toFixed(4)}</td>
                   <td>{obj.heating_cost.toFixed(2)}</td>

@@ -25,7 +25,7 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
     is_closed: false,
     bank: null,
   };
-  const [renter, setRenter] = useState(initial);
+  const [renter, setRenter] = useState({...initial});
   const [banks, setBanks] = useState([]);
   const [error, setError] = useState("");
 
@@ -46,7 +46,7 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
     if (selectedItem?.id) {
       setRenter(selectedItem);
     } else {
-      setRenter(initial);
+      setRenter({...initial});
     }
   }, [selectedItem]);
 
@@ -340,7 +340,7 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
           name="is_closed"
           id="is_closed"
           className="form_input"
-          value={renter.is_closed}
+          checked={renter.is_closed}
           onChange={() =>
             setRenter({ ...renter, is_closed: !renter.is_closed })
           }

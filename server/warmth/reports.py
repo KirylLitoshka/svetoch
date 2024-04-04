@@ -1,6 +1,8 @@
 from aiohttp import web
-import aiofiles
 from utils import MONTHS
+
+import aiofiles
+import calendar
 
 
 async def build_consolidated_report(report_data, month, year, currency_coefficient):
@@ -188,7 +190,7 @@ async def build_renter_full_report(renter_payments, month, year):
                     str(round(payment_coefficient, 2)),
                     vat, total_cost
                 ) + "\n"
-    content += line.format(*[""]*12)
+    content += line.format(*[""] * 12)
     async with aiofiles.open(file_path, mode="r", encoding="utf8") as fp:
         template_data = await fp.read()
     data = template_data.format(month, year, content)
@@ -200,12 +202,69 @@ async def build_renter_full_report(renter_payments, month, year):
         headers={"Content-Disposition": "attachment;filename=report.txt"}
     )
 
-#
-#
-# async def build_renters_payment_requirements(renters, year, month, currency_coefficient):
-#     return web.json_response({"success": True, "items": {
-#         "renters": renters,
-#         "year": year,
-#         "month": month,
-#         "currency_coefficient": currency_coefficient
-#     }})
+
+async def build_renter_bank_report(renters_payments, month, year):
+    template_file_path = "warmth/reports/templates/renter_bank_invoice.txt"
+    output_file_path = "warmth/reports/out/renter_bank_invoice.txt"
+    last_day_of_month = calendar.monthrange(year, month)[1]
+    invoice_date = "{:2d}.{:02d}.{:4d}".format(last_day_of_month, month, year)
+    month_name = MONTHS[month - 1]
+    output_content = ""
+
+    async with aiofiles.open(template_file_path, mode="r", encoding="utf-8") as fp:
+        template_data = await fp.read()
+
+    for renter in renters_payments:
+        renter_sum = round(sum([row['heating_cost'] + row['water_heating_cost'] for row in renter['payments']]), 2)
+        renter_vat_amount = round(sum([row['vat_value'] for row in renter['payments']]), 2)
+        renter_currency_amount = round(sum([row['currency_cost'] for row in renter['payments']]), 2)
+        renter_total_amount = round(sum([row['total_cost'] for row in renter['payments']]), 2)
+        invoice_number = "{:1s}{:02d}{:03d}".format(str(year)[-1], month, renter['id'])
+        payments_detail = ""
+        line = "│{:29s}│{:8s}│{:9.5f}│{:8.6f}│{:11.5f}│{:11.2f}│{:11.5f}│{:11.2f}│{:11.2f}│{:11.2f}│{:11.2f}│{:11.2f}│"
+        for index, payment in enumerate(renter['payments']):
+            coefficient = payment['coefficient_value']
+            if payment['is_additional_coefficient_applied']:
+                coefficient = payment['additional_coefficient_value']
+            payments_detail += line.format(
+                payment['title'],
+                f"{payment['payment_month']}.{payment['payment_year']}",
+                payment['applied_rate_value'],
+                coefficient,
+                payment['heating_value'],
+                payment['heating_cost'],
+                payment['water_heating_value'],
+                payment['water_heating_cost'],
+                round(payment['heating_cost'] + payment['water_heating_cost'], 2),
+                payment['vat_value'],
+                payment['currency_cost'],
+                payment['total_cost']
+            )
+            if index != len(renter['payments']) - 1:
+                payments_detail += "\n"
+        output_content += template_data.format(
+            invoice_date=invoice_date,
+            invoice_number=invoice_number,
+            payment_sum=renter_total_amount,
+            banking_account=renter['banking_account'],
+            registration_number=renter['registration_number'],
+            full_name=renter['full_name'],
+            contract_number=renter['contract_number'],
+            contract_date=renter['contract_date'],
+            bank_code=renter['bank_code'],
+            bank_title=renter['bank_title'],
+            month_name=month_name,
+            year=year,
+            sum=renter_sum,
+            currency=renter_currency_amount,
+            vat_sum=renter_vat_amount,
+            payments_detail=payments_detail
+        ) + "\n"
+    async with aiofiles.open(output_file_path, mode="w", encoding="utf-8", errors="ignore") as output_fp:
+        await output_fp.write(output_content)
+    return web.FileResponse(
+        output_file_path,
+        status=200,
+        headers={"Content-Disposition": "attachment;filename=report.txt"}
+    )
+

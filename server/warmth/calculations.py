@@ -190,5 +190,15 @@ async def get_renter_payments_calculation_short(renter_payments):
     return output_data
 
 
-async def get_renter_payments_calculation_full(renter_payments):
-    pass
+async def get_renter_vat_calculations(renter_payments):
+    for renter in renter_payments:
+        for payment in renter['payments']:
+            coefficient = payment['coefficient_value']
+            if payment['is_additional_coefficient_applied']:
+                coefficient = payment['additional_coefficient_value']
+            total = payment['heating_cost'] + payment['water_heating_cost']
+            value_with_coefficient = total * coefficient
+            payment['vat_value'] = round(value_with_coefficient / 100 * payment['vat'] if payment['vat'] else 0, 2)
+            payment['currency_cost'] = round(value_with_coefficient - total, 2)
+            payment['total_cost'] = round(value_with_coefficient + payment['vat_value'], 2)
+    return renter_payments

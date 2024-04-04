@@ -36,26 +36,30 @@ const Reports = () => {
 
   const getRentersReport = async (reportType) => {
     if (!reportType) {
-      return
+      return;
     }
     setModalVisible({ ...modalVisible, renter: false });
-    axios.get(`/api/v1/warmth/reports/files/${reportType}`).then((r) => {
-      if (r.status === 200) {
-        const url = URL.createObjectURL(new Blob([r.data]));
-        const link = document.createElement("a");
-        link.href = url;
-        link.setAttribute("download", "renters_report.txt");
-        link.click();
-      } else {
-        setError(r.data.reason);
-        setModalVisible({ ...modalVisible, error: true });
-      }
-    });
+    axios
+      .get(`/api/v1/warmth/reports/files/${reportType}`)
+      .then((r) => {
+        if (r.status === 200 && r.headers['content-disposition']) {
+          console.log("ASDASDASD");
+          const url = URL.createObjectURL(new Blob([r.data]));
+          const link = document.createElement("a");
+          link.href = url;
+          link.setAttribute("download", "renters_report.txt");
+          link.click();
+        } else {
+          setError(r.data.reason);
+          setModalVisible({ ...modalVisible, renter: false, error: true });
+        }
+      })
+      .catch((e) => setError(e.response.data.reason));
   };
 
   const getReportByWorkshop = async (id) => {
     if (!id) {
-      return
+      return;
     }
     setModalVisible({ ...modalVisible, workshop: false });
     axios

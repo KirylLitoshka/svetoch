@@ -425,10 +425,7 @@ class FileReportsView(BaseView):
         year = self.request.app['subsystem']['year']
         async with self.request.app['db'].connect() as conn:
             if report_name == "consolidated":
-                try:
-                    workshop_groups_payments = await get_workshop_groups_payments(conn, month, year)
-                except RecordNotFound as e:
-                    return web.json_response({"success": False, "reason": str(e)}, status=404)
+                workshop_groups_payments = await get_workshop_groups_payments(conn, month, year)
                 current_currency_coefficient = await get_current_currency_coefficient(conn, month, year)
                 calculations = await get_workshops_calculation(workshop_groups_payments)
                 return await build_consolidated_report(calculations, month, year, current_currency_coefficient)
@@ -436,10 +433,7 @@ class FileReportsView(BaseView):
                 workshop_id = int(self.request.query.get("id", None))
                 if not workshop_id:
                     return web.json_response({"success": False, "reason": "Не верно указан идентификатор цеха"})
-                try:
-                    workshop_payments = await get_workshop_payments(conn, workshop_id, month, year)
-                except RecordNotFound as e:
-                    return web.json_response({"success": False, "reason": str(e)}, status=404)
+                workshop_payments = await get_workshop_payments(conn, workshop_id, month, year)
                 calculations = await get_workshop_objects_calculation(workshop_payments)
                 return await build_workshop_report(calculations, month, year)
             elif report_name == "renter_short":
@@ -449,6 +443,15 @@ class FileReportsView(BaseView):
             elif report_name == "renter_full":
                 renters_payments = await get_renters_payments(conn, month=month, year=year)
                 return await build_renter_full_report(renters_payments, month, year)
+            elif report_name == "renter_bank":
+                renters_payments = await get_renters_payments(conn, month=month, year=year, is_bank_payment=True)
+                calculation = await get_renter_vat_calculations(renters_payments)
+                return await build_renter_bank_report(calculation, month, year)
+            elif report_name == "renter_invoices":
+                renter_id = self.request.query.get("id", None)
+                renter_payments = await get_renters_payments(conn, renter_id=renter_id, month=month, year=year)
+                calculation = await get_renter_vat_calculations(renter_payments)
+                return await build_renters_invoices_report(calculation, month, year)
             else:
                 return web.json_response({"success": False, "reason": "Отчет не найден"})
             

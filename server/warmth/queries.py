@@ -100,39 +100,7 @@ async def get_workshop_payments(conn, workshop_id, month, year):
     return workshops_payments
 
 
-async def get_renters_payments(conn, renter_id=None, month=None, year=None, is_detailed=False, is_bank_payment=False):
-    # stmt = select(
-    #     renters.c.id, renters.c.name.label("renter_title"),
-    #     func.sum(payments.c.heating_value).label("heating_value"),
-    #     func.sum(payments.c.heating_cost).label("heating_cost"),
-    #     func.sum(payments.c.water_heating_value).label("water_heating_value"),
-    #     func.sum(payments.c.water_heating_cost).label("water_heating_cost")
-    # ).select_from(renters.join(renters_objects).join(objects).join(payments)).group_by(renters.c.id).where(and_(
-    #     payments.c.operation_month == month,
-    #     payments.c.operation_year == year,
-    #     payments.c.payment_type == 1,
-    #     payments.c.ncen != 0
-    # )).order_by(renters.c.id)
-    # if is_detailed:
-    #     objects_payment = select(
-    #         objects, func.json_agg(payments.table_valued()).label("payments")
-    #     ).select_from(objects.join(payments)).group_by(objects.c.id).where(and_(
-    #         payments.c.operation_month == month,
-    #         payments.c.operation_year == year,
-    #         payments.c.payment_type == 1,
-    #         payments.c.ncen != 0
-    #     )).order_by(objects.c.id).alias("objects_payment")
-    #     stmt = select(
-    #         renters,
-    #         banks.c.title.label("bank_title"),
-    #         banks.c.code.label("bank_code"),
-    #         func.json_agg(text("objects_payment.*")).label("includes")
-    #     ).select_from(
-    #         renters.join(renters_objects).join(banks, isouter=True).join(objects_payment)
-    #     )
-    #     if is_bank_payment:
-    #         stmt = stmt.where(renters.c.is_bank_payer)
-    #     stmt = stmt.group_by(renters.c.id, banks).order_by(renters.c.id)
+async def get_renters_payments(conn, renter_id=None, month=None, year=None, is_bank_payment=False):
     payments_with_coefficient = select(
         objects.c.code,
         objects.c.title,
@@ -152,15 +120,20 @@ async def get_renters_payments(conn, renter_id=None, month=None, year=None, is_d
         ))
 
     payments_with_coefficient = payments_with_coefficient.alias("payments")
-    query = select(renters, func.json_agg(text("payments.*")).label("payments")).select_from(
-        renters.join(renters_objects).join(objects).join(payments_with_coefficient)
-    ).group_by(renters)
+    query = select(
+        renters, banks.c.title.label("bank_title"), banks.c.code.label("bank_code"),
+        func.json_agg(text("payments.*")).label("payments")
+    ).select_from(
+        renters.join(renters_objects).join(objects).join(payments_with_coefficient).join(banks)
+    ).group_by(renters, banks.c.title, banks.c.code)
     if renter_id:
-        query = query.where(renters.c.id == renter_id)
+        query = query.where(renters.c.id == int(renter_id))
+    if is_bank_payment:
+        query = query.where(renters.c.is_bank_payer)
     cursor = await conn.execute(query)
     result = [dict(row) for row in cursor.fetchall()]
     if not result:
-        raise RecordNotFound("Не найдено")
+        raise RecordNotFound("Начисления за текущий месяц не найдены")
     return result
 
 

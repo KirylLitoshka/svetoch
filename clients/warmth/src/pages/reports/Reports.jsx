@@ -43,7 +43,6 @@ const Reports = () => {
       .get(`/api/v1/warmth/reports/files/${reportType}`)
       .then((r) => {
         if (r.status === 200 && r.headers['content-disposition']) {
-          console.log("ASDASDASD");
           const url = URL.createObjectURL(new Blob([r.data]));
           const link = document.createElement("a");
           link.href = url;

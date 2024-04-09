@@ -124,7 +124,7 @@ async def get_renters_payments(conn, renter_id=None, month=None, year=None, is_b
         renters, banks.c.title.label("bank_title"), banks.c.code.label("bank_code"),
         func.json_agg(text("payments.*")).label("payments")
     ).select_from(
-        renters.join(renters_objects).join(objects).join(payments_with_coefficient).join(banks)
+        renters.join(renters_objects).join(objects).join(payments_with_coefficient).join(banks, isouter=True)
     ).group_by(renters, banks.c.title, banks.c.code)
     if renter_id:
         query = query.where(renters.c.id == int(renter_id))

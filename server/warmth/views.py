@@ -216,7 +216,7 @@ class RentersListView(ListView):
             cursor = await conn.execute(
                 select(
                     self.model, func.row_to_json(banks.table_valued()).label("bank")
-                ).select_from(self.model.join(banks)).order_by(self.model.c.id)
+                ).select_from(self.model.join(banks, isouter=True)).order_by(self.model.c.id)
             )
             result = [dict(row) for row in cursor.fetchall()]
             return web.json_response({"success": True, "items": result}, dumps=pretty_json)

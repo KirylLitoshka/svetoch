@@ -1,8 +1,11 @@
 from aiohttp import web
+from xml.etree import ElementTree as ET
 from utils import MONTHS
+from zipfile import ZipFile
 
 import aiofiles
 import calendar
+import os
 
 
 async def build_consolidated_report(report_data, month, year, currency_coefficient):
@@ -219,7 +222,7 @@ async def build_renter_bank_report(renters_payments, month, year):
         renter_vat_amount = round(sum([row['vat_value'] for row in renter['payments']]), 2)
         renter_currency_amount = round(sum([row['currency_cost'] for row in renter['payments']]), 2)
         renter_total_amount = round(sum([row['total_cost'] for row in renter['payments']]), 2)
-        invoice_number = "{:1s}{:02d}{:03d}".format(str(year)[-1], month, renter['id'])
+        invoice_number = "{:1s}{:02d}{:04d}".format(str(year)[-1], month, renter['id'])
         payments_detail = ""
         line = "│{:29s}│{:8s}│{:9.5f}│{:8.6f}│{:11.5f}│{:11.2f}│{:11.5f}│{:11.2f}│{:11.2f}│{:11.2f}│{:11.2f}│{:11.2f}│"
         for index, payment in enumerate(renter['payments']):
@@ -265,6 +268,117 @@ async def build_renter_bank_report(renters_payments, month, year):
     return web.FileResponse(
         output_file_path,
         status=200,
-        headers={"Content-Disposition": "attachment;filename=report.txt"}
+        headers={
+            "Content-Disposition": "attachment;filename=report.txt",
+            "Access-Control-Expose-Headers": "Content-Disposition"
+        }
     )
 
+
+async def build_renters_invoices_report(renters, month, year):
+    invoice_number = "400004956-{:4d}-3{:2s}{:02d}05{:04d}"
+    last_day_of_month = calendar.monthrange(year, month)[1]
+    invoice_date = "{:4d}-{:02d}-{:02d}".format(year, month, last_day_of_month)
+    output_file_path = "warmth/reports/out/invoices.zip"
+
+    if os.path.exists(output_file_path):
+        os.remove(output_file_path)
+
+    zip_file = ZipFile(output_file_path, "a")
+
+    def build_roster_item(element, index, title, value, rate_value, service_cost, coefficient, vat):
+        roster_item = ET.SubElement(element, "rosterItem")
+        payment_cost = round(service_cost * coefficient, 2)
+        payment_vat = round(payment_cost / 100 * vat, 2)
+        ET.SubElement(roster_item, "number").text = str(index)
+        ET.SubElement(roster_item, "name").text = title
+        if value:
+            ET.SubElement(roster_item, "units").text = "233"
+        ET.SubElement(roster_item, "count").text = str(value)
+        ET.SubElement(roster_item, "price").text = str(rate_value)
+        ET.SubElement(roster_item, "cost").text = str(payment_cost)
+        ET.SubElement(roster_item, "summaExcise").text = "0"
+        vat_element = ET.SubElement(roster_item, "vat")
+        if vat:
+            ET.SubElement(vat_element, "rate").text = "{:2.2f}".format(vat)
+            ET.SubElement(vat_element, "rateType").text = "DECIMAL"
+            ET.SubElement(vat_element, "summaVat").text = str(payment_vat)
+        ET.SubElement(roster_item, "costVat").text = str(round(payment_cost + payment_vat, 2))
+
+    async with aiofiles.open("warmth/reports/templates/renter_invoice.txt") as f:
+        invoice_template = await f.read()
+
+    for renter in renters:
+        renter_invoice_number = invoice_number.format(year, str(year)[-2:], month, renter['id'])
+        renter_short_invoice_number = "{:1s}{:02d}{:04d}".format(str(year)[-1], month, renter['id'])
+        renter_invoice_path = f"warmth/reports/out/{renter_invoice_number}.xml"
+
+        total_currency_cost = sum([payment['currency_cost'] for payment in renter['payments']])
+        cost = sum([payment['heating_cost'] + payment['water_heating_cost'] for payment in renter['payments']])
+        total_cost = round(cost + total_currency_cost, 2)
+        total_vat = round(sum([payment['vat_value'] for payment in renter['payments']]))
+        summary = round(total_cost + total_vat, 2)
+
+        invoice_text = invoice_template.format(
+            invoice_number=renter_invoice_number,
+            invoice_date=invoice_date,
+            renter_name=renter['full_name'],
+            renter_address=renter['address'],
+            contract_date=renter['contract_date'],
+            contract_number=renter['contract_number'],
+            short_invoice_number=renter_short_invoice_number,
+            total_cost=total_cost,
+            total_vat=total_vat,
+            summary=summary
+        )
+
+        xml_tree = ET.ElementTree(ET.fromstring(invoice_text))
+        xml_tree_root = xml_tree.getroot()
+        roster = xml_tree_root.find("roster")
+        roster_index = 1
+
+        for payment in renter['payments']:
+            payment_coefficient = payment['coefficient_value']
+            if payment['is_additional_coefficient_applied']:
+                payment_coefficient = payment['additional_coefficient_value']
+
+            if payment['heating_cost']:
+                build_roster_item(
+                    roster,
+                    roster_index,
+                    "Отопление",
+                    payment['heating_value'],
+                    payment['applied_rate_value'],
+                    payment['heating_cost'],
+                    payment_coefficient,
+                    payment['vat']
+                )
+                roster_index += 1
+
+            if payment['water_heating_cost']:
+                build_roster_item(
+                    roster,
+                    roster_index,
+                    "Подогр.воды",
+                    payment['water_heating_value'],
+                    payment['applied_rate_value'],
+                    payment['water_heating_cost'],
+                    payment_coefficient,
+                    payment['vat']
+                )
+                roster_index += 1
+
+        ET.indent(xml_tree, space="\t")
+
+        xml_tree.write(renter_invoice_path, encoding="utf-8")
+        zip_file.write(renter_invoice_path, f"{renter_invoice_number}.xml")
+        os.remove(renter_invoice_path)
+
+    zip_file.close()
+    return web.FileResponse(
+        output_file_path,
+        status=200,
+        headers={
+            "Content-Disposition": "attachment;filename=invoices.zip",
+            "Access-Control-Expose-Headers": "Content-Disposition"
+        })

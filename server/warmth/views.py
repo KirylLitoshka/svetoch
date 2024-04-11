@@ -447,7 +447,7 @@ class FileReportsView(BaseView):
                 renters_payments = await get_renters_payments(conn, month=month, year=year, is_bank_payment=True)
                 calculation = await get_renter_vat_calculations(renters_payments)
                 return await build_renter_bank_report(calculation, month, year)
-            elif report_name == "renter_invoices":
+            elif report_name == "renter_invoice":
                 renter_id = self.request.query.get("id", None)
                 renter_payments = await get_renters_payments(conn, renter_id=renter_id, month=month, year=year)
                 calculation = await get_renter_vat_calculations(renter_payments)

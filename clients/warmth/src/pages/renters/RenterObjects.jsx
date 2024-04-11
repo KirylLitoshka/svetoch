@@ -16,7 +16,7 @@ const RenterObjects = ({ selectedItem, isVisible, closeModal }) => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   const [editMode, setEditMode] = useState(false);
-  const [searchQuery, setSearchQuery] = useState({title: "", code: ""})
+  const [searchQuery, setSearchQuery] = useState({ title: "", code: "" });
   const objectsIDs = renterObjects.map((obj) => obj.object_id);
   const selectedObjects = objects.filter((obj) => objectsIDs.includes(obj.id));
   const filteredObjects = useObjects(objects, searchQuery);
@@ -100,10 +100,13 @@ const RenterObjects = ({ selectedItem, isVisible, closeModal }) => {
   }, []);
 
   return (
-    <ModalWrapper closeModal={() => {
-      setEditMode(false)
-      closeModal()
-    }} isVisible={isVisible}>
+    <ModalWrapper
+      closeModal={() => {
+        setEditMode(false);
+        closeModal();
+      }}
+      isVisible={isVisible}
+    >
       {error ? (
         <ErrorMessage message={error} />
       ) : loading ? (
@@ -113,6 +116,7 @@ const RenterObjects = ({ selectedItem, isVisible, closeModal }) => {
           style={{
             width: "80vw",
             maxHeight: "80vh",
+            minHeight: "80vh",
             overflowY: "auto",
             padding: "10px",
           }}
@@ -120,12 +124,15 @@ const RenterObjects = ({ selectedItem, isVisible, closeModal }) => {
           <PageTitle>
             <Button callback={() => setEditMode(false)} text={"Назад"} />
           </PageTitle>
-          <ObjectSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+          <ObjectSearch
+            searchQuery={searchQuery}
+            setSearchQuery={setSearchQuery}
+          />
           <Accordion>
             {filteredObjects.map((obj) => (
               <AccordionItem
                 key={obj.id}
-                title={obj.title}
+                title={`${obj.code}. ${obj.title}`}
                 controls={[]}
                 callback={() => editModeHandler(obj)}
                 selected={objectsIDs.includes(obj.id)}
@@ -147,13 +154,19 @@ const RenterObjects = ({ selectedItem, isVisible, closeModal }) => {
           </PageTitle>
           <Accordion>
             {selectedObjects.map((obj) => (
-              <AccordionItem key={obj.id} title={obj.title} controls={[]}>
+              <AccordionItem key={obj.id} title={`${obj.code}. ${obj.title}`} controls={[]}>
                 <div>Код сбыта: {obj.code || "Не указан"}</div>
                 <div>
                   Стутас объекта: {obj.is_closed ? "Закрыт" : "Действителен"}
                 </div>
                 <div>Отопление: {obj.is_heating_available ? "Да" : "Нет"}</div>
+                {obj.is_heating_available && (
+                  <div>Нагрузка отопления: {obj.heating_load}</div>
+                )}
                 <div>ГВС: {obj.is_water_heating_available ? "Да" : "Нет"}</div>
+                {obj.is_water_heating_available && (
+                  <div>Нагрузка отопления: {obj.water_heating_load}</div>
+                )}
                 <div>НДС: {obj.vat}%</div>
                 <div>Тариф: {obj?.rate ? obj.rate.title : "Не указан"}</div>
                 <div>

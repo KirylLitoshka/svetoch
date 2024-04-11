@@ -112,7 +112,11 @@ const Object = () => {
 
   const createObjectItem = async (item) => {
     axios
-      .post("/api/v1/warmth/objects", item)
+      .post("/api/v1/warmth/objects", {
+        ...item, 
+        heating_load: parseFloat(item.heating_load) || null,
+        water_heating_load: parseFloat(item.water_heating_load) || null
+      })
       .then((r) => {
         if (r.data.success) {
           objectItems.push(r.data.item);
@@ -133,7 +137,11 @@ const Object = () => {
 
   const updateObjectItem = async (item) => {
     axios
-      .patch(`/api/v1/warmth/objects/${item.id}`, item)
+      .patch(`/api/v1/warmth/objects/${item.id}`, {
+        ...item, 
+        heating_load: parseFloat(item.heating_load) || null,
+        water_heating_load: parseFloat(item.water_heating_load) || null
+      })
       .then((r) => {
         if (r.data.success) {
           setObjectItems(
@@ -221,6 +229,14 @@ const Object = () => {
               {obj?.reconciliation_code
                 ? obj.reconciliation_code.title
                 : "Не указан"}
+            </div>
+            <div>Отопление: {obj.is_heating_available ? "Да" : "Нет"}</div>
+            <div>
+              Нагрузка на отопление: {obj.heating_load || "Не указан"}
+            </div>
+            <div>ГВС: {obj.is_water_heating_available ? "Да" : "Нет"}</div>
+            <div>
+              Нагрузка на ГВС: {obj.water_heating_load || "Не указан"}
             </div>
             {obj.is_meter_unavailable ? (
               <div style={{ color: "red" }}>Объект без прибора учета</div>

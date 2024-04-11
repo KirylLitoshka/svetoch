@@ -65,6 +65,14 @@ reconciliation_codes = sa.Table(
     sa.Column("title", sa.String, nullable=False)
 )
 
+"""
+Таблица объектов
+--- будет дополнено ---
+is_heating_available - доступно ли отопление
+heating_load - нагрузка по отоплению
+is_water_heating_available - доступно ли горячее водоснабжение
+water_heating_load - нагрузка по горячему водоснабжению
+"""
 objects = sa.Table(
     "objects", metadata,
     sa.Column("id", sa.Integer, primary_key=True),
@@ -75,7 +83,12 @@ objects = sa.Table(
     sa.Column("reconciliation_code_id", sa.Integer, sa.ForeignKey("reconciliation_codes.id", ondelete="SET NULL")),
     sa.Column("is_closed", sa.Boolean, default=False),
     sa.Column("is_meter_unavailable", sa.Boolean, default=False),
+    sa.Column("is_heating_available", sa.Boolean, default=False),
+    sa.Column("heating_load", sa.Float, nullable=True),
+    sa.Column("is_water_heating_available", sa.Boolean, default=False),
+    sa.Column("water_heating_load", sa.Float, nullable=True),
     sa.Column("vat", sa.Float, default=0)
+
 )
 
 """
@@ -93,10 +106,6 @@ address - адрес арендатора
 contacts - контакты арендатора
 email - почта арендатора
 is_public_sector - является ли гос.организацией
-is_heating_available - доступно ли отопление
-heating_load - нагрузка по отоплению
-is_water_heating_available - доступно ли горячее водоснабжение
-water_heating_load - нагрузка по горячему водоснабжению
 is_closed - статус арендатора (закрыт ли?)
 """
 renters = sa.Table(
@@ -116,10 +125,6 @@ renters = sa.Table(
     sa.Column("contacts", sa.String, nullable=True),
     sa.Column("email", sa.String, nullable=True),
     sa.Column("is_public_sector", sa.Boolean, default=False),
-    sa.Column("is_heating_available", sa.Boolean, default=False),
-    sa.Column("heating_load", sa.Float, nullable=True),
-    sa.Column("is_water_heating_available", sa.Boolean, default=False),
-    sa.Column("water_heating_load", sa.Float, nullable=True),
     sa.Column("is_closed", sa.Boolean, default=False),
 )
 

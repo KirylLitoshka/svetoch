@@ -182,7 +182,11 @@ class ObjectsListView(ListView):
                 workshop_id=post_data['workshop']['id'] if post_data['workshop'] is not None else None,
                 reconciliation_code_id=code_id,
                 is_closed=post_data['is_closed'],
-                vat=post_data['vat']
+                vat=post_data['vat'],
+                is_heating_available=post_data['is_heating_available'],
+                heating_load=post_data['heating_load'],
+                is_water_heating_available=post_data['is_water_heating_available'],
+                water_heating_load=post_data['water_heating_load']
             ))
             post_data['id'] = dict(cursor.fetchone()).get('id')
             return web.json_response({"success": True, "item": post_data})
@@ -203,7 +207,11 @@ class ObjectDetailView(DetailView):
                 workshop_id=post_data['workshop']['id'] if post_data['workshop'] is not None else None,
                 reconciliation_code_id=code_id,
                 is_closed=post_data['is_closed'],
-                vat=post_data['vat']
+                vat=post_data['vat'],
+                is_heating_available=post_data['is_heating_available'],
+                heating_load=post_data['heating_load'],
+                is_water_heating_available=post_data['is_water_heating_available'],
+                water_heating_load=post_data['water_heating_load']
             ))
             return web.json_response({"success": True}, dumps=pretty_json)
 

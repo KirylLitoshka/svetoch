@@ -180,14 +180,6 @@ const Renter = () => {
             <div>Адрес: {renter.address || "Не указан"}</div>
             <div>Контакты: {renter.contacts || "Не указаны"}</div>
             <div>Банк: {renter?.bank?.title || "Не указан"}</div>
-            <div>Отопление: {renter.is_heating_available ? "Да" : "Нет"}</div>
-            <div>
-              Нагрузка на отопление: {renter.heating_load || "Не указан"}
-            </div>
-            <div>ГВС: {renter.is_water_heating_available ? "Да" : "Нет"}</div>
-            <div>
-              Нагрузка на ГВС: {renter.water_heating_load || "Не указан"}
-            </div>
             <div>
               Бюджетная организация: {renter.is_public_sector ? "Да" : "Нет"}
             </div>

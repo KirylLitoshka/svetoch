@@ -13,6 +13,10 @@ const ObjectForm = ({ selectedItem, onCreate, onUpdate }) => {
     reconciliation_code: null,
     is_closed: false,
     is_meter_unavailable: false,
+    is_heating_available: false,
+    heating_load: null,
+    is_water_heating_available: false,
+    water_heating_load: null,
     vat: 0,
   });
   const [workshops, setWorkshops] = useState([]);
@@ -219,6 +223,94 @@ const ObjectForm = ({ selectedItem, onCreate, onUpdate }) => {
           }
         />
       </div>
+      <div className="form-row">
+        <label htmlFor="is_heating_available" className="form_label">
+          Отопление
+        </label>
+        <input
+          type="checkbox"
+          className="form_input"
+          id="is_heating_available"
+          checked={objectItem.is_heating_available}
+          onChange={() => {
+            if (objectItem.is_heating_available) {
+              setObjectItem({
+                ...objectItem,
+                is_heating_available: !objectItem.is_heating_available,
+                heating_load: null,
+              });
+            } else {
+              setObjectItem({
+                ...objectItem,
+                is_heating_available: !objectItem.is_heating_available,
+              });
+            }
+          }}
+        />
+      </div>
+      {objectItem.is_heating_available && (
+        <div className="form-row">
+          <label htmlFor="heating_load" className="form_label">
+            Нагрузка отопления
+          </label>
+          <input
+            type="number"
+            name="heating_load"
+            id="heating_load"
+            className="form_input"
+            value={objectItem.heating_load || ""}
+            onChange={(e) =>
+              setObjectItem({ ...objectItem, heating_load: e.target.value || null })
+            }
+          />
+        </div>
+      )}
+      <div className="form-row">
+        <label htmlFor="is_water_heating_available" className="form_label">
+          ГВС
+        </label>
+        <input
+          type="checkbox"
+          name="is_water_heating_available"
+          id="is_water_heating_available"
+          className="form_input"
+          checked={objectItem.is_water_heating_available}
+          onChange={() => {
+            if (objectItem.is_water_heating_available) {
+              setObjectItem({
+                ...objectItem,
+                water_heating_load: null,
+                is_water_heating_available: !objectItem.is_water_heating_available,
+              });
+            } else {
+              setObjectItem({
+                ...objectItem,
+                is_water_heating_available: !objectItem.is_water_heating_available,
+              });
+            }
+          }}
+        />
+      </div>
+      {objectItem.is_water_heating_available && (
+        <div className="form-row">
+          <label htmlFor="water_heating_load" className="form_label">
+            Нагрузка ГВС
+          </label>
+          <input
+            type="number"
+            name="water_heating_load"
+            id="water_heating_load"
+            className="form_input"
+            value={objectItem.water_heating_load || ""}
+            onChange={(e) =>
+              setObjectItem({
+                ...objectItem,
+                water_heating_load: e.target.value || null,
+              })
+            }
+          />
+        </div>
+      )}
       <div className="form-row">
         <label htmlFor="vat" className="form_label">
           НДС

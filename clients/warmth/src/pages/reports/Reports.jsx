@@ -40,7 +40,7 @@ const Reports = () => {
     }
     setModalVisible({ ...modalVisible, renter: false });
     axios
-      .get(`/api/v1/warmth/reports/files/${reportType}`)
+      .get(`/api/v1/warmth/reports/files/${reportType}`, {responseType: 'arraybuffer'})
       .then((r) => {
         if (r.status === 200 && r.headers['content-disposition']) {
           const filename = r.headers['content-disposition'].split("filename=")[1]

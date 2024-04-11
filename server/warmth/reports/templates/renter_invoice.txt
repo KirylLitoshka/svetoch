@@ -1,0 +1,68 @@
+<issuance sender="400004956">
+    <general>
+        <number>{invoice_number}</number>
+        <dateIssuance>{invoice_date}</dateIssuance>
+        <dateTransaction>{invoice_date}</dateTransaction>
+        <documentType>ORIGINAL</documentType>
+    </general>
+    <provider>
+        <providerStatus>SELLER</providerStatus>
+        <dependentPerson>false</dependentPerson>
+        <residentsOfOffshore>false</residentsOfOffshore>
+        <specialDealGoods>false</specialDealGoods>
+        <bigCompany>false</bigCompany>
+        <countryCode>112</countryCode>
+        <unp>400004956</unp>
+        <name>КЖУП &quot;Светочь&quot;</name>
+        <address>247400, Гомельская обл.,г.Светлогорск, ул.Социалистическая, д.54</address>
+    </provider>
+    <recipient>
+        <recipientStatus>CUSTOMER</recipientStatus>
+        <dependentPerson>false</dependentPerson>
+        <residentsOfOffshore>false</residentsOfOffshore>
+        <specialDealGoods>false</specialDealGoods>
+        <bigCompany>false</bigCompany>
+        <countryCode>112</countryCode>
+        <unp/>
+        <branchCode/>
+        <name>{renter_name}</name>
+        <address>{renter_address}</address>
+    </recipient>
+    <senderReceiver>
+        <consignors>
+            <consignor>
+                <countryCode>112</countryCode>
+                <unp>400004956</unp>
+                <name>КЖУП &quot;Светочь&quot;</name>
+                <address>247400, Гомельская обл.,г.Светлогорск, ул.Социалистическая, д.54</address>
+            </consignor>
+        </consignors>
+        <consignees>
+            <consignee>
+                <countryCode>112</countryCode>
+                <unp/>
+                <name>{renter_name}</name>
+                <address>{renter_address}</address>
+            </consignee>
+        </consignees>
+    </senderReceiver>
+    <deliveryCondition>
+        <contract>
+            <number>№{contract_number}</number>
+            <date>{contract_date}</date>
+            <documents>
+                <document>
+                    <docType>
+                        <code>608</code>
+                    </docType>
+                    <date>{invoice_date}</date>
+                    <blankCode/>
+                    <seria/>
+                    <number>{short_invoice_number}</number>
+                </document>
+            </documents>
+        </contract>
+    </deliveryCondition>
+    <roster totalCostVat="{summary}" totalExcise="0" totalVat="{total_vat}" totalCost="{total_cost}">
+    </roster>
+</issuance>

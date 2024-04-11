@@ -21,7 +21,7 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
     is_closed: false,
     bank: null,
   };
-  const [renter, setRenter] = useState({...initial});
+  const [renter, setRenter] = useState(initial);
   const [banks, setBanks] = useState([]);
   const [error, setError] = useState("");
 
@@ -42,7 +42,7 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
     if (selectedItem?.id) {
       setRenter(selectedItem);
     } else {
-      setRenter({...initial});
+      setRenter(initial);
     }
   }, [selectedItem]);
 
@@ -85,16 +85,20 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
           Банк
         </label>
         <select
-          name=""
+          name="bank"
           id="bank"
           className="form_input"
           value={renter.bank_id || ""}
           onChange={(e) => {
-            const bank = banks.find((bank) => bank.id === +e.target.value);
-            setRenter({ ...renter, bank: bank, bank_id: bank.id });
+            if (e.target.value) {
+              const bank = banks.find((bank) => bank.id === +e.target.value);
+              setRenter({ ...renter, bank: bank, bank_id: bank.id });
+            } else {
+              setRenter({...renter, bank: null, bank_id: null})
+            }
           }}
         >
-          <option value="" disabled>
+          <option value="">
             Не указан
           </option>
           {banks.map((bank) => (
@@ -233,7 +237,7 @@ const RenterForm = ({ selectedItem, onUpdate, onCreate }) => {
           name="is_public_sector"
           id="is_public_sector"
           className="form_input"
-          value={renter.is_public_sector}
+          checked={renter.is_public_sector}
           onChange={() =>
             setRenter({ ...renter, is_public_sector: !renter.is_public_sector })
           }

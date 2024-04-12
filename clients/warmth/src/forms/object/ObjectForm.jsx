@@ -5,7 +5,7 @@ import Loader from "../../components/ui/loader/Loader";
 import Button from "../../components/ui/buttons/base/Button";
 
 const ObjectForm = ({ selectedItem, onCreate, onUpdate }) => {
-  const [objectItem, setObjectItem] = useState({
+  const initialObject = {
     title: "",
     code: null,
     rate: null,
@@ -18,7 +18,8 @@ const ObjectForm = ({ selectedItem, onCreate, onUpdate }) => {
     is_water_heating_available: false,
     water_heating_load: null,
     vat: 0,
-  });
+  }
+  const [objectItem, setObjectItem] = useState(initialObject);
   const [workshops, setWorkshops] = useState([]);
   const [rates, setRates] = useState([]);
   const [reconciliationCodes, setReconciliationCodes] = useState([]);
@@ -29,16 +30,7 @@ const ObjectForm = ({ selectedItem, onCreate, onUpdate }) => {
     if (selectedItem?.id) {
       setObjectItem({ ...selectedItem });
     } else {
-      setObjectItem({
-        title: "",
-        code: "",
-        rate: null,
-        workshop: null,
-        reconciliation_code: null,
-        is_closed: false,
-        is_meter_unavailable: false,
-        vat: 0,
-      });
+      setObjectItem(initialObject);
     }
   }, [selectedItem]);
 

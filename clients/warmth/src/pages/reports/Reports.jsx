@@ -21,7 +21,7 @@ const Reports = () => {
   const getNormReport = async (e) => {
     e.preventDefault();
     axios.get("/api/v1/warmth/reports/files/consolidated").then((r) => {
-      if (r.status === 200) {
+      if (r.status === 200 && r.headers['content-disposition']) {
         const url = URL.createObjectURL(new Blob([r.data]));
         const link = document.createElement("a");
         link.href = url;

@@ -61,7 +61,7 @@ async def get_workshop_groups_payments(conn, month, year):
     cursor = await conn.execute(workshops_groups_payments)
     workshop_groups_data = [dict(row) for row in cursor.fetchall()]
     if not workshop_groups_data:
-        raise RecordNotFound("Записи на текущий месяц не найдены")
+        raise RecordNotFound("Записи на текущий месяц не найдены или не задан валютный коэффициент")
     return workshop_groups_data
 
 

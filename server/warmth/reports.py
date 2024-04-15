@@ -147,27 +147,36 @@ async def build_renter_full_report(renter_payments, month, year):
     month = MONTHS[month - 1]
     file_path = f"warmth/reports/templates/renter_full_report.txt"
     output_file_path = f"warmth/reports/out/renter_full_report.txt"
-    line = "│{:6s}│{:20s}│{:3s}│{:8s}│{:8s}│{:5s}│{:9s}│{:9s}│{:11s}│{:9s}│{:10s}│{:11s}│"
-    sub_line = "│     -│{:20s}│{:3s}│{:8s}│{:8.5f}│{:5.2f}│{:9s}│{:9s}│{:11.2f}│{:9s}│{:10.2f}│{:11.2f}│"
+    line = "│{:6s}│{:20s}│{:3s}│{:8s}│{:5s}│{:9s}│{:9s}│{:11s}│{:9s}│{:10s}│{:11s}│"
+    sub_line = "│     -│{:20s}│{:3s}│{:8.6f}│{:5.2f}│{:9s}│{:9s}│{:11.2f}│{:9s}│{:10.2f}│{:11.2f}│"
+    end_lind = "│------│{:20s}│{:3s}│{:8s}│{:5s}│{:9s}│{:9s}│{:11.2f}│{:9.2f}│{:10.2f}│{:11.2f}│"
     content = ""
+    total = {
+        "cost": 0,
+        "vat": 0,
+        "coefficient": 0,
+        "summary": 0
+    }
 
     for renter in renter_payments:
-        content += line.format(str(renter['id']), renter['name'], *[""] * 10) + "\n"
+        content += line.format(str(renter['id']), renter['name'][:20], *[""] * 10) + "\n"
         for payment in renter['payments']:
-            payment_period = f"{payment['payment_month']}.{payment['payment_year']}"
             if payment['is_additional_coefficient_applied']:
                 coefficient = payment['additional_coefficient_value']
             else:
                 coefficient = payment['coefficient_value']
             if payment['heating_cost']:
-                value_with_coefficient = payment['heating_cost'] * coefficient
-                vat = value_with_coefficient / 100 * payment['vat'] if payment['vat'] else 0
+                value_with_coefficient = round(payment['heating_cost'] * coefficient, 2)
+                vat = round(value_with_coefficient / 100 * payment['vat'], 2) if payment['vat'] else 0
                 payment_coefficient = value_with_coefficient - payment['heating_cost']
-                total_cost = value_with_coefficient + vat
+                total_cost = round(value_with_coefficient + vat, 2)
+                total['cost'] += payment['heating_cost']
+                total["vat"] += vat
+                total["coefficient"] += payment_coefficient
+                total["summary"] += total_cost
                 content += sub_line.format(
                     payment['title'][:20],
                     "Отп",
-                    payment_period,
                     coefficient,
                     payment['vat'],
                     str(round(payment['heating_value'], 4)),
@@ -177,14 +186,16 @@ async def build_renter_full_report(renter_payments, month, year):
                     vat, total_cost
                 ) + "\n"
             if payment['water_heating_cost']:
-                value_with_coefficient = payment['water_heating_cost'] * coefficient
-                vat = value_with_coefficient / 100 * payment['vat'] if payment['vat'] else 0
+                value_with_coefficient = round(payment['water_heating_cost'] * coefficient, 2)
+                vat = round(value_with_coefficient / 100 * payment['vat'], 2) if payment['vat'] else 0
                 payment_coefficient = value_with_coefficient - payment['water_heating_cost']
-                total_cost = value_with_coefficient + vat
+                total_cost = round(value_with_coefficient + vat, 2)
+                total["vat"] += vat
+                total['cost'] += payment_coefficient
+                total["summary"] += total_cost
                 content += sub_line.format(
                     payment['title'][:20],
                     "ГВС",
-                    payment_period,
                     coefficient,
                     payment['vat'],
                     str(round(payment['water_heating_value'], 4)),
@@ -194,9 +205,12 @@ async def build_renter_full_report(renter_payments, month, year):
                     vat, total_cost
                 ) + "\n"
     content += line.format(*[""] * 12)
+    total_line = end_lind.format(
+        "Итого", "", "", "", "", "", total['cost'], total['coefficient'], total['vat'], total['summary']
+    )
     async with aiofiles.open(file_path, mode="r", encoding="utf8") as fp:
         template_data = await fp.read()
-    data = template_data.format(month, year, content)
+    data = template_data.format(month, year, content, total_line)
     async with aiofiles.open(output_file_path, mode="w", encoding="utf8") as output_fp:
         await output_fp.write(data)
     return web.FileResponse(
@@ -382,3 +396,7 @@ async def build_renters_invoices_report(renters, month, year):
             "Content-Disposition": "attachment;filename=invoices.zip",
             "Access-Control-Expose-Headers": "Content-Disposition"
         })
+
+
+async def build_renters_invoices_print_report(renters_payments, month, year):
+    return web.json_response({'success': True, "items": renters_payments})

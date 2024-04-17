@@ -73,7 +73,11 @@ const Currency = () => {
 
   const updateCurrencyItem = async (item) => {
     axios
-      .patch(`/api/v1/warmth/currency_coefficients/${item.id}`, item)
+      .patch(`/api/v1/warmth/currency_coefficients/${item.id}`, {
+        ...item, 
+        value_1: parseFloat(item.value_1) || 0,
+        value_2: parseFloat(item.value_2) || 0
+      })
       .then((r) => {
         if (r.data.success) {
           setCurrencyItems(
@@ -94,7 +98,11 @@ const Currency = () => {
 
   const createCurrencyItem = async (item) => {
     axios
-      .post("/api/v1/warmth/currency_coefficients", item)
+      .post("/api/v1/warmth/currency_coefficients", {
+        ...item, 
+        value_1: parseFloat(item.value_1) || 0,
+        value_2: parseFloat(item.value_2) || 0
+      })
       .then((r) => {
         if (r.data.success) {
           setCurrencyItems([r.data.item, ...currencyItems]);

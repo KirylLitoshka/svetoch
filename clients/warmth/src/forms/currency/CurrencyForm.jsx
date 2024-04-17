@@ -6,8 +6,8 @@ const CurrencyForm = ({ selectedItem, onCreate, onUpdate }) => {
   const [currencyItem, setCurrencyItem] = useState({
     year: new Date().getFullYear(),
     month: 1,
-    value_1: 0,
-    value_2: 0,
+    value_1: "",
+    value_2: "",
   });
 
   useEffect(() => {
@@ -17,8 +17,8 @@ const CurrencyForm = ({ selectedItem, onCreate, onUpdate }) => {
       setCurrencyItem({
         year: new Date().getFullYear(),
         month: 1,
-        value_1: 0,
-        value_2: 0,
+        value_1: "",
+        value_2: "",
       });
     }
   }, [selectedItem]);
@@ -74,7 +74,7 @@ const CurrencyForm = ({ selectedItem, onCreate, onUpdate }) => {
           onChange={(e) =>
             setCurrencyItem({
               ...currencyItem,
-              value_1: parseFloat(e.target.value) || 0
+              value_1: e.target.value
             })
           }
         />
@@ -92,7 +92,7 @@ const CurrencyForm = ({ selectedItem, onCreate, onUpdate }) => {
           onChange={(e) =>
             setCurrencyItem({
               ...currencyItem,
-              value_2: parseFloat(e.target.value) || 0,
+              value_2: e.target.value,
             })
           }
         />

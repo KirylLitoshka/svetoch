@@ -1,5 +1,6 @@
 from aiohttp import web
 from xml.etree import ElementTree as ET
+from datetime import datetime
 from utils import MONTHS
 from zipfile import ZipFile
 
@@ -267,7 +268,7 @@ async def build_renter_bank_report(renters_payments, month, year):
             registration_number=renter['registration_number'],
             full_name=renter['full_name'],
             contract_number=renter['contract_number'],
-            contract_date=renter['contract_date'],
+            contract_date=renter['contract_date'].strftime("%d.%m.%Y"),
             bank_code=renter['bank_code'],
             bank_title=renter['bank_title'],
             month_name=month_name,

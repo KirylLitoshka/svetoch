@@ -1,7 +1,8 @@
 from aiohttp import web
 from xml.etree import ElementTree as ET
-from datetime import datetime
 from utils import MONTHS
+from docx import Document
+from docx.shared import Inches, Pt
 from zipfile import ZipFile
 
 import aiofiles
@@ -400,4 +401,127 @@ async def build_renters_invoices_report(renters, month, year):
 
 
 async def build_renters_invoices_print_report(renters_payments, month, year):
-    return web.json_response({'success': True, "items": renters_payments})
+    month_title = MONTHS[month - 1]
+    last_day_of_month = calendar.monthrange(year, month)[1]
+    output_file_path = "warmth/reports/out/invoices.docx"
+    line = "│{:12s}│{:5s}│{:12.4f}│{11.2f}│{:4.2f}│{:7.2f}│{:9.2f}│"
+    content_line = "|{:12s}|{:5s}|{:12.5f}|{:11.2f}|{:6.2f}|{:7.2f}|{:9.2f}|"
+    add_content_line = " {:3d} {:18s} {:7s} {:7s} {:7.6f} {:4.2f} {:9.4f} {:9.5f} {:11.2f} {:10.2f} {:10.2f} {:11.2f}"
+
+    async with aiofiles.open("warmth/reports/templates/renter_invoice_print.txt") as f:
+        invoice_text_template = await f.read()
+
+    async with aiofiles.open("warmth/reports/templates/renter_invoice_print_add.txt") as f:
+        additional_invoice_text_template = await f.read()
+
+    document = Document()
+    section = document.sections[-1]
+    section.top_margin = Inches(0.1)
+    section.bottom_margin = Inches(0.1)
+    section.left_margin = Inches(0.1)
+    section.right_margin = Inches(0.1)
+    style = document.styles['Normal']
+    style.font.name = 'Arial'
+
+    for index, renter in enumerate(renters_payments):
+        renter_short_invoice_number = "{:1s}{:02d}{:04d}".format(str(year)[-1], month, renter['id'])
+        total = {
+            "cost": 0,
+            "vat": 0,
+            "value": 0,
+        }
+        heating = total.copy()
+        water_heating = total.copy()
+        invoice_text_content = ""
+        additional_invoice_text_content = ""
+
+        for payment in renter['payments']:
+            tab = 1
+            payment_coefficient = payment['coefficient_value']
+            if payment['is_additional_coefficient_applied']:
+                payment_coefficient = payment['additional_coefficient_value']
+            if payment['heating_cost']:
+                value_with_coefficient = round(payment['heating_cost'] * payment_coefficient, 2)
+                vat = round(value_with_coefficient / 100 * payment['vat'], 2) if payment['vat'] else 0
+                coefficient_cost = value_with_coefficient - payment['heating_cost']
+                total_cost = round(value_with_coefficient + vat, 2)
+                heating['cost'] += value_with_coefficient
+                heating['vat'] += vat
+                heating['value'] += payment['heating_value']
+                additional_invoice_text_content += add_content_line.format(
+                    tab, payment['title'][:18], "Отп/Гкл", "{:02d}.{:4d}".format(month, year),
+                    payment_coefficient, payment['vat'], payment['heating_value'], payment['applied_rate_value'],
+                    payment['heating_cost'], coefficient_cost, vat, total_cost
+                ) + '\n'
+                tab += 1
+            if payment['water_heating_cost']:
+                value_with_coefficient = round(payment['water_heating_cost'] * payment_coefficient, 2)
+                vat = round(value_with_coefficient / 100 * payment['vat'], 2) if payment['vat'] else 0
+                coefficient_cost = value_with_coefficient - payment['heating_cost']
+                total_cost = round(value_with_coefficient + vat, 2)
+                water_heating['cost'] += value_with_coefficient
+                water_heating['vat'] += vat
+                water_heating['value'] += payment['water_heating_value']
+                additional_invoice_text_content += add_content_line.format(
+                    tab, payment['title'][:18], "Отп/Гкл", "{:02d}.{:4d}".format(month, year),
+                    payment_coefficient, payment['vat'], payment['water_heating_value'], payment['applied_rate_value'],
+                    payment['water_heating_cost'], coefficient_cost, vat, total_cost
+                ) + '\n'
+                tab += 1
+            invoice_text_content += content_line.format(
+                "Отопление", "Гкл", heating['value'], heating['cost'], 20,
+                heating['vat'], round(heating['cost'] + heating['vat'], 2)
+            ) + "\n"
+            invoice_text_content += content_line.format(
+                "Подогр.воды", "Гкл", water_heating['value'], water_heating['cost'], 20,
+                water_heating['vat'], round(water_heating['cost'] + water_heating['vat'], 2)
+            )
+
+        document.add_paragraph().add_run(invoice_text_template.format(
+            invoice_number=renter_short_invoice_number,
+            day=last_day_of_month,
+            month_title=month_title,
+            year=year,
+            contract_date=renter['contract_date'].strftime("%d.%m.%Y"),
+            contract_number=renter['contract_number'],
+            renter_title=renter['full_name'],
+            renter_address=renter['address'],
+            renter_registration_number=renter['registration_number'],
+            renter_banking_account=renter['banking_account'],
+            bank_code=renter['bank_code'],
+            bank_title=renter['bank_title'],
+            content=invoice_text_content,
+            total_cost=heating['cost'] + water_heating['cost'],
+            total_vat=heating['vat'] + water_heating['vat'],
+            summary=heating['cost'] + heating['vat'] + water_heating['cost'] + water_heating['vat'],
+        ), style="Macro Text Char").font.size = Pt(10)
+
+        document.add_page_break()
+
+        document.add_paragraph().add_run(additional_invoice_text_template.format(
+            invoice_number=renter_short_invoice_number,
+            day=last_day_of_month,
+            month_title=month_title,
+            year=year,
+            renter_title=renter['full_name'],
+            renter_address=renter['address'],
+            renter_registration_number=renter['registration_number'],
+            renter_banking_account=renter['banking_account'],
+            bank_code=renter['bank_code'],
+            bank_title=renter['bank_title'],
+            total_vat=heating['vat'] + water_heating['vat'],
+            summary=heating['cost'] + heating['vat'] + water_heating['cost'] + water_heating['vat'],
+            content=additional_invoice_text_content
+        ), style="Macro Text Char").font.size = Pt(7)
+
+        if index != len(renters_payments) - 1:
+            document.add_page_break()
+
+    document.save(output_file_path)
+    return web.FileResponse(
+        output_file_path,
+        status=200,
+        headers={
+            "Content-Disposition": "attachment;filename=invoices.docx",
+            "Access-Control-Expose-Headers": "Content-Disposition"
+        })

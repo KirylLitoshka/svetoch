@@ -460,6 +460,11 @@ class FileReportsView(BaseView):
                 renter_payments = await get_renters_payments(conn, renter_id=renter_id, month=month, year=year)
                 calculation = await get_renter_vat_calculations(renter_payments)
                 return await build_renters_invoices_report(calculation, month, year)
+            elif report_name == "renter_invoice_print":
+                renter_id = self.request.query.get("id", None)
+                renter_payments = await get_renters_payments(conn, renter_id=renter_id, month=month, year=year)
+                calculation = await get_renter_vat_calculations(renter_payments)
+                return await build_renters_invoices_print_report(calculation, month, year)
             else:
                 return web.json_response({"success": False, "reason": "Отчет не найден"})
             

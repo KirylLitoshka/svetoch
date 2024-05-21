@@ -100,7 +100,7 @@ async def get_workshop_payments(conn, workshop_id, month, year):
     return workshops_payments
 
 
-async def get_renters_payments(conn, renter_id=None, month=None, year=None, is_bank_payment=False):
+async def get_renters_payments(conn, renter_ids=None, month=None, year=None, is_bank_payment=False):
     payments_with_coefficient = select(
         objects.c.code,
         objects.c.title,
@@ -126,8 +126,10 @@ async def get_renters_payments(conn, renter_id=None, month=None, year=None, is_b
     ).select_from(
         renters.join(renters_objects).join(objects).join(payments_with_coefficient).join(banks, isouter=True)
     ).group_by(renters, banks.c.title, banks.c.code)
-    if renter_id:
-        query = query.where(renters.c.id == int(renter_id))
+    if renter_ids:
+        if isinstance(renter_ids, int):
+            renter_ids = [renter_ids]
+        query = query.where(renters.c.id.in_(renter_ids))
     if is_bank_payment:
         query = query.where(renters.c.is_bank_payer)
     cursor = await conn.execute(query)

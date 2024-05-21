@@ -13,6 +13,7 @@ import RenterSearch from "../../forms/renter/RenterSearch";
 import { useRenters } from "../../hooks/useRenters";
 import RenterObjects from "./RenterObjects";
 import { useNavigate } from "react-router-dom";
+import RentersSelection from "./RentersSelection";
 
 const Renter = () => {
   const navigate = useNavigate();
@@ -20,10 +21,13 @@ const Renter = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedRentersIDs, setSelectedRentersIDs] = useState([]);
+  const [reportType, setReportType] = useState("");
   const [modalsVisible, setModalsVisible] = useState({
     create: false,
     delete: false,
     view: false,
+    selection: false,
   });
   const [searchQuery, setSearchQuery] = useState({
     title: "",
@@ -61,6 +65,36 @@ const Renter = () => {
       },
     },
   ];
+
+  const getRentersReport = async () => {
+    if (selectedRentersIDs.length === 0) {
+      return;
+    }
+    setModalsVisible({ ...modalsVisible, selection: false });
+    const URLString = selectedRentersIDs
+      .map((value, index) => `arr[${index}]=${value}`)
+      .join("&");
+    axios
+      .get(`/api/v1/warmth/reports/files/${reportType}?${URLString}`, {
+        responseType: "arraybuffer",
+      })
+      .then((r) => {
+        if (r.status === 200 && r.headers["content-disposition"]) {
+          const filename =
+            r.headers["content-disposition"].split("filename=")[1];
+          const url = URL.createObjectURL(new Blob([r.data]));
+          const link = document.createElement("a");
+          link.href = url;
+          link.setAttribute("download", filename);
+          link.click();
+        } else {
+          setError(r.data.reason);
+          setModalsVisible({ ...modalsVisible, selection: false });
+        }
+      })
+      .catch((e) => setError(e.response.data.reason));
+    setSelectedRentersIDs([]);
+  };
 
   const getRentersItems = async () => {
     axios
@@ -159,6 +193,20 @@ const Renter = () => {
             setModalsVisible({ ...modalsVisible, create: true });
           }}
         />
+        <Button
+          text={"ЭСЧФ"}
+          callback={() => {
+            setModalsVisible({ ...modalsVisible, selection: true });
+            setReportType("renter_invoice");
+          }}
+        />
+        <Button
+          text={"Счет фактуры"}
+          callback={() => {
+            setModalsVisible({ ...modalsVisible, selection: true });
+            setReportType("renter_invoice_print");
+          }}
+        />
       </PageTitle>
       <RenterSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <Accordion>
@@ -218,6 +266,17 @@ const Renter = () => {
           setSelectedItem({});
           setModalsVisible({ ...modalsVisible, view: false });
         }}
+      />
+      <RentersSelection
+        rentersList={renters.filter((renter) => !renter.is_closed)}
+        isVisible={modalsVisible.selection}
+        onClose={() => {
+          setSelectedRentersIDs([]);
+          setModalsVisible({ ...modalsVisible, selection: false });
+        }}
+        selectedIDs={selectedRentersIDs}
+        setSelectedIDs={setSelectedRentersIDs}
+        confirmCallback={getRentersReport}
       />
     </React.Fragment>
   );

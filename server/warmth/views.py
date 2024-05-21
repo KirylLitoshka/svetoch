@@ -403,7 +403,7 @@ class RenterPaymentListView(ListView):
     async def get(self):
         renter_id = int(self.request.match_info['id'])
         async with self.request.app['db'].connect() as conn:
-            renter_payments = await get_renters_payments(conn, renter_id=renter_id)
+            renter_payments = await get_renters_payments(conn, renter_ids=renter_id)
             calculations = await get_renter_payments_calculation(renter_payments)
             return web.json_response({"success": True, "items": calculations}, dumps=pretty_json)
 
@@ -456,13 +456,13 @@ class FileReportsView(BaseView):
                 calculation = await get_renter_vat_calculations(renters_payments)
                 return await build_renter_bank_report(calculation, month, year)
             elif report_name == "renter_invoice":
-                renter_id = self.request.query.get("id", None)
-                renter_payments = await get_renters_payments(conn, renter_id=renter_id, month=month, year=year)
+                renter_ids = self.request.query.get("id", [int(val) for val in self.request.query.values()])
+                renter_payments = await get_renters_payments(conn, renter_ids=renter_ids, month=month, year=year)
                 calculation = await get_renter_vat_calculations(renter_payments)
                 return await build_renters_invoices_report(calculation, month, year)
             elif report_name == "renter_invoice_print":
-                renter_id = self.request.query.get("id", None)
-                renter_payments = await get_renters_payments(conn, renter_id=renter_id, month=month, year=year)
+                renter_ids = self.request.query.get("id", [int(val) for val in self.request.query.values()])
+                renter_payments = await get_renters_payments(conn, renter_ids=renter_ids, month=month, year=year)
                 calculation = await get_renter_vat_calculations(renter_payments)
                 return await build_renters_invoices_print_report(calculation, month, year)
             else:

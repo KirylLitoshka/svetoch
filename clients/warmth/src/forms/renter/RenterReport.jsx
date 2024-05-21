@@ -21,8 +21,6 @@ const RenterReport = ({callback}) => {
           <option value="" disabled>Не указан</option>
           <option value="renter_short">Сокращенный</option>
           <option value="renter_full">Полный</option>
-          <option value="renter_invoice">Счет фактура (ЭСЧФ)</option>
-          <option value="renter_invoice_print"> Счет фактура (печать)</option>
           <option value="renter_bank">Платежные требования</option>
         </select>
       </div>

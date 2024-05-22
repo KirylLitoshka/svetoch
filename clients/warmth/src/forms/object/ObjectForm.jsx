@@ -206,7 +206,7 @@ const ObjectForm = ({ selectedItem, onCreate, onUpdate }) => {
           type="checkbox"
           id="is_meter_unavailable"
           className="form_input"
-          value={objectItem.is_meter_unavailable}
+          checked={objectItem.is_meter_unavailable}
           onChange={() =>
             setObjectItem({
               ...objectItem,

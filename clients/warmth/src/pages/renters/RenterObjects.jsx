@@ -92,6 +92,7 @@ const RenterObjects = ({ selectedItem, isVisible, closeModal }) => {
     } else {
       setRenterObjects([]);
       setLoading(true);
+      setSearchQuery({ title: "", code: "" })
     }
   }, [selectedItem]);
 

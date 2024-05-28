@@ -65,6 +65,11 @@
         "is_currency_coefficient_applied": true
     },
     {
+        "title": "разница тарифов",
+        "workshop_group_id": 2,
+        "is_currency_coefficient_applied": false
+    },
+    {
         "title": "РМЦ",
         "workshop_group_id": 6,
         "is_currency_coefficient_applied": true
@@ -227,7 +232,7 @@
     {
         "title": "Общежития Светочь",
         "workshop_group_id": 1,
-        "is_currency_coefficient_applied": false
+        "is_currency_coefficient_applied": true
     },
     {
         "title": "Лифтовое хоз-во",
@@ -267,11 +272,11 @@
     {
         "title": "Арендаторы КЖУП",
         "workshop_group_id": 2,
-        "is_currency_coefficient_applied": true
+        "is_currency_coefficient_applied": false
     },
     {
         "title": "Арендаторы",
         "workshop_group_id": 2,
-        "is_currency_coefficient_applied": true
+        "is_currency_coefficient_applied": false
     }
 ]

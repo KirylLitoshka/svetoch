@@ -232,6 +232,10 @@
         "vat": 20.0
     },
     {
+        "object_id": 21301,
+        "vat": 20.0
+    },
+    {
         "object_id": 19703,
         "vat": 20.0
     },
@@ -246,10 +250,6 @@
     {
         "object_id": 47701,
         "vat": 20.0
-    },
-    {
-        "object_id": 47802,
-        "vat": 0.0
     },
     {
         "object_id": 3504,
@@ -408,7 +408,359 @@
         "vat": 20.0
     },
     {
+        "object_id": 704,
+        "vat": 20.0
+    },
+    {
+        "object_id": 803,
+        "vat": 20.0
+    },
+    {
+        "object_id": 2704,
+        "vat": 20.0
+    },
+    {
+        "object_id": 3503,
+        "vat": 20.0
+    },
+    {
+        "object_id": 3505,
+        "vat": 20.0
+    },
+    {
+        "object_id": 4207,
+        "vat": 20.0
+    },
+    {
+        "object_id": 4405,
+        "vat": 20.0
+    },
+    {
+        "object_id": 5003,
+        "vat": 20.0
+    },
+    {
+        "object_id": 5704,
+        "vat": 20.0
+    },
+    {
+        "object_id": 6203,
+        "vat": 20.0
+    },
+    {
+        "object_id": 6405,
+        "vat": 20.0
+    },
+    {
+        "object_id": 6506,
+        "vat": 20.0
+    },
+    {
+        "object_id": 7607,
+        "vat": 20.0
+    },
+    {
+        "object_id": 7712,
+        "vat": 20.0
+    },
+    {
+        "object_id": 7718,
+        "vat": 20.0
+    },
+    {
+        "object_id": 7719,
+        "vat": 20.0
+    },
+    {
+        "object_id": 7720,
+        "vat": 20.0
+    },
+    {
+        "object_id": 7721,
+        "vat": 20.0
+    },
+    {
+        "object_id": 7722,
+        "vat": 20.0
+    },
+    {
+        "object_id": 8501,
+        "vat": 20.0
+    },
+    {
+        "object_id": 8804,
+        "vat": 20.0
+    },
+    {
+        "object_id": 9109,
+        "vat": 20.0
+    },
+    {
+        "object_id": 9410,
+        "vat": 20.0
+    },
+    {
+        "object_id": 9411,
+        "vat": 20.0
+    },
+    {
+        "object_id": 9505,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11004,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11214,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11215,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11216,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11217,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11218,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11219,
+        "vat": 20.0
+    },
+    {
+        "object_id": 12304,
+        "vat": 20.0
+    },
+    {
+        "object_id": 12305,
+        "vat": 20.0
+    },
+    {
+        "object_id": 12602,
+        "vat": 20.0
+    },
+    {
+        "object_id": 13009,
+        "vat": 20.0
+    },
+    {
+        "object_id": 13010,
+        "vat": 20.0
+    },
+    {
+        "object_id": 13011,
+        "vat": 20.0
+    },
+    {
+        "object_id": 13605,
+        "vat": 20.0
+    },
+    {
+        "object_id": 13803,
+        "vat": 20.0
+    },
+    {
+        "object_id": 14906,
+        "vat": 20.0
+    },
+    {
+        "object_id": 14913,
+        "vat": 20.0
+    },
+    {
+        "object_id": 14914,
+        "vat": 20.0
+    },
+    {
+        "object_id": 14915,
+        "vat": 20.0
+    },
+    {
+        "object_id": 14916,
+        "vat": 20.0
+    },
+    {
+        "object_id": 16207,
+        "vat": 20.0
+    },
+    {
+        "object_id": 16204,
+        "vat": 20.0
+    },
+    {
+        "object_id": 19707,
+        "vat": 20.0
+    },
+    {
+        "object_id": 23502,
+        "vat": 20.0
+    },
+    {
+        "object_id": 27509,
+        "vat": 20.0
+    },
+    {
+        "object_id": 27510,
+        "vat": 20.0
+    },
+    {
+        "object_id": 27511,
+        "vat": 20.0
+    },
+    {
+        "object_id": 27512,
+        "vat": 20.0
+    },
+    {
+        "object_id": 27513,
+        "vat": 20.0
+    },
+    {
+        "object_id": 28902,
+        "vat": 20.0
+    },
+    {
+        "object_id": 29703,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39906,
+        "vat": 20.0
+    },
+    {
+        "object_id": 7904,
+        "vat": 20.0
+    },
+    {
+        "object_id": 47001,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39917,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39908,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39913,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39925,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39926,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39927,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39911,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39928,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39929,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39931,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39933,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11222,
+        "vat": 20.0
+    },
+    {
+        "object_id": 2403,
+        "vat": 20.0
+    },
+    {
+        "object_id": 5104,
+        "vat": 20.0
+    },
+    {
+        "object_id": 6304,
+        "vat": 20.0
+    },
+    {
+        "object_id": 6604,
+        "vat": 20.0
+    },
+    {
+        "object_id": 7729,
+        "vat": 20.0
+    },
+    {
+        "object_id": 9506,
+        "vat": 20.0
+    },
+    {
+        "object_id": 13013,
+        "vat": 20.0
+    },
+    {
+        "object_id": 27209,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11203,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11221,
+        "vat": 20.0
+    },
+    {
+        "object_id": 13012,
+        "vat": 20.0
+    },
+    {
+        "object_id": 27208,
+        "vat": 20.0
+    },
+    {
+        "object_id": 13203,
+        "vat": 20.0
+    },
+    {
+        "object_id": 28803,
+        "vat": 20.0
+    },
+    {
+        "object_id": 35305,
+        "vat": 20.0
+    },
+    {
         "object_id": 48901,
+        "vat": 20.0
+    },
+    {
+        "object_id": 42602,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11504,
         "vat": 20.0
     },
     {
@@ -433,6 +785,50 @@
     },
     {
         "object_id": 7709,
+        "vat": 20.0
+    },
+    {
+        "object_id": 16203,
+        "vat": 20.0
+    },
+    {
+        "object_id": 903,
+        "vat": 20.0
+    },
+    {
+        "object_id": 2106,
+        "vat": 20.0
+    },
+    {
+        "object_id": 3406,
+        "vat": 20.0
+    },
+    {
+        "object_id": 7723,
+        "vat": 20.0
+    },
+    {
+        "object_id": 16206,
+        "vat": 20.0
+    },
+    {
+        "object_id": 27004,
+        "vat": 20.0
+    },
+    {
+        "object_id": 9507,
+        "vat": 20.0
+    },
+    {
+        "object_id": 35306,
+        "vat": 20.0
+    },
+    {
+        "object_id": 39932,
+        "vat": 20.0
+    },
+    {
+        "object_id": 11212,
         "vat": 20.0
     },
     {
@@ -1372,10 +1768,6 @@
         "vat": 0
     },
     {
-        "object_id": 11212,
-        "vat": 0
-    },
-    {
         "object_id": 11299,
         "vat": 0
     },
@@ -1692,6 +2084,10 @@
         "vat": 0
     },
     {
+        "object_id": 15099,
+        "vat": 0
+    },
+    {
         "object_id": 15100,
         "vat": 0
     },
@@ -1981,10 +2377,6 @@
     },
     {
         "object_id": 19800,
-        "vat": 0
-    },
-    {
-        "object_id": 19899,
         "vat": 0
     },
     {
@@ -2280,6 +2672,10 @@
         "vat": 0
     },
     {
+        "object_id": 23999,
+        "vat": 0
+    },
+    {
         "object_id": 24000,
         "vat": 0
     },
@@ -2564,10 +2960,6 @@
         "vat": 0
     },
     {
-        "object_id": 27499,
-        "vat": 0
-    },
-    {
         "object_id": 27500,
         "vat": 0
     },
@@ -2712,19 +3104,11 @@
         "vat": 0
     },
     {
-        "object_id": 31300,
-        "vat": 0
-    },
-    {
         "object_id": 31500,
         "vat": 0
     },
     {
         "object_id": 31800,
-        "vat": 0
-    },
-    {
-        "object_id": 32200,
         "vat": 0
     },
     {
@@ -2864,15 +3248,7 @@
         "vat": 0
     },
     {
-        "object_id": 34391,
-        "vat": 0
-    },
-    {
         "object_id": 34392,
-        "vat": 0
-    },
-    {
-        "object_id": 34399,
         "vat": 0
     },
     {
@@ -2977,10 +3353,6 @@
     },
     {
         "object_id": 35800,
-        "vat": 0
-    },
-    {
-        "object_id": 35899,
         "vat": 0
     },
     {
@@ -3148,10 +3520,6 @@
         "vat": 0
     },
     {
-        "object_id": 39700,
-        "vat": 0
-    },
-    {
         "object_id": 39900,
         "vat": 0
     },
@@ -3224,6 +3592,10 @@
         "vat": 0
     },
     {
+        "object_id": 45799,
+        "vat": 0
+    },
+    {
         "object_id": 45800,
         "vat": 0
     },
@@ -3253,14 +3625,6 @@
     },
     {
         "object_id": 46399,
-        "vat": 0
-    },
-    {
-        "object_id": 46600,
-        "vat": 0
-    },
-    {
-        "object_id": 46900,
         "vat": 0
     },
     {
@@ -3448,10 +3812,6 @@
         "vat": 0
     },
     {
-        "object_id": 50699,
-        "vat": 0
-    },
-    {
         "object_id": 50700,
         "vat": 0
     },
@@ -3545,6 +3905,10 @@
     },
     {
         "object_id": 52200,
+        "vat": 0
+    },
+    {
+        "object_id": 52299,
         "vat": 0
     },
     {

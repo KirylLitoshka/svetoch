@@ -12,7 +12,8 @@ from utils import construct_db_url, get_app_config
 
 APPS_SAMPLE_DIRS = {
     "electricity": os.path.join(BASE_PATH, "electricity", "sample"),
-    "warmth": os.path.join(BASE_PATH, "warmth", "sample")
+    "warmth": os.path.join(BASE_PATH, "warmth", "sample"),
+    "boiler": os.path.join(BASE_PATH, "boiler", "sample"),
 }
 
 
@@ -81,10 +82,18 @@ async def warmth_data(config, sub_app_name):
     await engine.dispose()
 
 
+async def boiler_data(config, sub_app_name):
+    db_url = construct_db_url(config[sub_app_name])
+    engine = create_async_engine(db_url, echo=True)
+
+    await engine.dispose()
+
+
 async def main():
     config = get_app_config()
-    await electricity_data(config, "electricity")
-    await warmth_data(config, "warmth")
+    # await electricity_data(config, "electricity")
+    # await warmth_data(config, "warmth")
+    await warmth_data(config, "boiler")
 
 
 if __name__ == "__main__":

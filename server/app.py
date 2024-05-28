@@ -1,6 +1,7 @@
 from aiohttp import web
 from electricity.app import electricity_app
 from warmth.app import warmth_app
+from boiler.app import boiler_app
 from middlewares import handle_json_error
 
 
@@ -8,6 +9,7 @@ def create_app():
     application = web.Application()
     application.add_subapp("/api/v1/electricity", electricity_app())
     application.add_subapp("/api/v1/warmth", warmth_app())
+    application.add_subapp("/api/v1/boiler", boiler_app())
     application.middlewares.append(handle_json_error)
     return application
 

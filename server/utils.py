@@ -23,7 +23,6 @@ async def on_startup(app):
     config = get_app_config()
     db_url = construct_db_url(config[application_name])
     app['db'] = create_async_engine(db_url, echo=True)
-    await init_app_context_data(app)
 
 
 async def on_shutdown(app):
@@ -45,16 +44,16 @@ pretty_json = functools.partial(
 
 DATE_FORMAT = '%Y-%m-%d'
 MONTHS = [
-  "Январь",
-  "Февраль",
-  "Март",
-  "Апрель",
-  "Май",
-  "Июнь",
-  "Июль",
-  "Август",
-  "Сентябрь",
-  "Октябрь",
-  "Ноябрь",
-  "Декабрь",
+    "Январь",
+    "Февраль",
+    "Март",
+    "Апрель",
+    "Май",
+    "Июнь",
+    "Июль",
+    "Август",
+    "Сентябрь",
+    "Октябрь",
+    "Ноябрь",
+    "Декабрь",
 ]

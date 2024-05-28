@@ -6,8 +6,15 @@ electricity:
   database: energy
 
 warmth:
-  username: test_admin
-  password: test
+  username: administrator
+  password: Sv255366313
   host: localhost
   port: 5432
   database: warmth
+
+boiler:
+  username: administrator
+  password: Sv255366313
+  host: localhost
+  port: 5432
+  database: boiler

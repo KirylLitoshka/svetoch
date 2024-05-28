@@ -332,7 +332,7 @@ async def build_renters_invoices_report(renters, month, year):
         total_currency_cost = sum([payment['currency_cost'] for payment in renter['payments']])
         cost = sum([payment['heating_cost'] + payment['water_heating_cost'] for payment in renter['payments']])
         total_cost = round(cost + total_currency_cost, 2)
-        total_vat = round(sum([payment['vat_value'] for payment in renter['payments']]))
+        total_vat = round(sum([payment['vat_value'] for payment in renter['payments']]), 2)
         summary = round(total_cost + total_vat, 2)
 
         invoice_text = invoice_template.format(
@@ -416,10 +416,10 @@ async def build_renters_invoices_print_report(renters_payments, month, year):
 
     document = Document()
     section = document.sections[-1]
-    section.top_margin = Inches(0.1)
-    section.bottom_margin = Inches(0.1)
-    section.left_margin = Inches(0.1)
-    section.right_margin = Inches(0.1)
+    section.top_margin = Inches(0.5)
+    section.bottom_margin = Inches(0.5)
+    section.left_margin = Inches(0.5)
+    section.right_margin = Inches(0.3)
     style = document.styles['Normal']
     style.font.name = 'Arial'
 
@@ -491,9 +491,9 @@ async def build_renters_invoices_print_report(renters_payments, month, year):
             bank_code=renter['bank_code'],
             bank_title=renter['bank_title'],
             content=invoice_text_content,
-            total_cost=heating['cost'] + water_heating['cost'],
-            total_vat=heating['vat'] + water_heating['vat'],
-            summary=heating['cost'] + heating['vat'] + water_heating['cost'] + water_heating['vat'],
+            total_cost=round(heating['cost'] + water_heating['cost'], 2),
+            total_vat=round(heating['vat'] + water_heating['vat'], 2),
+            summary=round(heating['cost'] + heating['vat'] + water_heating['cost'] + water_heating['vat'], 2),
         ), style="Macro Text Char").font.size = Pt(10)
 
         document.add_page_break()

@@ -26,12 +26,15 @@ def save_data(filename, data):
 
 def prepare_rates_data():
     old_rates_data = load_data("CENA1.json", True)
+    old_ids = {}
     result = []
-    for rate in old_rates_data:
+    for index, rate in enumerate(old_rates_data):
         result.append({
             "title": rate['H_HO'],
         })
+        old_ids[rate["H_KO"]] = index + 1
     save_data("rates.json", result)
+    save_data("_old_rates_ids.json", old_ids)
 
 
 def prepare_rates_history_data():
@@ -124,6 +127,7 @@ def prepare_objects():
     old_objects = load_data("SORG1.json", is_old=True)
     old_objects = sorted(old_objects, key=lambda x: int(x['KO']))
     old_workshops_ids = load_data("_old_workshops_ids.json")
+    old_rate_ids = load_data("_old_rates_ids.json")
     index = 1
     old_objects_ids = {}
     result = []
@@ -135,7 +139,7 @@ def prepare_objects():
         result.append(({
             "title": row['HO'],
             "code": int(row['KO']),
-            "rate_id": int(row['CEN']),
+            "rate_id": old_rate_ids[row['CEN']],
             "workshop_id": old_workshops_ids[row['CEX']],
             "reconciliation_code_id": int(row['TEN']) if int(row['TEN']) else None,
             "is_closed": row['PRBL'] == "*",
@@ -164,7 +168,7 @@ def prepare_renters_data():
             "name": row['A_HO'] if row['A_HO'] else row['A_HHO'],
             "full_name": row['A_HHO'] if row['A_HHO'] else row['A_HO'],
             "bank_id": new_bank_id,
-            "checking_account": row['A_RS'] if row['A_RS'] else None,
+            "banking_account": row['A_RS'] if row['A_RS'] else None,
             "registration_number": row['A_UNN'] if row['A_UNN'] else None,
             "respondent_number": row['A_OKPO'] if row['A_OKPO'] else None,
             "contract_number": None,
@@ -187,6 +191,7 @@ def prepare_renters_objects_data():
     old_objects_ids = load_data("_old_objects_ids.json")
     for row in old_ids:
         if not int(row['D_KKO']):
+            print(row['D_KKO'])
             continue
         if row['D_KO'] not in old_renters_ids.keys():
             continue

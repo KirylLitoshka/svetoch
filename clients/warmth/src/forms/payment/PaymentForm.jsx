@@ -120,9 +120,27 @@ const PaymentForm = ({ selectedItem, onUpdate, onCreate }) => {
           id="heating_value"
           className="form_input"
           value={payment.heating_value}
-          onChange={(e) =>
-            setPayment({ ...payment, heating_value: e.target.value })
-          }
+          onChange={(e) => {
+            if (
+              parseFloat(e.target.value) &&
+              parseFloat(payment.applied_rate_value)
+            ) {
+              setPayment({
+                ...payment,
+                heating_value: e.target.value,
+                heating_cost: (
+                  parseFloat(e.target.value) *
+                  parseFloat(payment.applied_rate_value)
+                ).toFixed(2),
+              });
+            } else {
+              setPayment({
+                ...payment,
+                heating_value: e.target.value,
+                heating_cost: "",
+              });
+            }
+          }}
         />
       </div>
       <div className="form-row">
@@ -148,9 +166,27 @@ const PaymentForm = ({ selectedItem, onUpdate, onCreate }) => {
           id="water_heating_value"
           className="form_input"
           value={payment.water_heating_value}
-          onChange={(e) =>
-            setPayment({ ...payment, water_heating_value: e.target.value })
-          }
+          onChange={(e) => {
+            if (
+              parseFloat(e.target.value) &&
+              parseFloat(payment.applied_rate_value)
+            ) {
+              setPayment({
+                ...payment,
+                water_heating_value: e.target.value,
+                water_heating_cost: (
+                  parseFloat(e.target.value) *
+                  parseFloat(payment.applied_rate_value)
+                ).toFixed(2),
+              });
+            } else {
+              setPayment({
+                ...payment,
+                water_heating_value: e.target.value,
+                water_heating_cost: "",
+              });
+            }
+          }}
         />
       </div>
       <div className="form-row">

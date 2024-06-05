@@ -40,7 +40,7 @@ const RentersSelection = ({
                 style={{ padding: "0 5px" }}
                 htmlFor={`renter_${renter.id}`}
               >
-                {renter.name}
+                {renter.id}. {renter.name}
               </label>
             </div>
           ))}

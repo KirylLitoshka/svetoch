@@ -86,7 +86,7 @@ async def build_renter_short_report(report_data, month, year):
 
     for index, row in enumerate(report_data):
         content += line.format(
-            str(row['id']), row['title'][:18], "",
+            str(index + 1), row['title'][:18], "",
             round(row['heating']['value'] + row['water_heating']['value'], 4),
             round(row['heating']['cost'] + row['water_heating']['cost'], 2),
             round(row['heating']['coefficient'] + row['water_heating']['coefficient'], 2),
@@ -160,8 +160,8 @@ async def build_renter_full_report(renter_payments, month, year):
         "summary": 0
     }
 
-    for renter in renter_payments:
-        content += line.format(str(renter['id']), renter['name'][:20], *[""] * 10) + "\n"
+    for index, renter in enumerate(renter_payments):
+        content += line.format(str(index + 1), renter['name'][:20], *[""] * 10) + "\n"
         for payment in renter['payments']:
             if payment['is_additional_coefficient_applied']:
                 coefficient = payment['additional_coefficient_value']

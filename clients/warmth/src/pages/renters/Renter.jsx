@@ -210,10 +210,10 @@ const Renter = () => {
       </PageTitle>
       <RenterSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <Accordion>
-        {filteredRenters.map((renter) => (
+        {filteredRenters.map((renter, index) => (
           <AccordionItem
             key={renter.id}
-            title={renter.id + ". " + renter.name}
+            title={index + 1 + ". " + renter.name}
             controls={controls.map((control) => ({ ...control, item: renter }))}
           >
             <div>Наименование: {renter.full_name}</div>

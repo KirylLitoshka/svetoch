@@ -20,7 +20,7 @@ const RentersSelection = ({
         <Button text={"Сформировать"} callback={confirmCallback} />
       </div>
       <div style={{ minWidth: "80vw", maxHeight: "80vh", overflow: "overlay" }}>
-        {rentersList.map((renter) => (
+        {rentersList.map((renter, index) => (
             <div key={renter.id} style={{ fontSize: "18px", margin: "5px 0" }}>
               <input
                 size={40}
@@ -40,7 +40,7 @@ const RentersSelection = ({
                 style={{ padding: "0 5px" }}
                 htmlFor={`renter_${renter.id}`}
               >
-                {renter.id}. {renter.name}
+                {index}. {renter.name} ({renter.id})
               </label>
             </div>
           ))}

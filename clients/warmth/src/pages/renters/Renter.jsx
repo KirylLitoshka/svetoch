@@ -213,7 +213,7 @@ const Renter = () => {
         {filteredRenters.map((renter) => (
           <AccordionItem
             key={renter.id}
-            title={renter.name}
+            title={renter.id + ". " + renter.name}
             controls={controls.map((control) => ({ ...control, item: renter }))}
           >
             <div>Наименование: {renter.full_name}</div>

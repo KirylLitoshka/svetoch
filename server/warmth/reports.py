@@ -240,7 +240,7 @@ async def build_renter_bank_report(renters_payments, month, year):
         renter_total_amount = round(sum([row['total_cost'] for row in renter['payments']]), 2)
         invoice_number = "{:1s}{:02d}{:04d}".format(str(year)[-1], month, renter['id'])
         payments_detail = ""
-        line = "│{:29s}│{:8s}│{:9.5f}│{:8.6f}│{:11.5f}│{:11.2f}│{:11.5f}│{:11.2f}│{:11.2f}│{:11.2f}│{:11.2f}│{:11.2f}│"
+        line = "|{:29s}|{:8s}|{:9.5f}|{:8.6f}|{:11.5f}|{:11.2f}|{:11.5f}|{:11.2f}|{:11.2f}|{:11.2f}|{:11.2f}|{:11.2f}|"
         for index, payment in enumerate(renter['payments']):
             coefficient = payment['coefficient_value']
             if payment['is_additional_coefficient_applied']:
@@ -279,7 +279,7 @@ async def build_renter_bank_report(renters_payments, month, year):
             vat_sum=renter_vat_amount,
             payments_detail=payments_detail
         ) + "\n"
-    async with aiofiles.open(output_file_path, mode="w", encoding="cp866", errors="ignore") as output_fp:
+    async with aiofiles.open(output_file_path, mode="w", encoding="cp1251", errors="ignore") as output_fp:
         await output_fp.write(output_content)
     return web.FileResponse(
         output_file_path,

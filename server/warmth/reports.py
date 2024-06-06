@@ -279,7 +279,7 @@ async def build_renter_bank_report(renters_payments, month, year):
             vat_sum=renter_vat_amount,
             payments_detail=payments_detail
         ) + "\n"
-    async with aiofiles.open(output_file_path, mode="w", encoding="utf-8", errors="ignore") as output_fp:
+    async with aiofiles.open(output_file_path, mode="w", encoding="cp866", errors="ignore") as output_fp:
         await output_fp.write(output_content)
     return web.FileResponse(
         output_file_path,

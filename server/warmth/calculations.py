@@ -21,8 +21,8 @@ async def get_workshops_calculation(workshops_groups):
                     payment_coefficient = payment['value_1']
                     if payment['is_additional_coefficient_applied']:
                         payment_coefficient = payment['additional_coefficient_value']
-                    heating_cost = round(payment['heating_cost'] * payment_coefficient, 2)
-                    water_heating_cost = round(payment['water_heating_cost'] * payment_coefficient, 2)
+                    heating_cost = payment['heating_cost'] * payment_coefficient
+                    water_heating_cost = payment['water_heating_cost'] * payment_coefficient
                 workshop['heating_cost'] += heating_cost
                 workshop['water_heating_cost'] += water_heating_cost
                 workshop['heating_value'] += payment['heating_value']

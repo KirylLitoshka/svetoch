@@ -443,8 +443,8 @@ async def build_renters_invoices_print_report(renters_payments, month, year):
             if payment['is_additional_coefficient_applied']:
                 payment_coefficient = payment['additional_coefficient_value']
             if payment['heating_cost']:
-                value_with_coefficient = round(payment['heating_cost'] * payment_coefficient, 2)
-                vat = round(value_with_coefficient / 100 * payment['vat'], 2) if payment['vat'] else 0
+                value_with_coefficient = payment['heating_cost'] * payment_coefficient
+                vat = value_with_coefficient / 100 * payment['vat'] if payment['vat'] else 0
                 coefficient_cost = value_with_coefficient - payment['heating_cost']
                 total_cost = round(value_with_coefficient + vat, 2)
                 heating['cost'] += value_with_coefficient
@@ -457,9 +457,9 @@ async def build_renters_invoices_print_report(renters_payments, month, year):
                 ) + '\n'
                 tab += 1
             if payment['water_heating_cost']:
-                value_with_coefficient = round(payment['water_heating_cost'] * payment_coefficient, 2)
-                vat = round(value_with_coefficient / 100 * payment['vat'], 2) if payment['vat'] else 0
-                coefficient_cost = value_with_coefficient - payment['heating_cost']
+                value_with_coefficient = payment['water_heating_cost'] * payment_coefficient
+                vat = value_with_coefficient / 100 * payment['vat'] if payment['vat'] else 0
+                coefficient_cost = value_with_coefficient - payment['water_heating_cost']
                 total_cost = round(value_with_coefficient + vat, 2)
                 water_heating['cost'] += value_with_coefficient
                 water_heating['vat'] += vat
@@ -488,10 +488,10 @@ async def build_renters_invoices_print_report(renters_payments, month, year):
             contract_number=renter['contract_number'],
             renter_title=renter['full_name'],
             renter_address=renter['address'],
-            renter_registration_number=renter.get('registration_number', ""),
-            renter_banking_account=renter.get('banking_account', ""),
-            bank_code=renter.get('bank_code', ""),
-            bank_title=renter.get('bank_title', ""),
+            renter_registration_number=renter['registration_number'] or "",
+            renter_banking_account=renter['banking_account'] or "",
+            bank_code=renter['bank_code'] or "",
+            bank_title=renter['bank_title'] or "",
             content=invoice_text_content,
             total_cost=round(heating['cost'] + water_heating['cost'], 2),
             total_vat=round(heating['vat'] + water_heating['vat'], 2),
@@ -507,12 +507,12 @@ async def build_renters_invoices_print_report(renters_payments, month, year):
             year=year,
             renter_title=renter['full_name'],
             renter_address=renter['address'],
-            renter_registration_number=renter.get('registration_number', ""),
-            renter_banking_account=renter.get('banking_account', ""),
-            bank_code=renter.get('bank_code', ""),
-            bank_title=renter.get('bank_title', ""),
-            total_vat=heating['vat'] + water_heating['vat'],
-            summary=heating['cost'] + heating['vat'] + water_heating['cost'] + water_heating['vat'],
+            renter_registration_number=renter['registration_number'] or "",
+            renter_banking_account=renter['banking_account'] or "",
+            bank_code=renter['bank_code'] or "",
+            bank_title=renter['bank_title'] or "",
+            total_vat=round(heating['vat'] + water_heating['vat'], 2),
+            summary=round(heating['cost'] + heating['vat'] + water_heating['cost'] + water_heating['vat'], 2),
             content=additional_invoice_text_content
         ), style="Macro Text Char").font.size = Pt(7)
 

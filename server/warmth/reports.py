@@ -168,11 +168,11 @@ async def build_renter_full_report(renter_payments, month, year):
             else:
                 coefficient = payment['coefficient_value']
             if payment['heating_cost']:
-                value_with_coefficient = round(payment['heating_cost'] * coefficient, 2)
+                value_with_coefficient = round(round(payment['heating_cost'], 2) * coefficient, 2)
                 vat = round(value_with_coefficient / 100 * payment['vat'], 2) if payment['vat'] else 0
-                payment_coefficient = value_with_coefficient - payment['heating_cost']
+                payment_coefficient = round(value_with_coefficient - round(payment['heating_cost'], 2), 2)
                 total_cost = round(value_with_coefficient + vat, 2)
-                total['cost'] += payment['heating_cost']
+                total['cost'] += round(payment['heating_cost'], 2)
                 total["vat"] += vat
                 total["coefficient"] += payment_coefficient
                 total["summary"] += total_cost
@@ -184,16 +184,17 @@ async def build_renter_full_report(renter_payments, month, year):
                     str(round(payment['heating_value'], 4)),
                     str(round(payment['applied_rate_value'], 5)),
                     payment['heating_cost'],
-                    str(round(payment_coefficient, 2)),
+                    str(payment_coefficient),
                     vat, total_cost
                 ) + "\n"
             if payment['water_heating_cost']:
-                value_with_coefficient = round(payment['water_heating_cost'] * coefficient, 2)
+                value_with_coefficient = round(round(payment['water_heating_cost'], 2) * coefficient, 2)
                 vat = round(value_with_coefficient / 100 * payment['vat'], 2) if payment['vat'] else 0
-                payment_coefficient = value_with_coefficient - payment['water_heating_cost']
+                payment_coefficient = round(value_with_coefficient - round(payment['water_heating_cost'], 2), 2)
                 total_cost = round(value_with_coefficient + vat, 2)
                 total["vat"] += vat
-                total['cost'] += payment_coefficient
+                total['cost'] += round(payment['water_heating_cost'], 2)
+                total["coefficient"] += payment_coefficient
                 total["summary"] += total_cost
                 content += sub_line.format(
                     payment['title'][:20],
@@ -203,7 +204,7 @@ async def build_renter_full_report(renter_payments, month, year):
                     str(round(payment['water_heating_value'], 4)),
                     str(round(payment['applied_rate_value'], 6)),
                     payment['water_heating_cost'],
-                    str(round(payment_coefficient, 2)),
+                    str(payment_coefficient),
                     vat, total_cost
                 ) + "\n"
     content += line.format(*[""] * 12)
@@ -234,10 +235,11 @@ async def build_renter_bank_report(renters_payments, month, year):
         template_data = await fp.read()
 
     for renter in renters_payments:
-        renter_sum = round(sum([row['heating_cost'] + row['water_heating_cost'] for row in renter['payments']]), 2)
-        renter_vat_amount = round(sum([row['vat_value'] for row in renter['payments']]), 2)
-        renter_currency_amount = round(sum([row['currency_cost'] for row in renter['payments']]), 2)
-        renter_total_amount = round(sum([row['total_cost'] for row in renter['payments']]), 2)
+        renter_sum = sum([round(row['heating_cost'], 2) + round(row['water_heating_cost'], 2) for row in renter['payments']])
+        renter_vat_amount = sum([row['vat_value'] for row in renter['payments']])
+        renter_currency_amount = sum([row['currency_cost'] for row in renter['payments']])
+        renter_total_amount = sum([row['total_cost'] for row in renter['payments']])
+        print(renter_sum, renter_vat_amount, renter_currency_amount, renter_total_amount)
         invoice_number = "{:1s}{:02d}{:04d}".format(str(year)[-1], month, renter['id'])
         payments_detail = ""
         line = "|{:29s}|{:8s}|{:9.5f}|{:8.6f}|{:11.5f}|{:11.2f}|{:11.5f}|{:11.2f}|{:11.2f}|{:11.2f}|{:11.2f}|{:11.2f}|"
@@ -246,7 +248,7 @@ async def build_renter_bank_report(renters_payments, month, year):
             if payment['is_additional_coefficient_applied']:
                 coefficient = payment['additional_coefficient_value']
             payments_detail += line.format(
-                payment['title'],
+                payment['title'][:29],
                 f"{payment['payment_month']}.{payment['payment_year']}",
                 payment['applied_rate_value'],
                 coefficient,
@@ -254,7 +256,7 @@ async def build_renter_bank_report(renters_payments, month, year):
                 payment['heating_cost'],
                 payment['water_heating_value'],
                 payment['water_heating_cost'],
-                round(payment['heating_cost'] + payment['water_heating_cost'], 2),
+                round(payment['heating_cost'], 2) + round(payment['water_heating_cost'], 2),
                 payment['vat_value'],
                 payment['currency_cost'],
                 payment['total_cost']
@@ -304,7 +306,7 @@ async def build_renters_invoices_report(renters, month, year):
 
     def build_roster_item(element, index, title, value, rate_value, service_cost, coefficient, vat):
         roster_item = ET.SubElement(element, "rosterItem")
-        payment_cost = round(service_cost * coefficient, 2)
+        payment_cost = round(round(service_cost, 2) * coefficient, 2)
         payment_vat = round(payment_cost / 100 * vat, 2)
         ET.SubElement(roster_item, "number").text = str(index)
         ET.SubElement(roster_item, "name").text = title
@@ -330,7 +332,7 @@ async def build_renters_invoices_report(renters, month, year):
         renter_invoice_path = f"warmth/reports/out/{renter_invoice_number}.xml"
 
         total_currency_cost = sum([payment['currency_cost'] for payment in renter['payments']])
-        cost = sum([payment['heating_cost'] + payment['water_heating_cost'] for payment in renter['payments']])
+        cost = sum([round(payment['heating_cost'], 2) + round(payment['water_heating_cost'], 2) for payment in renter['payments']])
         total_cost = round(cost + total_currency_cost, 2)
         total_vat = round(sum([payment['vat_value'] for payment in renter['payments']]), 2)
         summary = round(total_cost + total_vat, 2)
@@ -342,6 +344,7 @@ async def build_renters_invoices_report(renters, month, year):
             renter_address=renter['address'],
             contract_date=renter['contract_date'],
             contract_number=renter['contract_number'],
+            renter_registration_number=renter['registration_number'] or "",
             short_invoice_number=renter_short_invoice_number,
             total_cost=total_cost,
             total_vat=total_vat,
@@ -406,7 +409,6 @@ async def build_renters_invoices_print_report(renters_payments, month, year):
     month_title = MONTHS[month - 1]
     last_day_of_month = calendar.monthrange(year, month)[1]
     output_file_path = "warmth/reports/out/invoices.docx"
-    line = "│{:12s}│{:5s}│{:12.4f}│{11.2f}│{:4.2f}│{:7.2f}│{:9.2f}│"
     content_line = "|{:12s}|{:5s}|{:12.5f}|{:11.2f}|{:6.2f}|{:7.2f}|{:9.2f}|"
     add_content_line = " {:3d} {:18s} {:7s} {:7s} {:7.6f} {:4.2f} {:9.4f} {:9.5f} {:11.2f} {:10.2f} {:10.2f} {:11.2f}"
 
@@ -443,31 +445,31 @@ async def build_renters_invoices_print_report(renters_payments, month, year):
             if payment['is_additional_coefficient_applied']:
                 payment_coefficient = payment['additional_coefficient_value']
             if payment['heating_cost']:
-                value_with_coefficient = payment['heating_cost'] * payment_coefficient
-                vat = value_with_coefficient / 100 * payment['vat'] if payment['vat'] else 0
-                coefficient_cost = value_with_coefficient - payment['heating_cost']
+                value_with_coefficient = round(payment['heating_cost'], 2) * payment_coefficient
+                vat = round(value_with_coefficient / 100 * payment['vat']) if payment['vat'] else 0
+                coefficient_cost = round(value_with_coefficient - round(payment['heating_cost'], 2), 2)
                 total_cost = round(value_with_coefficient + vat, 2)
                 heating['cost'] += value_with_coefficient
                 heating['vat'] += vat
-                heating['value'] += payment['heating_value']
+                heating['value'] += round(payment['heating_value'], 2)
                 additional_invoice_text_content += add_content_line.format(
                     tab, payment['title'][:18], "Отп/Гкл", "{:02d}.{:4d}".format(month, year),
                     payment_coefficient, payment['vat'], payment['heating_value'], payment['applied_rate_value'],
-                    payment['heating_cost'], coefficient_cost, vat, total_cost
+                    round(payment['heating_cost'], 2), coefficient_cost, vat, total_cost
                 ) + '\n'
                 tab += 1
             if payment['water_heating_cost']:
-                value_with_coefficient = payment['water_heating_cost'] * payment_coefficient
-                vat = value_with_coefficient / 100 * payment['vat'] if payment['vat'] else 0
-                coefficient_cost = value_with_coefficient - payment['water_heating_cost']
+                value_with_coefficient = round(payment['water_heating_cost'], 2) * payment_coefficient
+                vat = round(value_with_coefficient / 100 * payment['vat'], 2) if payment['vat'] else 0
+                coefficient_cost = round(value_with_coefficient - round(payment['water_heating_cost'], 2), 2)
                 total_cost = round(value_with_coefficient + vat, 2)
                 water_heating['cost'] += value_with_coefficient
                 water_heating['vat'] += vat
-                water_heating['value'] += payment['water_heating_value']
+                water_heating['value'] += round(payment['water_heating_value'], 2)
                 additional_invoice_text_content += add_content_line.format(
                     tab, payment['title'][:18], "Отп/Гкл", "{:02d}.{:4d}".format(month, year),
                     payment_coefficient, payment['vat'], payment['water_heating_value'], payment['applied_rate_value'],
-                    payment['water_heating_cost'], coefficient_cost, vat, total_cost
+                    round(payment['water_heating_cost'], 2), coefficient_cost, vat, total_cost
                 ) + '\n'
                 tab += 1
             invoice_text_content += content_line.format(

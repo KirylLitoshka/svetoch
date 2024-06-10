@@ -167,22 +167,22 @@ async def get_renter_payments_calculation_short(renter_payments):
             else:
                 coefficient = payment['coefficient_value']
             if payment['heating_cost']:
-                value_with_coefficient = payment['heating_cost'] * coefficient
-                vat = value_with_coefficient / 100 * payment['vat']
-                payment_coefficient = value_with_coefficient - payment['heating_cost']
+                value_with_coefficient = round(round(payment['heating_cost'], 2) * coefficient, 2)
+                vat = round(value_with_coefficient / 100 * payment['vat'], 2)
+                payment_coefficient = round(value_with_coefficient - round(payment['heating_cost'], 2), 2)
                 total_cost = value_with_coefficient + vat
                 current_renter['heating']['value'] += payment['heating_value']
-                current_renter['heating']['cost'] += payment['heating_cost']
+                current_renter['heating']['cost'] += round(payment['heating_cost'], 2)
                 current_renter['heating']['coefficient'] += payment_coefficient
                 current_renter['heating']['vat'] += vat
                 current_renter['heating']['total'] += total_cost
             if payment['water_heating_value']:
-                value_with_coefficient = payment['water_heating_cost'] * coefficient
-                vat = value_with_coefficient / 100 * payment['vat']
-                payment_coefficient = value_with_coefficient - payment['water_heating_cost']
+                value_with_coefficient = round(round(payment['water_heating_cost'], 2) * coefficient, 2)
+                vat = round(value_with_coefficient / 100 * payment['vat'], 2)
+                payment_coefficient = round(value_with_coefficient - round(payment['water_heating_cost'], 2), 2)
                 total_cost = value_with_coefficient + vat
                 current_renter['water_heating']['value'] += payment['water_heating_value']
-                current_renter['water_heating']['cost'] += payment['water_heating_cost']
+                current_renter['water_heating']['cost'] += round(payment['water_heating_cost'], 2)
                 current_renter['water_heating']['coefficient'] += payment_coefficient
                 current_renter['water_heating']['vat'] += vat
                 current_renter['water_heating']['total'] += total_cost
@@ -196,8 +196,8 @@ async def get_renter_vat_calculations(renter_payments):
             coefficient = payment['coefficient_value']
             if payment['is_additional_coefficient_applied']:
                 coefficient = payment['additional_coefficient_value']
-            total = payment['heating_cost'] + payment['water_heating_cost']
-            value_with_coefficient = total * coefficient
+            total = round(payment['heating_cost'], 2) + round(payment['water_heating_cost'], 2)
+            value_with_coefficient = round(total * coefficient, 2)
             payment['vat_value'] = round(value_with_coefficient / 100 * payment['vat'] if payment['vat'] else 0, 2)
             payment['currency_cost'] = round(value_with_coefficient - total, 2)
             payment['total_cost'] = round(value_with_coefficient + payment['vat_value'], 2)

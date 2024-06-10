@@ -23,7 +23,7 @@
     <specialDealGoods>false</specialDealGoods>
     <bigCompany>false</bigCompany>
     <countryCode>112</countryCode>
-    <unp/>
+    <unp>{renter_registration_number}</unp>
     <branchCode/>
     <name>{renter_name}</name>
     <address>{renter_address}</address>
@@ -40,7 +40,7 @@
     <consignees>
       <consignee>
         <countryCode>112</countryCode>
-        <unp/>
+        <unp>{renter_registration_number}</unp>
         <name>{renter_name}</name>
         <address>{renter_address}</address>
       </consignee>

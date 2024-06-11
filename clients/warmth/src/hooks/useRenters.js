@@ -14,8 +14,8 @@ export const useFilterByRegistrationNumber = (renters, searchQuery) => {
   const filteredRenters = useFilterByStatus(renters, searchQuery);
   return useMemo(() => {
     if (searchQuery.registration_number) {
-      return filteredRenters.filter((renter) =>
-        renter.registration_number.includes(searchQuery.registration_number)
+      return filteredRenters.filter((renter) => 
+        renter.registration_number && renter.registration_number.includes(searchQuery.registration_number)
       );
     }
     return filteredRenters;

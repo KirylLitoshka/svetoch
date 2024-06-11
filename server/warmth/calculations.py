@@ -21,8 +21,8 @@ async def get_workshops_calculation(workshops_groups):
                     payment_coefficient = payment['value_1']
                     if payment['is_additional_coefficient_applied']:
                         payment_coefficient = payment['additional_coefficient_value']
-                    heating_cost = payment['heating_cost'] * payment_coefficient
-                    water_heating_cost = payment['water_heating_cost'] * payment_coefficient
+                    heating_cost = round(round(payment['heating_cost'], 2) * payment_coefficient, 2)
+                    water_heating_cost = round(round(payment['water_heating_cost'], 2) * payment_coefficient, 2)
                 workshop['heating_cost'] += heating_cost
                 workshop['water_heating_cost'] += water_heating_cost
                 workshop['heating_value'] += payment['heating_value']
@@ -30,11 +30,11 @@ async def get_workshops_calculation(workshops_groups):
                 workshop['total_value'] += payment['heating_value'] + payment['water_heating_value']
                 workshop['total_cost'] += heating_cost + water_heating_cost
         group['heating_value'] = sum([row['heating_value'] for row in group['workshops']])
-        group['heating_cost'] = sum([row['heating_cost'] for row in group['workshops']])
+        group['heating_cost'] = sum([round(row['heating_cost'], 2) for row in group['workshops']])
         group['water_heating_value'] = sum([row['water_heating_value'] for row in group['workshops']])
-        group['water_heating_cost'] = sum([row['water_heating_cost'] for row in group['workshops']])
+        group['water_heating_cost'] = sum([round(row['water_heating_cost'], 2) for row in group['workshops']])
         group['total_value'] = group['heating_value'] + group['water_heating_value']
-        group['total_cost'] = group['heating_cost'] + group['water_heating_cost']
+        group['total_cost'] = round(group['heating_cost'] + group['water_heating_cost'], 2)
     return workshops_groups
 
 

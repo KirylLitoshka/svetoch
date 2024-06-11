@@ -294,7 +294,7 @@ async def build_renter_bank_report(renters_payments, month, year):
 
 
 async def build_renters_invoices_report(renters, month, year):
-    invoice_number = "400004956-{:4d}-3{:2s}{:02d}5{:04d}"
+    invoice_number = "400004956-{:4d}-5{:2s}{:02d}5{:04d}"
     last_day_of_month = calendar.monthrange(year, month)[1]
     invoice_date = "{:4d}-{:02d}-{:02d}".format(year, month, last_day_of_month)
     output_file_path = "warmth/reports/out/invoices.zip"

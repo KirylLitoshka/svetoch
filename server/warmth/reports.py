@@ -8,13 +8,14 @@ from zipfile import ZipFile
 import aiofiles
 import calendar
 import os
+from datetime import date
 
 
 async def build_consolidated_report(report_data, month, year, currency_coefficient):
     """
     Построитель сводной ведомости
     """
-    month = MONTHS[month - 1]
+    month_name = MONTHS[month - 1]
     file_path = "warmth/reports/templates/consolidated_report.txt"
     output_file_path = "warmth/reports/out/consolidated_report.txt"
     title_line = "│{:3d}│{:26s}│{:12.4f}│{:14.2f}│{:12.4f}│{:14.2f}│{:12.4f}│{:14.2f}│"
@@ -44,18 +45,18 @@ async def build_consolidated_report(report_data, month, year, currency_coefficie
 
     async with aiofiles.open(file_path, mode="r", encoding="utf8") as fp:
         template_data = await fp.read()
-    data = template_data.format(month, year, currency_coefficient['value_1'], main_content, end_content)
+    data = template_data.format(month_name, year, currency_coefficient['value_1'], main_content, end_content)
     async with aiofiles.open(output_file_path, mode="w", encoding="utf8") as output_fp:
         await output_fp.write(data)
     return web.FileResponse(
         path=output_file_path,
         status=200,
-        headers={"Content-Disposition": "attachment;filename=report.txt"}
+        headers={"Content-Disposition": f"attachment;filename=consolidated_report_{month}_{year}.txt"}
     )
 
 
 async def build_workshop_report(data, month, year):
-    month = MONTHS[month - 1]
+    month_name = MONTHS[month - 1]
     file_path = f"warmth/reports/templates/workshop_report.txt"
     output_file_path = f"warmth/reports/out/workshop_report.txt"
     line = '│{:27s}│{:11.4f}│{:11.2f}│{:11.4f}│{:11.2f}│{:11.4f}│{:11.2f}│'
@@ -66,18 +67,18 @@ async def build_workshop_report(data, month, year):
     end_line = line.format("Итого", *list(data.values())[3:])
     async with aiofiles.open(file_path, mode="r", encoding="utf8") as fp:
         template_data = await fp.read()
-    data = template_data.format(data['title'], month, year, main_content, end_line)
+    data = template_data.format(data['title'], month_name, year, main_content, end_line)
     async with aiofiles.open(output_file_path, mode="w", encoding="utf8") as output_fp:
         await output_fp.write(data)
     return web.FileResponse(
         output_file_path,
         status=200,
-        headers={"Content-Disposition": "attachment;filename=report.txt"}
+        headers={"Content-Disposition": f"attachment;filename=workshop_report_{month}_{year}.txt"}
     )
 
 
 async def build_renter_short_report(report_data, month, year):
-    month = MONTHS[month - 1]
+    month_name = MONTHS[month - 1]
     file_path = f"warmth/reports/templates/renter_short_report.txt"
     output_file_path = f"warmth/reports/out/renter_short_report.txt"
     line = '│{:3s}│{:18s}│{:3s}│{:13.4f}│{:13.2f}│{:13.2f}│{:13.2f}│{:13.2f}│'
@@ -135,18 +136,18 @@ async def build_renter_short_report(report_data, month, year):
     )
     async with aiofiles.open(file_path, mode="r", encoding="utf8") as fp:
         template_data = await fp.read()
-    data = template_data.format(month, year, content, end_content)
+    data = template_data.format(month_name, year, content, end_content)
     async with aiofiles.open(output_file_path, mode="w", encoding="utf8") as output_fp:
         await output_fp.write(data)
     return web.FileResponse(
         output_file_path,
         status=200,
-        headers={"Content-Disposition": "attachment;filename=report.txt"}
+        headers={"Content-Disposition": f"attachment;filename=renter_report_mini_{month}_{year}.txt"}
     )
 
 
 async def build_renter_full_report(renter_payments, month, year):
-    month = MONTHS[month - 1]
+    month_name = MONTHS[month - 1]
     file_path = f"warmth/reports/templates/renter_full_report.txt"
     output_file_path = f"warmth/reports/out/renter_full_report.txt"
     line = "│{:6s}│{:20s}│{:3s}│{:8s}│{:5s}│{:9s}│{:9s}│{:11s}│{:9s}│{:10s}│{:11s}│"
@@ -213,13 +214,13 @@ async def build_renter_full_report(renter_payments, month, year):
     )
     async with aiofiles.open(file_path, mode="r", encoding="utf8") as fp:
         template_data = await fp.read()
-    data = template_data.format(month, year, content, total_line)
+    data = template_data.format(month_name, year, content, total_line)
     async with aiofiles.open(output_file_path, mode="w", encoding="utf8") as output_fp:
         await output_fp.write(data)
     return web.FileResponse(
         output_file_path,
         status=200,
-        headers={"Content-Disposition": "attachment;filename=report.txt"}
+        headers={"Content-Disposition": f"attachment;filename=renter_report_full_{month}_{year}.txt"}
     )
 
 
@@ -239,7 +240,6 @@ async def build_renter_bank_report(renters_payments, month, year):
         renter_vat_amount = sum([row['vat_value'] for row in renter['payments']])
         renter_currency_amount = sum([row['currency_cost'] for row in renter['payments']])
         renter_total_amount = sum([row['total_cost'] for row in renter['payments']])
-        print(renter_sum, renter_vat_amount, renter_currency_amount, renter_total_amount)
         invoice_number = "{:1s}{:02d}{:04d}".format(str(year)[-1], month, renter['id'])
         payments_detail = ""
         line = "|{:29s}|{:8s}|{:9.5f}|{:8.6f}|{:11.5f}|{:11.2f}|{:11.5f}|{:11.2f}|{:11.2f}|{:11.2f}|{:11.2f}|{:11.2f}|"
@@ -287,7 +287,7 @@ async def build_renter_bank_report(renters_payments, month, year):
         output_file_path,
         status=200,
         headers={
-            "Content-Disposition": "attachment;filename=report.txt",
+            "Content-Disposition": f"attachment;filename=bank_{month}_{year}.txt",
             "Access-Control-Expose-Headers": "Content-Disposition"
         }
     )
@@ -400,12 +400,12 @@ async def build_renters_invoices_report(renters, month, year):
         output_file_path,
         status=200,
         headers={
-            "Content-Disposition": "attachment;filename=invoices.zip",
+            "Content-Disposition": f"attachment;filename=invoices_{month}_{year}.zip",
             "Access-Control-Expose-Headers": "Content-Disposition"
         })
 
 
-async def build_renters_invoices_print_report(renters_payments, month, year):
+async def build_renters_invoices_print_report(renters_payments, month, year, details):
     month_title = MONTHS[month - 1]
     last_day_of_month = calendar.monthrange(year, month)[1]
     output_file_path = "warmth/reports/out/invoices.docx"
@@ -451,7 +451,7 @@ async def build_renters_invoices_print_report(renters_payments, month, year):
                 total_cost = round(value_with_coefficient + vat, 2)
                 heating['cost'] += value_with_coefficient
                 heating['vat'] += vat
-                heating['value'] += round(payment['heating_value'], 2)
+                heating['value'] += round(payment['heating_value'], 5)
                 additional_invoice_text_content += add_content_line.format(
                     tab, payment['title'][:18], "Отп/Гкл", "{:02d}.{:4d}".format(month, year),
                     payment_coefficient, payment['vat'], payment['heating_value'], payment['applied_rate_value'],
@@ -465,7 +465,7 @@ async def build_renters_invoices_print_report(renters_payments, month, year):
                 total_cost = round(value_with_coefficient + vat, 2)
                 water_heating['cost'] += value_with_coefficient
                 water_heating['vat'] += vat
-                water_heating['value'] += round(payment['water_heating_value'], 2)
+                water_heating['value'] += round(payment['water_heating_value'], 5)
                 additional_invoice_text_content += add_content_line.format(
                     tab, payment['title'][:18], "Отп/Гкл", "{:02d}.{:4d}".format(month, year),
                     payment_coefficient, payment['vat'], payment['water_heating_value'], payment['applied_rate_value'],
@@ -481,51 +481,57 @@ async def build_renters_invoices_print_report(renters_payments, month, year):
                 water_heating['vat'], round(water_heating['cost'] + water_heating['vat'], 2)
             )
 
-        document.add_paragraph().add_run(invoice_text_template.format(
-            invoice_number=renter_short_invoice_number,
-            day=last_day_of_month,
-            month_title=month_title,
-            year=year,
-            contract_date=renter['contract_date'].strftime("%d.%m.%Y"),
-            contract_number=renter['contract_number'],
-            renter_title=renter['full_name'],
-            renter_address=renter['address'],
-            renter_registration_number=renter['registration_number'] or "",
-            renter_banking_account=renter['banking_account'] or "",
-            bank_code=renter['bank_code'] or "",
-            bank_title=renter['bank_title'] or "",
-            content=invoice_text_content,
-            total_cost=round(heating['cost'] + water_heating['cost'], 2),
-            total_vat=round(heating['vat'] + water_heating['vat'], 2),
-            summary=round(heating['cost'] + heating['vat'] + water_heating['cost'] + water_heating['vat'], 2),
-        ), style="Macro Text Char").font.size = Pt(10)
+        renter_invoice_details = next((row for row in details if row['id'] == renter['id']), None)
+        if renter_invoice_details is None:
+            raise
 
-        document.add_page_break()
+        if renter_invoice_details['invoice']:
+            document.add_paragraph().add_run(invoice_text_template.format(
+                invoice_number=renter_short_invoice_number,
+                day=last_day_of_month,
+                month_title=month_title,
+                year=year,
+                contract_date=renter['contract_date'].strftime("%d.%m.%Y"),
+                contract_number=renter['contract_number'],
+                renter_title=renter['full_name'],
+                renter_address=renter['address'],
+                renter_registration_number=renter['registration_number'] or "",
+                renter_banking_account=renter['banking_account'] or "",
+                bank_code=renter['bank_code'] or "",
+                bank_title=renter['bank_title'] or "",
+                content=invoice_text_content,
+                total_cost=round(heating['cost'] + water_heating['cost'], 2),
+                total_vat=round(heating['vat'] + water_heating['vat'], 2),
+                summary=round(heating['cost'] + heating['vat'] + water_heating['cost'] + water_heating['vat'], 2),
+            ), style="Macro Text Char").font.size = Pt(10)
 
-        document.add_paragraph().add_run(additional_invoice_text_template.format(
-            invoice_number=renter_short_invoice_number,
-            day=last_day_of_month,
-            month_title=month_title,
-            year=year,
-            renter_title=renter['full_name'],
-            renter_address=renter['address'],
-            renter_registration_number=renter['registration_number'] or "",
-            renter_banking_account=renter['banking_account'] or "",
-            bank_code=renter['bank_code'] or "",
-            bank_title=renter['bank_title'] or "",
-            total_vat=round(heating['vat'] + water_heating['vat'], 2),
-            summary=round(heating['cost'] + heating['vat'] + water_heating['cost'] + water_heating['vat'], 2),
-            content=additional_invoice_text_content
-        ), style="Macro Text Char").font.size = Pt(7)
-
-        if index != len(renters_payments) - 1:
             document.add_page_break()
+
+        if renter_invoice_details['attachment']:
+            document.add_paragraph().add_run(additional_invoice_text_template.format(
+                invoice_number=renter_short_invoice_number,
+                day=last_day_of_month,
+                month_title=month_title,
+                year=year,
+                renter_title=renter['full_name'],
+                renter_address=renter['address'],
+                renter_registration_number=renter['registration_number'] or "",
+                renter_banking_account=renter['banking_account'] or "",
+                bank_code=renter['bank_code'] or "",
+                bank_title=renter['bank_title'] or "",
+                total_vat=round(heating['vat'] + water_heating['vat'], 2),
+                summary=round(heating['cost'] + heating['vat'] + water_heating['cost'] + water_heating['vat'], 2),
+                content=additional_invoice_text_content
+            ), style="Macro Text Char").font.size = Pt(7)
+
+            if index != len(renters_payments) - 1:
+                document.add_page_break()
 
     document.save(output_file_path)
     return web.FileResponse(
         output_file_path,
         status=200,
         headers={
-            "Content-Disposition": "attachment;filename=invoices.docx",
+            "Content-Disposition": f"attachment;filename=invoices_{date.today()}.docx",
             "Access-Control-Expose-Headers": "Content-Disposition"
         })

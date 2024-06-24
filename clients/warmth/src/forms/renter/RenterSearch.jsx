@@ -1,9 +1,9 @@
 import React from "react";
 import Search from "../../components/wrappers/search/Search";
 
-const RenterSearch = ({ searchQuery, setSearchQuery }) => {
+const RenterSearch = ({style, searchQuery, setSearchQuery }) => {
   return (
-    <Search>
+    <Search style={style}>
       {searchQuery.hasOwnProperty("title") &&
       (
         <div className="search_row">

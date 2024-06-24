@@ -1,35 +1,21 @@
-import asyncio
 from datetime import datetime
+import json
 
 from sqlalchemy import select, literal_column, func, desc, and_
 
 from views import ListView, DetailView, BaseView
 from utils import pretty_json, DATE_FORMAT
 from table import get_table_data
-from exceptions import RecordNotFound
 from warmth.models import *
 from warmth.calculations import *
 from warmth.queries import *
 from warmth.reports import *
 
 
-async def test_handler_post(request: web.Request):
-    post_data = await request.post()
-    file = post_data['file'].file
-    table_data = await get_table_data(file, request.app["app_name"])
-    return web.json_response({"success": True, "items": table_data}, dumps=pretty_json)
-
-
-async def test_handler(request):
-    data = request.app['subsystem']
-    return web.json_response({"success": True, "item": data}, dumps=pretty_json)
-
-
 class SubsystemDetailView(DetailView):
     model = subsystem
 
     async def get(self):
-        await asyncio.sleep(1)
         async with self.request.app['db'].connect() as conn:
             cursor = await conn.execute(
                 select(self.model)
@@ -458,15 +444,23 @@ class FileReportsView(BaseView):
                 calculation = await get_renter_vat_calculations(renters_payments)
                 return await build_renter_bank_report(calculation, month, year)
             elif report_name == "renter_invoice":
-                renter_ids = self.request.query.get("id", [int(val) for val in self.request.query.values()])
-                renter_payments = await get_renters_payments(conn, renter_ids=renter_ids, month=month, year=year)
+                request_items = dict(self.request.query.items())
+                required_renters = request_items.get('renters')
+                if required_renters is None:
+                    return web.json_response({"success": False, "reason": "Список арендаторов не может быть пустым"})
+                renters_ids = [row['id'] for row in json.loads(required_renters)]
+                renter_payments = await get_renters_payments(conn, renter_ids=renters_ids, month=month, year=year)
                 calculation = await get_renter_vat_calculations(renter_payments)
                 return await build_renters_invoices_report(calculation, month, year)
             elif report_name == "renter_invoice_print":
-                renter_ids = self.request.query.get("id", [int(val) for val in self.request.query.values()])
-                renter_payments = await get_renters_payments(conn, renter_ids=renter_ids, month=month, year=year)
+                request_items = dict(self.request.query.items())
+                required_renters = request_items.get('renters')
+                if required_renters is None:
+                    return web.json_response({"success": False, "reason": "Список арендаторов не может быть пустым"})
+                required_renters_details = json.loads(required_renters)
+                renters_ids = [row['id'] for row in required_renters_details]
+                renter_payments = await get_renters_payments(conn, renter_ids=renters_ids, month=month, year=year)
                 calculation = await get_renter_vat_calculations(renter_payments)
-                return await build_renters_invoices_print_report(calculation, month, year)
+                return await build_renters_invoices_print_report(calculation, month, year, required_renters_details)
             else:
                 return web.json_response({"success": False, "reason": "Отчет не найден"})
-            

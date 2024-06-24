@@ -21,7 +21,7 @@ const Renter = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   const [selectedItem, setSelectedItem] = useState(null);
-  const [selectedRentersIDs, setSelectedRentersIDs] = useState([]);
+  const [selectedRentersItems, setSelectedRentersItems] = useState([]);
   const [reportType, setReportType] = useState("");
   const [modalsVisible, setModalsVisible] = useState({
     create: false,
@@ -67,21 +67,18 @@ const Renter = () => {
   ];
 
   const getRentersReport = async () => {
-    if (selectedRentersIDs.length === 0) {
+    if (selectedRentersItems.length === 0) {
       return;
     }
     setModalsVisible({ ...modalsVisible, selection: false });
-    const URLString = selectedRentersIDs
-      .map((value, index) => `arr[${index}]=${value}`)
-      .join("&");
     axios
-      .get(`/api/v1/warmth/reports/files/${reportType}?${URLString}`, {
+      .get(`/api/v1/warmth/reports/files/${reportType}`, {
         responseType: "arraybuffer",
+        params: { renters: JSON.stringify(selectedRentersItems) },
       })
       .then((r) => {
         if (r.status === 200 && r.headers["content-disposition"]) {
-          const filename =
-            r.headers["content-disposition"].split("filename=")[1];
+          const filename = r.headers["content-disposition"].split("filename=")[1];
           const url = URL.createObjectURL(new Blob([r.data]));
           const link = document.createElement("a");
           link.href = url;
@@ -93,7 +90,7 @@ const Renter = () => {
         }
       })
       .catch((e) => setError(e.response.data.reason));
-    setSelectedRentersIDs([]);
+    setSelectedRentersItems([]);
   };
 
   const getRentersItems = async () => {
@@ -208,7 +205,11 @@ const Renter = () => {
           }}
         />
       </PageTitle>
-      <RenterSearch searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+      <RenterSearch
+        style={{ marginBottom: "30px" }}
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+      />
       <Accordion>
         {filteredRenters.map((renter, index) => (
           <AccordionItem
@@ -271,12 +272,13 @@ const Renter = () => {
         rentersList={renters.filter((renter) => !renter.is_closed)}
         isVisible={modalsVisible.selection}
         onClose={() => {
-          setSelectedRentersIDs([]);
+          setSelectedRentersItems([]);
           setModalsVisible({ ...modalsVisible, selection: false });
         }}
-        selectedIDs={selectedRentersIDs}
-        setSelectedIDs={setSelectedRentersIDs}
+        selectedItems={selectedRentersItems}
+        setSelectedItems={setSelectedRentersItems}
         confirmCallback={getRentersReport}
+        reportType={reportType}
       />
     </React.Fragment>
   );

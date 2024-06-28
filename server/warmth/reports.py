@@ -225,48 +225,46 @@ async def build_renter_full_report(renter_payments, month, year):
 
 
 async def build_renter_bank_report(renters_payments, month, year):
-    template_file_path = "warmth/reports/templates/renter_bank_invoice.txt"
-    output_file_path = "warmth/reports/out/renter_bank_invoice.txt"
-    last_day_of_month = calendar.monthrange(year, month)[1]
-    invoice_date = "{:2d}.{:02d}.{:4d}".format(last_day_of_month, month, year)
     month_name = MONTHS[month - 1]
+    last_day_of_month = calendar.monthrange(year, month)[1]
+    output_file_path = "warmth/reports/out/renter_bank_invoice.txt"
+    invoice_date = "{:2d}.{:02d}.{:4d}".format(last_day_of_month, month, year)
     output_content = ""
 
-    async with aiofiles.open(template_file_path, mode="r", encoding="utf-8") as fp:
+    async with aiofiles.open("warmth/reports/templates/renter_bank_invoice.txt", mode="r", encoding="utf-8") as fp:
         template_data = await fp.read()
 
     for renter in renters_payments:
-        renter_sum = sum([round(row['heating_cost'], 2) + round(row['water_heating_cost'], 2) for row in renter['payments']])
-        renter_vat_amount = sum([row['vat_value'] for row in renter['payments']])
-        renter_currency_amount = sum([row['currency_cost'] for row in renter['payments']])
-        renter_total_amount = sum([row['total_cost'] for row in renter['payments']])
         invoice_number = "{:1s}{:02d}{:04d}".format(str(year)[-1], month, renter['id'])
-        payments_detail = ""
-        line = "|{:29s}|{:8s}|{:9.5f}|{:8.6f}|{:11.5f}|{:11.2f}|{:11.5f}|{:11.2f}|{:11.2f}|{:11.2f}|{:11.2f}|{:11.2f}|"
+        renter_summary_cost = 0
+        renter_summary_currency = 0
+        renter_summary_vat = 0
+        renter_total = 0
+        payments_info = f""
+
         for index, payment in enumerate(renter['payments']):
-            coefficient = payment['coefficient_value']
-            if payment['is_additional_coefficient_applied']:
-                coefficient = payment['additional_coefficient_value']
-            payments_detail += line.format(
-                payment['title'][:29],
-                f"{payment['payment_month']}.{payment['payment_year']}",
-                payment['applied_rate_value'],
-                coefficient,
-                payment['heating_value'],
-                payment['heating_cost'],
-                payment['water_heating_value'],
-                payment['water_heating_cost'],
-                round(payment['heating_cost'], 2) + round(payment['water_heating_cost'], 2),
-                payment['vat_value'],
-                payment['currency_cost'],
-                payment['total_cost']
-            )
+            payments_info += f" {payment['title']}\n"
+
+            if payment['heating_cost']:
+                payments_info += build_renter_bank_report_line(payment, "heating")
+                renter_summary_cost += round(payment['heating_cost'], 2)
+                renter_summary_currency += payment['heating_coefficient_value']
+                renter_summary_vat += payment['heating_vat_cost']
+                renter_total += payment['heating_total_cost']
+
+            if payment['water_heating_cost']:
+                payments_info += build_renter_bank_report_line(payment, "water_heating")
+                renter_summary_cost += round(payment['water_heating_cost'], 2)
+                renter_summary_currency += payment['water_heating_coefficient_value']
+                renter_summary_vat += payment['water_heating_vat_cost']
+                renter_total += payment['water_heating_total_cost']
+
             if index != len(renter['payments']) - 1:
-                payments_detail += "\n"
+                payments_info += "\n"
+
         output_content += template_data.format(
             invoice_date=invoice_date,
             invoice_number=invoice_number,
-            payment_sum=renter_total_amount,
             banking_account=renter['banking_account'],
             registration_number=renter['registration_number'],
             full_name=renter['full_name'],
@@ -276,13 +274,16 @@ async def build_renter_bank_report(renters_payments, month, year):
             bank_title=renter['bank_title'],
             month_name=month_name,
             year=year,
-            sum=renter_sum,
-            currency=renter_currency_amount,
-            vat_sum=renter_vat_amount,
-            payments_detail=payments_detail
+            sum=renter_summary_cost,
+            currency=renter_summary_currency,
+            vat_sum=renter_summary_vat,
+            payment_sum=renter_total,
+            payments_detail=payments_info
         ) + "\n"
+
     async with aiofiles.open(output_file_path, mode="w", encoding="cp1251", errors="ignore") as output_fp:
         await output_fp.write(output_content)
+
     return web.FileResponse(
         output_file_path,
         status=200,
@@ -409,7 +410,7 @@ async def build_renters_invoices_print_report(renters_payments, month, year, det
     month_title = MONTHS[month - 1]
     last_day_of_month = calendar.monthrange(year, month)[1]
     output_file_path = "warmth/reports/out/invoices.docx"
-    content_line = "|{:12s}|{:5s}|{:12.5f}|{:11.2f}|{:6.2f}|{:7.2f}|{:9.2f}|"
+    content_line = "|{:12s}|{:5s}|{:9.5f}|{:12.5f}|{:11.2f}|{:6.2f}|{:7.2f}|{:9.2f}|"
     add_content_line = " {:3d} {:18s} {:7s} {:7s} {:7.6f} {:4.2f} {:9.4f} {:9.5f} {:11.2f} {:10.2f} {:10.2f} {:11.2f}"
 
     async with aiofiles.open("warmth/reports/templates/renter_invoice_print.txt") as f:
@@ -467,19 +468,21 @@ async def build_renters_invoices_print_report(renters_payments, month, year, det
                 water_heating['vat'] += vat
                 water_heating['value'] += round(payment['water_heating_value'], 5)
                 additional_invoice_text_content += add_content_line.format(
-                    tab, payment['title'][:18], "Отп/Гкл", "{:02d}.{:4d}".format(month, year),
+                    tab, payment['title'][:18], "ГВС/Гкл", "{:02d}.{:4d}".format(month, year),
                     payment_coefficient, payment['vat'], payment['water_heating_value'], payment['applied_rate_value'],
                     round(payment['water_heating_cost'], 2), coefficient_cost, vat, total_cost
                 ) + '\n'
                 tab += 1
-            invoice_text_content += content_line.format(
-                "Отопление", "Гкл", heating['value'], heating['cost'], 20,
-                heating['vat'], round(heating['cost'] + heating['vat'], 2)
-            ) + "\n"
-            invoice_text_content += content_line.format(
-                "Подогр.воды", "Гкл", water_heating['value'], water_heating['cost'], 20,
-                water_heating['vat'], round(water_heating['cost'] + water_heating['vat'], 2)
-            )
+
+        max_rate_value = max([row['applied_rate_value'] for row in renter['payments']])
+        invoice_text_content += content_line.format(
+            "Отопление", "Гкл", max_rate_value, heating['value'], heating['cost'], 20,
+            heating['vat'], round(heating['cost'] + heating['vat'], 2)
+        ) + "\n"
+        invoice_text_content += content_line.format(
+            "Подогр.воды", "Гкл", max_rate_value, water_heating['value'], water_heating['cost'], 20,
+            water_heating['vat'], round(water_heating['cost'] + water_heating['vat'], 2)
+        )
 
         renter_invoice_details = next((row for row in details if row['id'] == renter['id']), None)
         if renter_invoice_details is None:
@@ -535,3 +538,26 @@ async def build_renters_invoices_print_report(renters_payments, month, year, det
             "Content-Disposition": f"attachment;filename=invoices_{date.today()}.docx",
             "Access-Control-Expose-Headers": "Content-Disposition"
         })
+
+
+def build_renter_bank_report_line(payment_info, service_name):
+    output_line = ""
+    line = "|{:10s}|{:8s}|{:9.5f}|{:8.6f}|{:8.6f}|{:9.2f}|{:7.2f}|{:9.2f}|{:9.2f}|"
+
+    coefficient = payment_info['coefficient_value']
+    if payment_info['is_additional_coefficient_applied']:
+        coefficient = payment_info['additional_coefficient_value']
+
+    output_line += line.format(
+        "Отопление" if service_name == "heating" else "ГВС",
+        f"{payment_info['payment_month']}.{payment_info['payment_year']}",
+        payment_info['applied_rate_value'],
+        payment_info[f'{service_name}_value'],
+        coefficient,
+        payment_info[f'{service_name}_cost'],
+        payment_info[f'{service_name}_vat_cost'],
+        payment_info[f'{service_name}_coefficient_value'],
+        payment_info[f'{service_name}_total_cost']
+    ) + "\n"
+
+    return output_line

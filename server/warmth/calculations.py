@@ -202,3 +202,32 @@ async def get_renter_vat_calculations(renter_payments):
             payment['currency_cost'] = round(value_with_coefficient - total, 2)
             payment['total_cost'] = round(value_with_coefficient + payment['vat_value'], 2)
     return renter_payments
+
+
+async def get_renter_detailed_calculation(renters_payments):
+    for renter in renters_payments:
+        for payment in renter['payments']:
+            heating_details = build_detailed_payment_calculation(payment, "heating")
+            water_heating_details = build_detailed_payment_calculation(payment, "water_heating")
+            payment.update(heating_details)
+            payment.update(water_heating_details)
+    return renters_payments
+
+
+def build_detailed_payment_calculation(payment, key):
+    coefficient = payment['coefficient_value']
+    if payment['is_additional_coefficient_applied']:
+        coefficient = payment['additional_coefficient_value']
+    cost_with_coefficient = round(round(payment[f'{key}_cost'], 2) * coefficient, 2)
+    coefficient_value = round(cost_with_coefficient - round(payment[f'{key}_cost'], 2), 2)
+    vat_cost = round(cost_with_coefficient / 100 * payment['vat'] if payment['vat'] else 0, 2)
+    total_cost = round(cost_with_coefficient + vat_cost, 2)
+    return {
+        f"{key}_cost_with_coefficient": cost_with_coefficient,
+        f"{key}_coefficient_value": coefficient_value,
+        f"{key}_vat_cost": vat_cost,
+        f"{key}_total_cost": total_cost
+    }
+
+
+

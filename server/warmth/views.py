@@ -441,8 +441,8 @@ class FileReportsView(BaseView):
                 return await build_renter_full_report(renters_payments, month, year)
             elif report_name == "renter_bank":
                 renters_payments = await get_renters_payments(conn, month=month, year=year, is_bank_payment=True)
-                calculation = await get_renter_vat_calculations(renters_payments)
-                return await build_renter_bank_report(calculation, month, year)
+                renters_detailed_payments = await get_renter_detailed_calculation(renters_payments)
+                return await build_renter_bank_report(renters_detailed_payments, month, year)
             elif report_name == "renter_invoice":
                 request_items = dict(self.request.query.items())
                 required_renters = request_items.get('renters')

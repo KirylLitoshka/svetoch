@@ -1,4 +1,5 @@
 from aiohttp import web
+
 from electricity.routes import routes
 from utils import on_shutdown, on_startup, init_app_context_data
 

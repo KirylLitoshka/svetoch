@@ -1,4 +1,3 @@
-from aiohttp import web
 from warmth.views import *
 
 routes = [
@@ -59,6 +58,7 @@ routes = [
     web.route("PATCH", "/workshops_groups/{id}", WorkshopsGroupDetailView),
     web.route("DELETE", "/workshops_groups/{id}", WorkshopsGroupDetailView),
     web.route("GET", "/reports/files/{name}", FileReportsView),
+    web.route("POST", "/reports/files/{name}", FileReportsView),
     web.route("GET", '/revise', ReviseListView),
     web.route("POST", "/payments/:files", PaymentsUploadView),
 ]

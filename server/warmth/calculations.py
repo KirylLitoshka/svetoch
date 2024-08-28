@@ -230,4 +230,22 @@ def build_detailed_payment_calculation(payment, key):
     }
 
 
-
+async def calculate_communal_objects_values(communal_objects_ids, objects_payments: list):
+    output_result = {}
+    for obj_id in communal_objects_ids:
+        output_result[str(obj_id)] = {"heating": 0, "water_heating": 0}
+        if obj_id % 100 == 0:
+            object_payments = list(filter(
+                lambda payment: payment['code'] in [obj_id, obj_id + 99], objects_payments)
+            )
+        else:
+            object_payments = list(filter(
+                lambda payment: payment['code'] == obj_id, objects_payments)
+            )
+        print(object_payments)
+        for object_payment in object_payments:
+            if object_payment['is_heating_available']:
+                output_result[str(obj_id)]['heating'] += object_payment['heating_value']
+            if object_payment['is_water_heating_available']:
+                output_result[str(obj_id)]['water_heating'] += object_payment['water_heating_value']
+    return output_result

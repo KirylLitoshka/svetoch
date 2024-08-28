@@ -9,7 +9,8 @@ __all__ = [
     "get_current_currency_coefficient",
     "get_workshop_payments",
     "get_reconciliation_codes_payments",
-    "get_renters_payments"
+    "get_renters_payments",
+    "get_communal_objects_payments"
 ]
 
 
@@ -166,4 +167,25 @@ async def get_reconciliation_codes_payments(conn, month, year):
     result = [dict(row) for row in cursor]
     if not result:
         raise RecordNotFound("Начислений не найдено")
+    return result
+
+
+async def get_communal_objects_payments(conn, year, month):
+    query = select(
+        objects.c.code,
+        objects.c.is_heating_available,
+        objects.c.is_water_heating_available,
+        payments
+    ).select_from(
+        payments.join(objects).join(workshops, onclause=objects.c.workshop_id == workshops.c.id)
+    ).where(and_(
+        payments.c.operation_year == year,
+        payments.c.payment_month == month,
+        payments.c.ncen != 0,
+        workshops.c.workshop_group_id == 1
+    ))
+    cursor = await conn.execute(query)
+    result = [dict(row) for row in cursor.fetchall()]
+    if not result:
+        raise RecordNotFound("Платежи не найдены")
     return result

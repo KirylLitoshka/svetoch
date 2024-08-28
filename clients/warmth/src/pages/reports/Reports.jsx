@@ -7,12 +7,14 @@ import Form from "../../components/ui/form/Form";
 import RenterReport from "../../forms/renter/RenterReport";
 import WorkshopChoiceForm from "../../forms/workshop/WorkshopChoiceForm";
 import ModalWrapper from "../../components/wrappers/modal/ModalWrapper";
+import PaymentsRSC from "../../forms/payment/PaymentsRSC";
 
 const Reports = () => {
   const [modalVisible, setModalVisible] = useState({
     renter: false,
     workshop: false,
     error: false,
+    rsc: false
   });
   const [workshops, setWorkshops] = useState([]);
   const [error, setError] = useState("");
@@ -46,7 +48,8 @@ const Reports = () => {
       })
       .then((r) => {
         if (r.status === 200 && r.headers["content-disposition"]) {
-          const filename = r.headers["content-disposition"].split("filename=")[1];
+          const filename =
+            r.headers["content-disposition"].split("filename=")[1];
           const url = URL.createObjectURL(new Blob([r.data]));
           const link = document.createElement("a");
           link.href = url;
@@ -69,7 +72,8 @@ const Reports = () => {
       .get("/api/v1/warmth/reports/files/workshop", { params: { id: id } })
       .then((r) => {
         if (r.status === 200) {
-          const filename = r.headers["content-disposition"].split("filename=")[1];
+          const filename =
+            r.headers["content-disposition"].split("filename=")[1];
           const url = URL.createObjectURL(new Blob([r.data]));
           const link = document.createElement("a");
           link.href = url;
@@ -139,6 +143,14 @@ const Reports = () => {
               Отчет по цехам
             </Link>
           </div>
+          <div className="main-menu_item">
+            <Link
+              className="main-menu_item-link"
+              onClick={() => setModalVisible({...modalVisible, rsc: true})}
+            >
+              Отчет для РСЦ
+            </Link>
+          </div>
         </div>
       </div>
       <Form
@@ -158,6 +170,20 @@ const Reports = () => {
           />
         }
       />
+      <Form
+        isModal={true}
+        modalVisible={modalVisible.rsc}
+        component={
+          <PaymentsRSC
+            isVisible={modalVisible.rsc}
+            closeModal={() =>
+              setModalVisible({ ...modalVisible, rsc: false })
+            }
+          />
+        }
+        closeModal={() => setModalVisible({ ...modalVisible, rsc: false })}
+      />
+
       <ModalWrapper
         isVisible={modalVisible.error}
         closeModal={() => {

@@ -1,7 +1,9 @@
+import io
 from datetime import datetime
 import json
 
 from sqlalchemy import select, literal_column, func, desc, and_
+from openpyxl import load_workbook
 
 from views import ListView, DetailView, BaseView
 from utils import pretty_json, DATE_FORMAT
@@ -464,3 +466,47 @@ class FileReportsView(BaseView):
                 return await build_renters_invoices_print_report(calculation, month, year, required_renters_details)
             else:
                 return web.json_response({"success": False, "reason": "Отчет не найден"})
+
+    async def post(self):
+        report_name = self.request.match_info['name']
+        month = self.request.app['subsystem']['month']
+        year = self.request.app['subsystem']['year']
+
+        if report_name == "rsc_payments":
+            post_data = await self.request.post()
+            file = post_data['file'].file
+            if not file:
+                return web.json_response({"success": False, "reason": "Не указан фаил"})
+            workbook = load_workbook(file)
+            work_list = workbook[workbook.sheetnames[0]]
+            objects_codes = [row[0] for row in list(work_list.values)[4:] if isinstance(row[0], int)]
+            async with self.request.app['db'].begin() as conn:
+                objects_payments = await get_communal_objects_payments(
+                    conn, month=month, year=year
+                )
+            calculated_data = await calculate_communal_objects_values(objects_codes, objects_payments)
+            for index, line in enumerate(work_list):
+                if index < 4:
+                    continue
+                line_code = line[0].value
+                if not line_code:
+                    break
+                payment_values = calculated_data.get(str(line_code))
+                if payment_values is None:
+                    line[5].value, line[6].value = "", ""
+                    continue
+                line[5].value = payment_values['heating'] or ""
+                line[6].value = payment_values['water_heating'] or ""
+            output = io.BytesIO()
+            workbook.save(output)
+            output.seek(0)
+            return web.Response(
+                body=output.getvalue(),  # Получаем содержимое
+                status=200,
+                headers={
+                    'Content-Disposition': f'attachment; filename=rsc_report.xlsx',
+                    'Content-Type': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                }
+            )
+        else:
+            return web.json_response({"success": False, "reason": "Отчет не найден"})

@@ -492,6 +492,7 @@ async def build_renters_invoices_print_report(renters_payments, month, year, det
             document.add_paragraph().add_run(invoice_text_template.format(
                 invoice_number=renter_short_invoice_number,
                 day=last_day_of_month,
+                month='{:02d}'.format(month),
                 month_title=month_title,
                 year=year,
                 contract_date=renter['contract_date'].strftime("%d.%m.%Y"),

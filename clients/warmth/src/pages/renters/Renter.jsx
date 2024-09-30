@@ -126,11 +126,7 @@ const Renter = () => {
 
   const createRenterItem = async (item) => {
     axios
-      .post("/api/v1/warmth/renters", {
-        ...item,
-        heating_load: +item.heating_load || null,
-        water_heating_load: +item.water_heating_load || null,
-      })
+      .post("/api/v1/warmth/renters", item)
       .then((r) => {
         if (r.data.success) {
           setRenters([...renters, r.data.item]);

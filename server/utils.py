@@ -22,7 +22,7 @@ async def on_startup(app):
     application_name = app["app_name"]
     config = get_app_config()
     db_url = construct_db_url(config[application_name])
-    app['db'] = create_async_engine(db_url, echo=True)
+    app["db"] = create_async_engine(db_url, echo=True)
 
 
 async def on_shutdown(app):
@@ -30,19 +30,20 @@ async def on_shutdown(app):
 
 
 async def init_app_context_data(app):
-    async with app['db'].connect() as conn:
+    async with app["db"].connect() as conn:
         cursor = await conn.execute(text("SELECT * FROM subsystem"))
-        result = dict(cursor.fetchone())
-        if not result:
-            raise
-    app['subsystem'] = result
+        try:
+            result = dict(cursor.fetchone())
+            if not result:
+                raise
+        except Exception as e:
+            raise e
+    app["subsystem"] = result
 
 
-pretty_json = functools.partial(
-    json.dumps, indent=4, ensure_ascii=False, default=str
-)
+pretty_json = functools.partial(json.dumps, indent=4, ensure_ascii=False, default=str)
 
-DATE_FORMAT = '%Y-%m-%d'
+DATE_FORMAT = "%Y-%m-%d"
 MONTHS = [
     "Январь",
     "Февраль",
